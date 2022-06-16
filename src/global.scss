@@ -1,0 +1,34 @@
+$banner-background-color: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
+
+$ipad-pro-max: 1024px;
+@mixin ipad-pro-max {
+  @media (max-width: #{$ipad-pro-max}) {
+    @content;
+  }
+}
+
+$ipad-pro-width: 991px;
+@mixin ipad-pro {
+  @media (max-width: #{$ipad-pro-width}) {
+    @content;
+  }
+}
+
+$ipad-width: 768px;
+@mixin mobile {
+  @media (max-width: #{$ipad-width}) {
+    @content;
+  }
+}
+$mobile-width: 414px;
+@mixin mini-mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+$mini-mobile-width: 360px;
+@mixin mini-mobile-max {
+  @media (max-width: #{$mini-mobile-width}) {
+    @content;
+  }
+}
