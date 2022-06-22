@@ -1,0 +1,67 @@
+@import "../../global.scss";
+
+footer {
+  background: $secondry-color;
+  color: #ffffff;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    a {
+      text-decoration: none;
+
+      font-size: 18px;
+      line-height: 30px;
+      /* identical to box height, or 167% */
+
+      font-feature-settings: "salt" on, "liga" off;
+
+      color: #ffffff;
+    }
+  }
+  .useful-links {
+    h4 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      /* identical to box height, or 150% */
+      padding-bottom: 25px;
+      font-feature-settings: "salt" on, "liga" off;
+
+      color: #ffffff;
+    }
+  }
+  .main-address {
+    address {
+      font-size: 18px;
+      line-height: 30px;
+      /* or 167% */
+
+      font-feature-settings: "salt" on, "liga" off;
+
+      color: #ffffff;
+    }
+  }
+  .news-letter-main {
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      font-feature-settings: "salt" on, "liga" off;
+      color: #ffffff;
+    }
+
+    .footer-news-letter {
+      border: 1px solid $primary-color;
+      input {
+        background: transparent;
+        border: none;
+      }
+      button {
+        i {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

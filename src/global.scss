@@ -1,9 +1,20 @@
 $banner-background-color: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
 $primary-color: #24b3d6;
 $secondry-color: #000525;
-ul {
-  padding: 0;
-  margin: 0;
+$btn-background: #0c5791;
+
+$pc: 1200px;
+@mixin ipad-pro-max {
+  @media (max-width: #{$pc}) {
+    @content;
+  }
+}
+
+$laptop: 1200px;
+@mixin ipad-pro-max {
+  @media (max-width: #{$laptop}) {
+    @content;
+  }
 }
 
 $ipad-pro-max: 1024px;
@@ -13,28 +24,34 @@ $ipad-pro-max: 1024px;
   }
 }
 
-$ipad-pro-width: 991px;
+$ipad-pro: 991px;
 @mixin ipad-pro {
-  @media (max-width: #{$ipad-pro-width}) {
+  @media (max-width: #{$ipad-pro}) {
     @content;
   }
 }
 
-$ipad-width: 768px;
+$ipad: 768px;
 @mixin mobile {
-  @media (max-width: #{$ipad-width}) {
+  @media (max-width: #{$ipad}) {
     @content;
   }
 }
-$mobile-width: 414px;
+$mobile: 425px;
 @mixin mini-mobile {
-  @media (max-width: #{$mobile-width}) {
+  @media (max-width: #{$mobile}) {
     @content;
   }
 }
-$mini-mobile-width: 360px;
+$mini-mobile: 360px;
 @mixin mini-mobile-max {
-  @media (max-width: #{$mini-mobile-width}) {
+  @media (max-width: #{$mini-mobile}) {
+    @content;
+  }
+}
+$mini-mobile-pro: 320px;
+@mixin mini-mobile-max {
+  @media (max-width: #{$mini-mobile-pro}) {
     @content;
   }
 }

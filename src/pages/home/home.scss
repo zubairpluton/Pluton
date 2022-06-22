@@ -68,7 +68,8 @@
     }
   }
 
-  #home-about {
+  #home-about,
+  #home-services {
     .line {
       position: relative;
       height: 100px;
@@ -151,7 +152,8 @@
     }
   }
 
-  #home-portfolio {
+  #home-portfolio,
+  #home-technologies {
     background: #000525;
     .main-portfolio {
       .tabbing-link {
@@ -205,6 +207,115 @@
 
       .tabbing-img {
         background: #cfcfcf;
+      }
+      .more-work-btn {
+        display: flex;
+        justify-content: center;
+        margin: 100px 0px 0px;
+        .btn {
+          background-color: $btn-background;
+
+          a {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+            /* identical to box height, or 24px */
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  #home-services {
+    .main-services {
+      .underline {
+        border-bottom: 4px solid #24b3d6;
+        display: flex;
+        width: 25%;
+        text-align: center;
+        margin: 0px auto 35px;
+      }
+      .main-services-card {
+        .card {
+          transition: all 0.9s;
+          padding: 50px;
+          border: 0;
+
+          .service-card-image {
+            .white {
+              display: none;
+            }
+          }
+          .service-card-heading {
+            h2 {
+              font-size: 30px;
+              line-height: 120%;
+              text-align: center;
+              letter-spacing: 0.02em;
+
+              color: $secondry-color;
+            }
+          }
+          .service-card-para {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 130%;
+            text-align: center;
+            letter-spacing: 0.02em;
+          }
+
+          &:hover {
+            background: linear-gradient(62.79deg, #000525 1.08%, #24b3d6 100%);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
+            cursor: pointer;
+
+            h2 {
+              color: #ffffff;
+            }
+            p {
+              color: #ffffff;
+            }
+            .service-card-image {
+              .black {
+                display: none;
+              }
+              .white {
+                display: inline-flex;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #home-technologies {
+    background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
+    // opacity: 0.8;
+    .tech-icons-main {
+      width: 600px;
+      margin: 0 auto;
+
+      .main-technical-icons {
+        display: flex;
+        justify-content: space-between;
+
+        .tech-icons {
+          text-align: center;
+          h4 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 200%;
+            /* or 36px */
+
+            letter-spacing: 0.02em;
+
+            color: #ffffff;
+          }
+        }
       }
     }
   }

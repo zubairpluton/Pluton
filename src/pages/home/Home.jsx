@@ -1,14 +1,27 @@
 import React from "react";
 import "./home.scss";
-import { Header, SidebarPortfolio } from "../../components/index";
-import bannerImg from "../../assets/images/banner/banner-1.png";
-import bannerBackgroundImg from "../../assets/images/banner/banner-1-background.png";
-import lap1 from "../../assets/images/portfolio/lap1.png";
-import lap2 from "../../assets/images/portfolio/lap2.png";
-import lap3 from "../../assets/images/portfolio/lap3.png";
-import lap4 from "../../assets/images/portfolio/lap4.png";
-import pluton from "../../assets/images/portfolio/pluton.png";
-import character from "../../assets/images/portfolio/character.png";
+import { Header, Footer } from "../../components/index";
+import {
+  Apple,
+  BlockchainIcon,
+  BlockchainIconWhite,
+  bannerImg,
+  bannerImg2,
+  bannerBackgroundImg,
+  lap1,
+  lap2,
+  lap3,
+  lap4,
+  pluton,
+  character,
+  Android,
+  Flutter,
+  Ionic,
+  Reactnative,
+  Kotlin,
+  Swift,
+} from "../../assets/images/index";
+
 function Home() {
   return (
     <div id="home">
@@ -228,6 +241,11 @@ function Home() {
                         </div>
                       </div>
                     </div>
+                    <div className="more-work-btn d-flex">
+                      <button className="btn btn-primary ">
+                        <a href="#">More work</a>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -235,6 +253,295 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* =============================section-services========================== */}
+      <section id="home-services">
+        <div className="main">
+          <div className="container">
+            <div className="sec-padding">
+              <div className="line">
+                <div className="straight-line"></div>
+                <span className="ellipse"></span>
+              </div>
+
+              <div className="main-about main-services text-center">
+                <div className="heading">
+                  <h6>Services</h6>
+                  <h1>Our Awesome Services</h1>
+                  <span className="underline"></span>
+                </div>
+
+                <div className="para">
+                  <p>
+                    Pluton’s establishment was laid in 2018. Our experience
+                    started determined to utilize state-of-the-art innovation to{" "}
+                    <br />
+                    carry transparency and trustworthiness to organization
+                    processes.
+                  </p>{" "}
+                </div>
+
+                <div className="main-services-card">
+                  <div className="row gx-0">
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img
+                            src={BlockchainIcon}
+                            className="black"
+                            alt="BlockChain"
+                          />
+                          <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Block chain Development</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            Create and Launch your NFTs and ICOs with us, and
+                            compete the world by following the latest
+                            technologies.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img
+                            src={BlockchainIcon}
+                            className="black"
+                            alt="BlockChain"
+                          />
+                          <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Mobile Application Development</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            We are the App Makers! Our expert mobile app
+                            developers strive to provide you the best user
+                            experience, custom android and iOS apps .
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img
+                            src={BlockchainIcon}
+                            className="black"
+                            alt="BlockChain"
+                          />
+                          <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Ecommerce Web Developmen</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            Hire our SEO specialists to assist you with on-page
+                            SEO, off-page SEO, Technical SEO, and Local SEO
+                            services to help you rank better and boost your
+                            sales.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img
+                            src={BlockchainIcon}
+                            className="black"
+                            alt="BlockChain"
+                          />
+                          <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Website Maintenance & Support</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            Hire our SEO specialists to assist you with on-page
+                            SEO, off-page SEO, Technical SEO, and Local SEO
+                            services to help you rank better and boost your
+                            sales
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img
+                            src={BlockchainIcon}
+                            className="black"
+                            alt="BlockChain"
+                          />
+                          <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Creative Graphic Designs</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            The best digital designers team up together to bring
+                            you creative, beautiful and engaging designs. We
+                            create excellence!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img
+                            src={BlockchainIcon}
+                            className="black"
+                            alt="BlockChain"
+                          />
+                          <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Custom Software Development</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            Our custom software development services aim to
+                            design, engineer, deploy, and support various types
+                            of software
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =============================section-portfolio========================== */}
+      <section id="home-technologies" className="home-portfolio">
+        <div className="main">
+          <div className="banner-container">
+            <div className="sec-padding">
+              <div className="main-portfolio">
+                <div className="row">
+                  <div className="col-md-3 d-flex flex-column justify-content-evenly">
+                    <div className="tabbing-link">
+                      <div className="heading">
+                        <h1>
+                          Technologies
+                          <br /> we work <br />
+                          with
+                        </h1>
+
+                        <span className="underline"></span>
+                      </div>
+                      <div className="links">
+                        <ul>
+                          <li>
+                            <a href="#">Mobile</a>
+                          </li>
+                          <li>
+                            <a href="#">Front end</a>
+                          </li>
+                          <li>
+                            <a href="#">Data base</a>
+                          </li>
+                          <li>
+                            <a href="#">Backend</a>
+                          </li>
+                          <li>
+                            <a href="#">CMS</a>
+                          </li>
+                          <li>
+                            <a href="#">Infra & develop</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-9 d-flex align-items-sm-end">
+                    <div className="tech-icons-main">
+                      <div className="row">
+                        <div className="col-md-12 pb-3">
+                          <div className="main-technical-icons">
+                            <div className="tech-icons">
+                              <img src={Apple} alt="" />
+                              <h4>IOS</h4>
+                            </div>
+                            <div className="tech-icons">
+                              <img src={Android} alt="" />
+                              <h4>Android</h4>
+                            </div>
+                            <div className="tech-icons">
+                              <img src={Flutter} alt="" />
+                              <h4>Flutter</h4>
+                            </div>
+                            <div className="tech-icons">
+                              <img src={Reactnative} alt="" />
+                              <h4>React Native</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="col-md-12">
+                          <div className="main-technical-icons justify-content-evenly">
+                            <div className="tech-icons">
+                              <img src={Ionic} alt="" />
+                              <h4>Ionic</h4>
+                            </div>
+                            <div className="tech-icons">
+                              <img src={Kotlin} alt="" />
+                              <h4>Kotlin</h4>
+                            </div>
+                            <div className="tech-icons">
+                              <img src={Swift} alt="" />
+                              <h4>Swift</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }
