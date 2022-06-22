@@ -1,4 +1,10 @@
 $banner-background-color: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
+$primary-color: #24b3d6;
+$secondry-color: #000525;
+ul {
+  padding: 0;
+  margin: 0;
+}
 
 $ipad-pro-max: 1024px;
 @mixin ipad-pro-max {

@@ -11,7 +11,6 @@ function Header() {
               <div className="col-md-4">
                 <div className="logo">
                   <img src={Logo} alt="Logo.png" />
-                  logo here
                 </div>
               </div>
               <div className="col-md-8 d-flex justify-content-end">

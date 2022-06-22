@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import { Header } from "../../components/index";
+import { Header, SidebarPortfolio } from "../../components/index";
 import bannerImg from "../../assets/images/banner/banner-1.png";
 import bannerBackgroundImg from "../../assets/images/banner/banner-1-background.png";
 import lap1 from "../../assets/images/portfolio/lap1.png";
@@ -17,36 +17,34 @@ function Home() {
         <Header />
         <div className="main-banner">
           <div className="banner-container">
-            <div className="sec-padding">
-              <div className="row">
-                <div className="col-md-6">
-                  <div className="main-banner-content">
-                    <div className="content">
-                      <h2>One of the Top</h2>
-                      <h1>Blockchain</h1>
-                      <h2>Company at your disposal</h2>
-                    </div>
-                    <div className="banner-btn">
-                      <button className="btn btn-primary ">Get Quote</button>
-                    </div>
+            <div className="row">
+              <div className="col-md-6">
+                <div className="main-banner-content">
+                  <div className="content">
+                    <h2>One of the Top</h2>
+                    <h1>Blockchain</h1>
+                    <h2>Company at your disposal</h2>
                   </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="main-banner-image">
-                    <div className="image text-center">
-                      <img
-                        src={bannerBackgroundImg}
-                        alt="banner-background-image"
-                        className="banner-background-img"
-                      />
-                      <img
-                        src={bannerImg}
-                        alt="banner-image"
-                        className="banner-img"
-                      />
-                    </div>
+              </div>
+              <div className="col-md-6">
+                <div className="main-banner-image">
+                  <div className="image text-center">
+                    <img
+                      src={bannerBackgroundImg}
+                      alt="banner-background-image"
+                      className="banner-background-img"
+                    />
+                    <img
+                      src={bannerImg}
+                      alt="banner-image"
+                      className="banner-img"
+                    />
                   </div>
                 </div>
+              </div>
+              <div className="banner-btn">
+                <button className="btn btn-primary ">Get Quote</button>
               </div>
             </div>
           </div>
@@ -123,16 +121,18 @@ function Home() {
         </div>
       </section>
       {/* =============================section-portfolio========================== */}
-      <section id="home-portfolio">
+      <section id="home-portfolio" className="home-portfolio">
         <div className="main">
           <div className="banner-container">
             <div className="sec-padding">
               <div className="main-portfolio">
                 <div className="row">
-                  <div className="col-md-2">
+                  <div className="col-md-3 d-flex flex-column justify-content-evenly">
                     <div className="tabbing-link">
                       <div className="heading">
-                        <h1>Our Featured Portfolio</h1>
+                        <h1>
+                          Our <br /> Featured <br /> Portfolio
+                        </h1>
                         <span className="underline"></span>
                       </div>
                       <div className="links">
@@ -168,7 +168,7 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-10">
+                  <div className="col-md-9">
                     <div className="tabbing-img">
                       <div className="row gx-0">
                         <div className="col-md-5 m-0 p-0">
