@@ -1,7 +1,26 @@
 import React from "react";
 import "./career.scss";
+import { Link } from "react-router-dom";
 import { JobOpnings } from "../../assets/images/index";
+import Box from "@mui/material/Box";
+import {
+  TextField,
+  MenuItem,
+  InputLabel,
+  Select,
+  FormControl,
+} from "@mui/material";
+import { useState } from "react";
+
 function Career() {
+  const [arrange, setArrange] = useState(true);
+  const arrangeHandle = () => {
+    setArrange(!arrange);
+  };
+  const [asscending, setAsscending] = useState(true);
+  const handleChange = (event) => {
+    setArrange(event.target.value);
+  };
   return (
     <div id="career">
       <section className="home-section">
@@ -46,9 +65,16 @@ function Career() {
               <img src={JobOpnings} />
             </div>
           </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-12">
+              <div className="btn d-flex justify-content-center">
+                <button className="btn btn-primary"> View Open Roles</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section className="from-section mt-4">
+      <section className="form-section mt-4">
         <div className="container">
           <div className="title-header">
             <h2 className="parallax-title text-center text-capitalize">
@@ -56,7 +82,393 @@ function Career() {
             </h2>
             <hr className="line" />
           </div>
-          <div className="row"></div>
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="row">
+                <div className="col-md-5">
+                  <div className="keywords">
+                    <span>Keywords:</span>
+                  </div>
+                </div>
+                <div className="col-md-7">
+                  <div className="search-jobs d-flex justify-content-end">
+                    <span className="mr-5">
+                      {" "}
+                      <Link to={"/#"}>Search Jobs</Link>
+                    </span>
+                    <span className="ml-5">
+                      {" "}
+                      <Link to={"/job-apply"}>Apply</Link>
+                    </span>
+                    {/* <button className="btn btn-primary m-lg-1">Apply</button> */}
+                  </div>
+                </div>
+              </div>
+              <div className="row mt-5">
+                <div className="col-lg-12">
+                  <div className="input-field d-flex">
+                    <Box
+                      sx={{
+                        width: 500,
+                        maxWidth: "100%",
+                      }}
+                    >
+                      <TextField
+                        fullWidth
+                        label="Enter Keywords e.g. software engineer)"
+                        id="fullWidth"
+                      />
+                    </Box>
+                    <div className="search-btn">
+                      <button className="btn btn-primary">Search Jobs</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="job-list">
+        <div className="container">
+          <div className="sec-padding">
+            <div className="main-job-list">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="table-header d-flex justify-content-between">
+                    <div className="jobs-heading">
+                      <h3>233+ jobs</h3>
+                    </div>
+                    <div className="arrange">
+                      <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                        <InputLabel id="demo-select-small">Arrange</InputLabel>
+                        <Select
+                          labelId="demo-select-small"
+                          id="demo-select-small"
+                          value={arrange}
+                          label="Arrange"
+                          onChange={handleChange}
+                        >
+                          <MenuItem value="">
+                            <em>None</em>
+                          </MenuItem>
+                          <MenuItem value={1}>Date</MenuItem>
+                          <MenuItem value={2}>Title</MenuItem>
+                          <MenuItem value={3}>Job#</MenuItem>
+                          <MenuItem value={4}>Location</MenuItem>
+                        </Select>
+                      </FormControl>
+                    </div>
+                    <div className="order">
+                      <h4>
+                        {asscending !== false ? "Asscending" : "Descending"}
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-12">
+                  <div className="jobs">
+                    <div className="row no-gutters main-row">
+                      <div className="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-10 clickable">
+                        <div className="row no-gutters">
+                          <div className="col-12 col-sm-12 col-md-12 job-row-info-section">
+                            <h4 className="job-title-upper can-hover">
+                              <a className="job-title clickable can-hover">
+                                Senior Software Developer
+                              </a>
+                            </h4>
+                          </div>
+                          <div className="col-12 col-sm-12 col-md-12 pl-1">
+                            <p
+                              style={{
+                                fontSize: "12px",
+                                color: "rgb(134, 142, 150)",
+                                textOverflow: "ellipsis",
+                                whiteSpace: "nowrap",
+                                overflow: "hidden",
+                              }}
+                            >
+                              <span>
+                                The Division: Travisoft is a subsidiary of the
+                                Volaris operating group of Constellation
+                                Software Inc. With over 25-years' experience,
+                                combined with an innovative team. Travisoft
+                                produces feature-rich, flexible benefits
+                                administration software solutions covering
+                                COBRA, Retirees, Direct Billing, Cafeteria
+                                Plans, and more. Travisoft is dedicated to
+                                partner with clients for unique needs allow...
+                              </span>
+                            </p>
+                          </div>
+                          <div className="col-12 col-sm-12 col-md-12 m-l-0 p-l-0">
+                            <div className="row">
+                              <div className="col-12 col-sm-12 col-md-4 p-l-21 job-row-d text-capitalize">
+                                23/06/2022
+                              </div>
+                              <div className="col-12 col-sm-12 col-md-4 job-row-d job-row-d-xs">
+                                22-00506
+                              </div>
+                              <div className="col-12 col-sm-12 col-md-4 job-row-d job-row-d-xs">
+                                Karachi, Sindh
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 align-self-center float-right">
+                        <button className="btn btn-outline-primary w-100">
+                          {" "}
+                          Apply
+                        </button>
+                      </div>
+                      <div className="col-md-12 col-xs-12 not-last-job-in-list">
+                        <div className="line-separator"></div>
+                      </div>
+                      <hr />
+                    </div>
+                    <div className="row no-gutters main-row">
+                      <div className="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-10 clickable">
+                        <div className="row no-gutters">
+                          <div className="col-12 col-sm-12 col-md-12 job-row-info-section">
+                            <h4 className="job-title-upper can-hover">
+                              <a className="job-title clickable can-hover">
+                                software quality assurance
+                              </a>
+                            </h4>
+                          </div>
+                          <div className="col-12 col-sm-12 col-md-12 pl-1">
+                            <p
+                              style={{
+                                fontSize: "12px",
+                                color: "rgb(134, 142, 150)",
+                                textOverflow: "ellipsis",
+                                whiteSpace: "nowrap",
+                                overflow: "hidden",
+                              }}
+                            >
+                              <span>
+                                The Division: Travisoft is a subsidiary of the
+                                Volaris operating group of Constellation
+                                Software Inc. With over 25-years' experience,
+                                combined with an innovative team. Travisoft
+                                produces feature-rich, flexible benefits
+                                administration software solutions covering
+                                COBRA, Retirees, Direct Billing, Cafeteria
+                                Plans, and more. Travisoft is dedicated to
+                                partner with clients for unique needs allow...
+                              </span>
+                            </p>
+                          </div>
+                          <div className="col-12 col-sm-12 col-md-12 m-l-0 p-l-0">
+                            <div className="row">
+                              <div className="col-12 col-sm-12 col-md-4 p-l-21 job-row-d text-capitalize">
+                                23/06/2022
+                              </div>
+                              <div className="col-12 col-sm-12 col-md-4 job-row-d job-row-d-xs">
+                                22-00506
+                              </div>
+                              <div className="col-12 col-sm-12 col-md-4 job-row-d job-row-d-xs">
+                                Karachi, Sindh
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 align-self-center float-right">
+                        <button className="btn btn-outline-primary w-100">
+                          {" "}
+                          Apply
+                        </button>
+                      </div>
+                      <div className="col-md-12 col-xs-12 not-last-job-in-list">
+                        <div className="line-separator"></div>
+                      </div>
+                      <hr />
+                    </div>
+                    <div className="row no-gutters main-row">
+                      <div className="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-10 clickable">
+                        <div className="row no-gutters">
+                          <div className="col-12 col-sm-12 col-md-12 job-row-info-section">
+                            <h4 className="job-title-upper can-hover">
+                              <a className="job-title clickable can-hover">
+                                Principal Software Engineer
+                              </a>
+                            </h4>
+                          </div>
+                          <div className="col-12 col-sm-12 col-md-12 pl-1">
+                            <p
+                              style={{
+                                fontSize: "12px",
+                                color: "rgb(134, 142, 150)",
+                                textOverflow: "ellipsis",
+                                whiteSpace: "nowrap",
+                                overflow: "hidden",
+                              }}
+                            >
+                              <span>
+                                The Division: Travisoft is a subsidiary of the
+                                Volaris operating group of Constellation
+                                Software Inc. With over 25-years' experience,
+                                combined with an innovative team. Travisoft
+                                produces feature-rich, flexible benefits
+                                administration software solutions covering
+                                COBRA, Retirees, Direct Billing, Cafeteria
+                                Plans, and more. Travisoft is dedicated to
+                                partner with clients for unique needs allow...
+                              </span>
+                            </p>
+                          </div>
+                          <div className="col-12 col-sm-12 col-md-12 m-l-0 p-l-0">
+                            <div className="row">
+                              <div className="col-12 col-sm-12 col-md-4 p-l-21 job-row-d text-capitalize">
+                                23/06/2022
+                              </div>
+                              <div className="col-12 col-sm-12 col-md-4 job-row-d job-row-d-xs">
+                                22-00506
+                              </div>
+                              <div className="col-12 col-sm-12 col-md-4 job-row-d job-row-d-xs">
+                                Karachi, Sindh
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 align-self-center float-right">
+                        <button className="btn btn-outline-primary w-100">
+                          {" "}
+                          Apply
+                        </button>
+                      </div>
+                      <div className="col-md-12 col-xs-12 not-last-job-in-list">
+                        <div className="line-separator"></div>
+                      </div>
+                      <hr />
+                    </div>
+                    <div className="row no-gutters main-row">
+                      <div className="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-10 clickable">
+                        <div className="row no-gutters">
+                          <div className="col-12 col-sm-12 col-md-12 job-row-info-section">
+                            <h4 className="job-title-upper can-hover">
+                              <a className="job-title clickable can-hover">
+                                Senior UI/Ux Developer
+                              </a>
+                            </h4>
+                          </div>
+                          <div className="col-12 col-sm-12 col-md-12 pl-1">
+                            <p
+                              style={{
+                                fontSize: "12px",
+                                color: "rgb(134, 142, 150)",
+                                textOverflow: "ellipsis",
+                                whiteSpace: "nowrap",
+                                overflow: "hidden",
+                              }}
+                            >
+                              <span>
+                                The Division: Travisoft is a subsidiary of the
+                                Volaris operating group of Constellation
+                                Software Inc. With over 25-years' experience,
+                                combined with an innovative team. Travisoft
+                                produces feature-rich, flexible benefits
+                                administration software solutions covering
+                                COBRA, Retirees, Direct Billing, Cafeteria
+                                Plans, and more. Travisoft is dedicated to
+                                partner with clients for unique needs allow...
+                              </span>
+                            </p>
+                          </div>
+                          <div className="col-12 col-sm-12 col-md-12 m-l-0 p-l-0">
+                            <div className="row">
+                              <div className="col-12 col-sm-12 col-md-4 p-l-21 job-row-d text-capitalize">
+                                23/06/2022
+                              </div>
+                              <div className="col-12 col-sm-12 col-md-4 job-row-d job-row-d-xs">
+                                22-00506
+                              </div>
+                              <div className="col-12 col-sm-12 col-md-4 job-row-d job-row-d-xs">
+                                Karachi, Sindh
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 align-self-center float-right">
+                        <button className="btn btn-outline-primary w-100">
+                          {" "}
+                          Apply
+                        </button>
+                      </div>
+                      <div className="col-md-12 col-xs-12 not-last-job-in-list">
+                        <div className="line-separator"></div>
+                      </div>
+                      <hr />
+                    </div>
+                    <div className="row no-gutters main-row">
+                      <div className="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-10 clickable">
+                        <div className="row no-gutters">
+                          <div className="col-12 col-sm-12 col-md-12 job-row-info-section">
+                            <h4 className="job-title-upper can-hover">
+                              <a className="job-title clickable can-hover">
+                                Graphic Designer
+                              </a>
+                            </h4>
+                          </div>
+                          <div className="col-12 col-sm-12 col-md-12 pl-1">
+                            <p
+                              style={{
+                                fontSize: "12px",
+                                color: "rgb(134, 142, 150)",
+                                textOverflow: "ellipsis",
+                                whiteSpace: "nowrap",
+                                overflow: "hidden",
+                              }}
+                            >
+                              <span>
+                                The Division: Travisoft is a subsidiary of the
+                                Volaris operating group of Constellation
+                                Software Inc. With over 25-years' experience,
+                                combined with an innovative team. Travisoft
+                                produces feature-rich, flexible benefits
+                                administration software solutions covering
+                                COBRA, Retirees, Direct Billing, Cafeteria
+                                Plans, and more. Travisoft is dedicated to
+                                partner with clients for unique needs allow...
+                              </span>
+                            </p>
+                          </div>
+                          <div className="col-12 col-sm-12 col-md-12 m-l-0 p-l-0">
+                            <div className="row">
+                              <div className="col-12 col-sm-12 col-md-4 p-l-21 job-row-d text-capitalize">
+                                23/06/2022
+                              </div>
+                              <div className="col-12 col-sm-12 col-md-4 job-row-d job-row-d-xs">
+                                22-00506
+                              </div>
+                              <div className="col-12 col-sm-12 col-md-4 job-row-d job-row-d-xs">
+                                Karachi, Sindh
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 align-self-center float-right">
+                        <button className="btn btn-outline-primary w-100">
+                          {" "}
+                          Apply
+                        </button>
+                      </div>
+                      <div className="col-md-12 col-xs-12 not-last-job-in-list">
+                        <div className="line-separator"></div>
+                      </div>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
