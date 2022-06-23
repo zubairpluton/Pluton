@@ -1,5 +1,15 @@
 import { Col, Container, Row } from "react-bootstrap";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Twitter, LinkedIn, YouTube } from "@mui/icons-material";
+import {
+  // Linkedin,
+  // youtube,
+  // twitter,
+  arrow,
+  pk,
+  uk,
+  canada,
+} from "./../../assets/images/index";
 import { memo } from "react";
 import "./footer.scss";
 function Footer() {
@@ -11,15 +21,43 @@ function Footer() {
             <Row>
               <Col lg={4} md={4}>
                 {/* <Link to={"/"} className="logo"> */}
-                <h2>Pluton</h2>
+
                 {/* <img src={logo} /> */}
                 {/* </Link> */}
+                <div className="footer-about">
+                  <Link to={"/"}>
+                    <h2>Pluton</h2>
+                  </Link>
+                  <p>
+                    Pluton Limited is a software firm that <br /> provides
+                    services such as websites, <br /> mobile apps, game
+                    creation, block <br /> chain development, and NFTs, <br />{" "}
+                    among others.
+                  </p>
+                </div>
 
-                <p className="footer-about">
-                  Pluton Limited is a software firm that <br /> provides
-                  services such as websites, <br /> mobile apps, game creation,
-                  block <br /> chain development, and NFTs, <br /> among others.
-                </p>
+                <div className="social-icons">
+                  <ul className="footer-menu social-icons-menu">
+                    <li>
+                      <a href="#">
+                        {/* <img src={twitter} alt="Twitter" /> */}
+                        <Twitter fontSize="inherit" />
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#">
+                        {" "}
+                        <LinkedIn fontSize="inherit" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <YouTube fontSize="inherit" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </Col>
               <Col lg={2} md={2}>
                 <div className="useful-links">
@@ -27,7 +65,7 @@ function Footer() {
 
                   <ul className="footer-menu">
                     <li>
-                      <a href="#">Career</a>
+                      <Link to={"/career"}>Career</Link>
                     </li>
 
                     <li>
@@ -54,8 +92,9 @@ function Footer() {
                   <div className="footer-news-letter">
                     <form action="#">
                       <input type="text" placeholder="Enter Email Address" />
+
                       <button type="submit">
-                        <i className="fas fa-arrow-right-long"></i>
+                        <img src={arrow} alt="" />
                       </button>
                     </form>
                   </div>
@@ -64,24 +103,24 @@ function Footer() {
               <Col lg={4} md={4}>
                 <div className="main-address">
                   <div className="address">
-                    <i>icon</i>
-                    <span>United Kingdom</span>
+                    <img src={uk} alt="United Kingdom" />
+                    <h4>United Kingdom</h4>
                     <address>
                       134 Spackmans Way, SL1 2SB, Slough, <br /> Berkshire,
                       United Kingdome.
                     </address>
                   </div>
                   <div className="address">
-                    <i>icon</i>
-                    <span>United Kingdom</span>
+                    <img src={pk} alt="Pakistan" />
+                    <h4>Pakistan</h4>
                     <address>
                       134 Spackmans Way, SL1 2SB, Slough, <br /> Berkshire,
                       United Kingdome.
                     </address>
                   </div>
                   <div className="address">
-                    <i>icon</i>
-                    <span>United Kingdom</span>
+                    <img src={canada} alt="canada" />
+                    <h4>Canada</h4>
                     <address>
                       134 Spackmans Way, SL1 2SB, Slough, <br /> Berkshire,
                       United Kingdome.

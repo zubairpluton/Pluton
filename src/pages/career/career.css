@@ -1,0 +1,106 @@
+#career .home-section {
+  height: 50vh;
+  width: 100%;
+  background: #0f639a;
+  background-image: url("../../assets/images/banner/career-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#career .home-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#career .home-section .container .col-lg-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: var(--bs-light);
+}
+
+#career .home-section .container .col-lg-12 .title-home {
+  text-align: center;
+}
+
+#career .home-section .container .col-lg-12 .title-home h1 {
+  font-size: 7vw;
+  font-weight: bold;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#career .line {
+  text-align: center;
+  margin: 1rem auto;
+  width: 50%;
+  color: #24b3d6;
+  border: 0;
+  border-top: 7px solid #24b3d6;
+  opacity: 1;
+}
+
+#career .custom-button {
+  color: var(--bs-light);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#career .icon-section .title-home {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+#career .icon-section .title-home .line {
+  width: 20%;
+}
+
+#career .icon-section .box-img {
+  text-align: center;
+  display: block;
+}
+
+#career .icon-section .box-img img {
+  width: 100%;
+  padding: 5px;
+}
+
+#career .icon-section .parallax-title {
+  width: 50%;
+  text-align: center;
+  font-weight: 700;
+  line-height: 40px;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+#career .from-section .title-header {
+  margin: auto;
+  text-align: center;
+}
+
+#career .from-section .title-header .line {
+  width: 15%;
+}
+/*# sourceMappingURL=career.css.map */

@@ -2,7 +2,8 @@ $banner-background-color: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
 $primary-color: #24b3d6;
 $secondry-color: #000525;
 $btn-background: #0c5791;
-
+$font-primary: "Bebas-Regular";
+$font-secondry: "Raleway-Black";
 $pc: 1200px;
 @mixin ipad-pro-max {
   @media (max-width: #{$pc}) {
