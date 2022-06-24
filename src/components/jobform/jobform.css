@@ -1,0 +1,63 @@
+#form .main-form {
+  padding: 40px 118px 80px;
+}
+
+#form .main-form .btn {
+  padding: 10px 70px;
+}
+
+#form .main-form .signup-body .dropZone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  background-color: #eef2f5;
+  border: 2px dashed #979797;
+  position: relative;
+}
+
+#form .main-form .signup-body .dropZone:hover {
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+
+#form .main-form .signup-body .dropZone img {
+  color: gray;
+}
+
+#form .main-form .signup-body .dropZone p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#form .main-form .signup-body .dropZone input {
+  position: absolute;
+  inset: 0px;
+  opacity: 1e-5;
+  pointer-events: none;
+}
+
+#form .main-box {
+  border: 1px solid gray;
+}
+
+#form .main-box .heading {
+  border: 1px solid;
+  padding: 20px 100px;
+  background: #24b3d6;
+}
+
+#form .main-box .heading h3 {
+  color: white;
+}
+/*# sourceMappingURL=jobform.css.map */

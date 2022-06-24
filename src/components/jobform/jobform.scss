@@ -1,0 +1,54 @@
+@import "../../global.scss";
+#form {
+  .main-form {
+    padding: 40px 118px 80px;
+
+    .btn {
+      padding: 10px 70px;
+    }
+
+    .signup-body {
+      .dropZone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        background-color: #eef2f5;
+        border: 2px dashed #979797;
+        position: relative;
+
+        &:hover {
+          background-color: #d8d8d8;
+          cursor: pointer;
+        }
+        img {
+          color: gray;
+        }
+        p {
+          font-size: 20px;
+          margin-top: 10px;
+        }
+        input {
+          position: absolute;
+          inset: 0px;
+          opacity: 1e-5;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  .main-box {
+    border: 1px solid gray;
+
+    .heading {
+      border: 1px solid;
+      padding: 20px 100px;
+      background: $primary-color;
+      h3 {
+        color: white;
+      }
+    }
+  }
+}

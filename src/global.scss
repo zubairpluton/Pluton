@@ -4,15 +4,30 @@ $secondry-color: #000525;
 $btn-background: #0c5791;
 $font-primary: "Bebas-Regular";
 $font-secondry: "Raleway-Black";
-$pc: 1200px;
-@mixin ipad-pro-max {
+
+$pc-pro-max: 1440px;
+@mixin pc-pro-max {
+  @media (max-width: #{$pc-pro-max}) {
+    @content;
+  }
+}
+
+$pc-pro: 1440px;
+@mixin pc-pro {
+  @media (max-width: #{$pc-pro}) {
+    @content;
+  }
+}
+
+$pc: 1440px;
+@mixin pc {
   @media (max-width: #{$pc}) {
     @content;
   }
 }
 
 $laptop: 1200px;
-@mixin ipad-pro-max {
+@mixin laptop {
   @media (max-width: #{$laptop}) {
     @content;
   }
