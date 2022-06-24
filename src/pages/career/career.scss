@@ -28,7 +28,7 @@
             font-size: 7vw;
             font-weight: bold;
             color: white;
-            font-family: "Bebas Neue", sans-serif;
+            font-family: $font-primary;
           }
         }
       }
@@ -42,11 +42,6 @@
     border: 0;
     border-top: 7px solid #24b3d6;
     opacity: 1;
-  }
-  .custom-button {
-    color: var(--bs-light);
-    text-transform: uppercase;
-    font-weight: 500;
   }
   .icon-section {
     .title-home {
@@ -73,6 +68,11 @@
       line-height: 40px;
       margin: auto;
       text-transform: uppercase;
+    }
+    .btn {
+      .view-btn {
+        font-size: 20px !important;
+      }
     }
   }
   .form-section {

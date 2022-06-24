@@ -68,7 +68,10 @@ function Career() {
           <div className="row justify-content-center">
             <div className="col-lg-12">
               <div className="btn d-flex justify-content-center">
-                <button className="btn btn-primary"> View Open Roles</button>
+                <button className="custom-btn view-btn">
+                  {" "}
+                  View Open Roles
+                </button>
               </div>
             </div>
           </div>
@@ -119,8 +122,8 @@ function Career() {
                         id="fullWidth"
                       />
                     </Box>
-                    <div className="search-btn">
-                      <button className="btn btn-primary">Search Jobs</button>
+                    <div className="search-btn mx-4">
+                      <button className="custom-btn">Search Jobs</button>
                     </div>
                   </div>
                 </div>

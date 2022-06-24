@@ -24,8 +24,8 @@ function Footer() {
 
                 {/* <img src={logo} /> */}
                 {/* </Link> */}
-                <div className="footer-about">
-                  <Link to={"/"}>
+                <div className="footer-about ">
+                  <Link to={"/"} className="text-decoration-none">
                     <h2>Pluton</h2>
                   </Link>
                   <p>

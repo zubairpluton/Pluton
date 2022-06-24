@@ -8,6 +8,7 @@ import {
   BlockchainIconWhite,
   bannerImg,
   bannerImg2,
+  bannerGroup,
   bannerBackgroundImg,
   lap1,
   lap2,
@@ -21,6 +22,7 @@ import {
   Reactnative,
   Kotlin,
   Swift,
+  lineImage,
 } from "../../assets/images/index";
 
 function Home() {
@@ -44,21 +46,24 @@ function Home() {
               <div className="col-md-6">
                 <div className="main-banner-image">
                   <div className="image text-center">
-                    <img
+                    <img src={bannerGroup} alt="" />
+                    {/* <img
                       src={bannerBackgroundImg}
                       alt="banner-background-image"
                       className="banner-background-img"
-                    />
-                    <img
+                    /> */}
+                    {/* <img
                       src={bannerImg}
                       alt="banner-image"
                       className="banner-img"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
               <div className="banner-btn">
-                <button className="btn btn-primary ">Get Quote</button>
+                <button className="btn btn-primary custom-btn">
+                  Get Quote
+                </button>
               </div>
             </div>
           </div>
@@ -70,8 +75,9 @@ function Home() {
           <div className="container">
             <div className="sec-padding">
               <div className="line">
-                <div className="straight-line"></div>
-                <span className="ellipse"></span>
+                {/* <div className="straight-line"></div>
+                <span className="ellipse"></span> */}
+                <img src={lineImage} alt="" />
               </div>
 
               <div className="main-about text-center">
