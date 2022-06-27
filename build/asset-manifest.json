@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e82aabd7.css",
+    "main.js": "/static/js/main.0432d775.js",
+    "static/js/787.573de1c8.chunk.js": "/static/js/787.573de1c8.chunk.js",
+    "static/media/career-banner.png": "/static/media/career-banner.a8d823f8d21a44db8ed1.png",
+    "static/media/banner-2.png": "/static/media/banner-2.7b1d9ab3999673a13506.png",
+    "static/media/group-banner.png": "/static/media/group-banner.6b94c18452906a26fd07.png",
+    "static/media/Raleway-Black.ttf": "/static/media/Raleway-Black.eef1ff812c4eced3a276.ttf",
+    "static/media/banner-1.png": "/static/media/banner-1.05e836ad12da648d274f.png",
+    "static/media/lap3.png": "/static/media/lap3.f263e342e94e215de896.png",
+    "static/media/lap2.png": "/static/media/lap2.fde6c0d21ec3132a96fe.png",
+    "static/media/banner-1-background.png": "/static/media/banner-1-background.8cd25c4697716142e1c3.png",
+    "static/media/lap1.png": "/static/media/lap1.654c5f3050e0da36e4bf.png",
+    "static/media/pluton.png": "/static/media/pluton.9ef77573648fdf0b4c8c.png",
+    "static/media/lap4.png": "/static/media/lap4.a881e1b58d96520d5983.png",
+    "static/media/character.png": "/static/media/character.3deaf242a346146b837e.png",
+    "static/media/Bebas-Regular.otf": "/static/media/Bebas-Regular.4468171832950e2d1d82.otf",
+    "index.html": "/index.html",
+    "main.e82aabd7.css.map": "/static/css/main.e82aabd7.css.map",
+    "main.0432d775.js.map": "/static/js/main.0432d775.js.map",
+    "787.573de1c8.chunk.js.map": "/static/js/787.573de1c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e82aabd7.css",
+    "static/js/main.0432d775.js"
+  ]
+}
