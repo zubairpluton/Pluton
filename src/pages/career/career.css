@@ -1,4 +1,38 @@
-#career .home-section {
+.custom-btn {
+  width: 183px;
+  outline: none;
+  border: none;
+  height: 55px;
+  border-radius: 4px;
+  background: #24b3d6;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-btn:hover {
+  background-color: #0c5791;
+}
+
+.btn-outline-primary {
+  border-color: #24b3d6 !important;
+  color: #24b3d6 !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #24b3d6 !important;
+  border-color: #24b3d6 !important;
+}
+
+.home-section {
   height: 50vh;
   width: 100%;
   background: #0f639a;
@@ -7,63 +41,48 @@
   background-size: cover;
 }
 
-#career .home-section .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.home-section .banner-container {
+  width: 90%;
+  margin: 0 auto;
 }
 
-#career .home-section .container .col-lg-12 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 40vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  color: var(--bs-light);
-}
-
-#career .home-section .container .col-lg-12 .title-home {
+.home-section .container .heading {
   text-align: center;
 }
 
-#career .home-section .container .col-lg-12 .title-home h1 {
+.home-section .container .heading h4 {
+  color: white;
+}
+
+.home-section .container .title-home {
+  text-align: center;
+  max-width: 75%;
+}
+
+.home-section .container .title-home h1 {
   font-size: 7vw;
   font-weight: bold;
   color: white;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas-Regular";
 }
 
-#career .line {
-  text-align: center;
-  margin: 1rem auto;
-  width: 50%;
+.home-section .container .title-home .para {
+  color: white;
+  font-weight: 700;
+  /* font-family: "Bebas-Regular"; */
+  font-size: 40px;
+  line-height: 60px;
+  text-align: justify;
+}
+
+.home-section .container .title-home .line {
+  text-align: start;
+  width: 500px;
+  width: 500px;
   color: #24b3d6;
   border: 0;
-  border-top: 7px solid #24b3d6;
+  border-top: 3px solid #24b3d6;
   opacity: 1;
-}
-
-#career .custom-button {
-  color: var(--bs-light);
-  text-transform: uppercase;
-  font-weight: 500;
 }
 
 #career .icon-section .title-home {
@@ -95,6 +114,10 @@
   text-transform: uppercase;
 }
 
+#career .icon-section .btn .view-btn {
+  font-size: 20px !important;
+}
+
 #career .form-section .title-header {
   margin: auto;
   text-align: center;
@@ -110,6 +133,11 @@
 
 #career .form-section .search-jobs span a {
   text-decoration: none;
+  color: black;
+}
+
+#career .form-section .search-jobs span a:hover {
+  color: #0f639a;
 }
 
 #career .form-section .input-field .css-1gyr8kh {
@@ -153,6 +181,10 @@
 
 #career .job-list .main-job-list .table-header .jobs-heading h3 {
   color: #ffffff;
+}
+
+#career .job-list .main-job-list .table-header .order h4 {
+  cursor: pointer;
 }
 
 #career .job-list .main-job-list .jobs .main-row {

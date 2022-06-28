@@ -1,0 +1,38 @@
+@import "../../global.scss";
+#about {
+  #about-content {
+    p {
+      font-family: $font-secondry;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0.02em;
+      color: #4a4a4a;
+    }
+    // .main-about-para {
+
+    // }
+    .heading {
+      h2 {
+        font-family: $font-secondry;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        /* or 48px */
+
+        letter-spacing: 0.02em;
+        color: $secondry-color;
+      }
+      .line {
+        text-align: start;
+        width: 500px;
+        width: 500px;
+        color: #24b3d6;
+        border: 0;
+        border-top: 3px solid #24b3d6;
+        opacity: 1;
+      }
+    }
+  }
+}

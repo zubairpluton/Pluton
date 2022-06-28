@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo/logo.png";
 import Navlogo from "../../assets/images/logo/navbar-btn.png";
 function Header() {
@@ -10,7 +11,10 @@ function Header() {
             <div className="row">
               <div className="col-md-4">
                 <div className="logo">
-                  <img src={Logo} alt="Logo.png" />
+                  <Link to="/">
+                    {" "}
+                    <img src={Logo} alt="Logo.png" />
+                  </Link>
                 </div>
               </div>
               <div className="col-md-8 d-flex justify-content-end">

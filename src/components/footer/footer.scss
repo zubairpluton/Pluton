@@ -3,7 +3,10 @@
 footer {
   background: $secondry-color;
   color: #ffffff;
-
+  .banner-container {
+    width: 90%;
+    margin: 0 auto;
+  }
   .footer-about {
     h2 {
       color: #24b3d6;
@@ -103,10 +106,14 @@ footer {
           border: none;
           outline: none;
         }
-        @media (min-width: 1800px) {
+        @include pc-pro-max {
           width: 82%;
         }
+        @include pc-pro {
+          width: 145px;
+        }
       }
+
       button {
         padding: 8px 8px 8px 9px;
         border: none;
@@ -115,6 +122,13 @@ footer {
         i {
           color: #ffffff;
         }
+      }
+
+      @include pc {
+        justify-content: end !important;
+      }
+      @include laptop {
+        justify-content: space-between !important;
       }
     }
   }

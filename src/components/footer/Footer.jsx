@@ -18,8 +18,8 @@ function Footer() {
       <footer>
         <div className="banner-container">
           <div className="sec-padding">
-            <Row>
-              <Col lg={4} md={4}>
+            <Row className="my-5">
+              <div className="col-xxl-4 col-xl-3 col-lg-6 col-md-6 col-sm-12">
                 {/* <Link to={"/"} className="logo"> */}
 
                 {/* <img src={logo} /> */}
@@ -58,8 +58,8 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
-              </Col>
-              <Col lg={2} md={2}>
+              </div>
+              <div className="col-xxl-2 col-xl-3 col-lg-6 col-md-6 col-sm-12">
                 <div className="useful-links">
                   <h4>Useful Links</h4>
 
@@ -69,38 +69,40 @@ function Footer() {
                     </li>
 
                     <li>
-                      <a href="#">Services</a>
+                      <Link to={"/services"}>Services</Link>
                     </li>
                     <li>
-                      <a href="#about">About us</a>
+                      <Link to={"/about"}>About Us</Link>
                     </li>
                     <li>
-                      <a href="#">Contact</a>
+                      <Link to={"/contact"}>Contact Us</Link>
                     </li>
                   </ul>
                 </div>
-              </Col>
+              </div>
 
-              <Col lg={2} md={2}>
+              <div className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
                 <div className="useful-links news-letter-main">
                   <h4>Newsletter</h4>
-
                   <p>
                     Subscribe us to get all <br />
                     Latest News, Offer and Promotions
-                  </p>
-                  <div className="footer-news-letter">
-                    <form action="#">
-                      <input type="text" placeholder="Enter Email Address" />
-
-                      <button type="submit">
-                        <img src={arrow} alt="" />
-                      </button>
-                    </form>
-                  </div>
+                  </p>{" "}
+                  <form action="#">
+                    <div className="footer-news-letter d-flex justify-content-between">
+                      <span>
+                        <input type="text" placeholder="Enter Email Address" />
+                      </span>
+                      <span>
+                        <button type="submit">
+                          <img src={arrow} alt="" />
+                        </button>
+                      </span>
+                    </div>
+                  </form>
                 </div>
-              </Col>
-              <Col lg={4} md={4}>
+              </div>
+              <div className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
                 <div className="main-address">
                   <div className="address">
                     <img src={uk} alt="United Kingdom" />
@@ -127,7 +129,7 @@ function Footer() {
                     </address>
                   </div>
                 </div>
-              </Col>
+              </div>
             </Row>
           </div>
         </div>

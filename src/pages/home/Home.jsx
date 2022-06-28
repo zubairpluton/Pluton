@@ -24,6 +24,15 @@ import {
   Swift,
   lineImage,
 } from "../../assets/images/index";
+import { bounce, bounceIn } from "react-animations";
+import { StyleSheet, css } from "aphrodite";
+
+const styles = StyleSheet.create({
+  bounceIn: {
+    animationName: bounceIn,
+    animationDuration: "10s",
+  },
+});
 
 function Home() {
   return (
@@ -45,7 +54,7 @@ function Home() {
               </div>
               <div className="col-md-6">
                 <div className="main-banner-image">
-                  <div className="image text-center">
+                  <div className={`image text-center ${css(styles.bounceIn)}`}>
                     <img src={bannerGroup} alt="" />
                     {/* <img
                       src={bannerBackgroundImg}
@@ -167,7 +176,7 @@ function Home() {
                             <a href="#">Responsive Website</a>
                           </li>
                           <li>
-                            <a href="#">Custom Website</a>
+                            <Link to="/custom-web">Custom Website</Link>
                           </li>
                           <li>
                             <a href="#">Game</a>

@@ -11,31 +11,50 @@ import {
   FormControl,
 } from "@mui/material";
 import { useState } from "react";
+import { Header } from "../../components";
+//  d-flex flex-coloumn align-content-md-start justify-content-start h-50
+export const CareerBanner = ({ page, title, para }) => {
+  return (
+    <div className="home-section">
+      <div>
+        <Header />
+      </div>
+      <div className="container">
+        <div className="row">
+          <div
+            className="col-lg-12 d-flex  flex-column align-items-start justify-content-end "
+            style={{ height: "30vh" }}
+          >
+            <div className="heading">
+              <h4>{page}</h4>
+            </div>
+            <div className="title-home">
+              <h1>{title}</h1>
+              <h6 className="para">{para}</h6>
+              <hr className="line" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 function Career() {
   const [arrange, setArrange] = useState(true);
+  const [asscending, setAsscending] = useState(true);
   const arrangeHandle = () => {
     setArrange(!arrange);
   };
-  const [asscending, setAsscending] = useState(true);
+  const handleOrder = () => {
+    setAsscending(!asscending);
+  };
   const handleChange = (event) => {
     setArrange(event.target.value);
   };
   return (
     <div id="career">
-      <section className="home-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <h4>Careers</h4>
-              <div className="title-home">
-                <h1>Join The Team</h1>
-                <hr className="line" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CareerBanner page="career" title="Join the Team" />
       <section className="icon-section mt-4">
         <div className="title-home">
           <h2 className="parallax-title text-center text-capitalize">
@@ -150,12 +169,12 @@ function Career() {
                           labelId="demo-select-small"
                           id="demo-select-small"
                           value={arrange}
-                          label="Arrange"
+                          label="Arrange By"
                           onChange={handleChange}
                         >
-                          <MenuItem value="">
+                          {/* <MenuItem value="">
                             <em>None</em>
-                          </MenuItem>
+                          </MenuItem> */}
                           <MenuItem value={1}>Date</MenuItem>
                           <MenuItem value={2}>Title</MenuItem>
                           <MenuItem value={3}>Job#</MenuItem>
@@ -164,7 +183,7 @@ function Career() {
                       </FormControl>
                     </div>
                     <div className="order">
-                      <h4>
+                      <h4 onClick={handleOrder}>
                         {asscending !== false ? "Asscending" : "Descending"}
                       </h4>
                     </div>
@@ -221,10 +240,13 @@ function Career() {
                         </div>
                       </div>
                       <div className="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 align-self-center float-right">
-                        <button className="btn btn-outline-primary w-100">
+                        <Link to={"/job-apply"}>
                           {" "}
-                          Apply
-                        </button>
+                          <button className="btn btn-outline-primary w-100">
+                            {" "}
+                            Apply
+                          </button>
+                        </Link>
                       </div>
                       <div className="col-md-12 col-xs-12 not-last-job-in-list">
                         <div className="line-separator"></div>
@@ -280,10 +302,12 @@ function Career() {
                         </div>
                       </div>
                       <div className="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 align-self-center float-right">
-                        <button className="btn btn-outline-primary w-100">
-                          {" "}
-                          Apply
-                        </button>
+                        <Link to={"/job-apply"}>
+                          <button className="btn btn-outline-primary w-100">
+                            {" "}
+                            Apply
+                          </button>
+                        </Link>
                       </div>
                       <div className="col-md-12 col-xs-12 not-last-job-in-list">
                         <div className="line-separator"></div>
@@ -339,10 +363,12 @@ function Career() {
                         </div>
                       </div>
                       <div className="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 align-self-center float-right">
-                        <button className="btn btn-outline-primary w-100">
-                          {" "}
-                          Apply
-                        </button>
+                        <Link to={"/job-apply"}>
+                          <button className="btn btn-outline-primary w-100">
+                            {" "}
+                            Apply
+                          </button>
+                        </Link>
                       </div>
                       <div className="col-md-12 col-xs-12 not-last-job-in-list">
                         <div className="line-separator"></div>
@@ -398,10 +424,12 @@ function Career() {
                         </div>
                       </div>
                       <div className="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 align-self-center float-right">
-                        <button className="btn btn-outline-primary w-100">
-                          {" "}
-                          Apply
-                        </button>
+                        <Link to={"/job-apply"}>
+                          <button className="btn btn-outline-primary w-100">
+                            {" "}
+                            Apply
+                          </button>
+                        </Link>
                       </div>
                       <div className="col-md-12 col-xs-12 not-last-job-in-list">
                         <div className="line-separator"></div>
@@ -457,10 +485,12 @@ function Career() {
                         </div>
                       </div>
                       <div className="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 align-self-center float-right">
-                        <button className="btn btn-outline-primary w-100">
-                          {" "}
-                          Apply
-                        </button>
+                        <Link to={"/job-apply"}>
+                          <button className="btn btn-outline-primary w-100">
+                            {" "}
+                            Apply
+                          </button>
+                        </Link>
                       </div>
                       <div className="col-md-12 col-xs-12 not-last-job-in-list">
                         <div className="line-separator"></div>

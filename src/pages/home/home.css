@@ -1,3 +1,37 @@
+.custom-btn {
+  width: 183px;
+  outline: none;
+  border: none;
+  height: 55px;
+  border-radius: 4px;
+  background: #24b3d6;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-btn:hover {
+  background-color: #0c5791;
+}
+
+.btn-outline-primary {
+  border-color: #24b3d6 !important;
+  color: #24b3d6 !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #24b3d6 !important;
+  border-color: #24b3d6 !important;
+}
+
 #home .banner-container {
   width: 90%;
   margin: 0 auto;
@@ -43,19 +77,11 @@
   position: relative;
 }
 
-#home #banner .main-banner-image .image .banner-img {
-  z-index: 3333;
-  position: relative;
+#home #banner .main-banner-image .image img {
+  width: 70%;
 }
 
-#home #banner .main-banner-image .image .banner-background-img {
-  position: absolute;
-  top: -80px;
-  left: 80px;
-  z-index: 1;
-}
-
-#home #banner .banner-btn .btn {
+#home .banner-btn .custom-btn {
   width: 183px;
   height: 46px;
   background: #24b3d6;
@@ -70,39 +96,30 @@
   color: #ffffff;
 }
 
-#home #home-about .line,
-#home #home-services .line {
+#home .banner-btn .custom-btn:hover {
+  background-color: #000525;
+  border-color: #24b3d6;
+}
+
+#home .banner-btn .custom-btn:active {
+  border-color: #24b3d6;
+}
+
+#home-about .line,
+#home-services .line {
   position: relative;
   height: 100px;
 }
 
-#home #home-about .line .straight-line,
-#home #home-services .line .straight-line {
+#home-about .line img,
+#home-services .line img {
   position: absolute;
-  width: 164px;
-  height: 0px;
-  left: 570px;
-  top: 0;
-  border: 1px solid #000525;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  left: 50%;
+  top: -82px;
 }
 
-#home #home-about .line .ellipse,
-#home #home-services .line .ellipse {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  left: 646px;
-  top: 80px;
-  border-radius: 50%;
-  border: 1px solid #000525;
-}
-
-#home #home-about .main-about .heading h6,
-#home #home-services .main-about .heading h6 {
+#home-about .main-about .heading h6,
+#home-services .main-about .heading h6 {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -113,8 +130,8 @@
   color: #706e6e;
 }
 
-#home #home-about .main-about .heading h1,
-#home #home-services .main-about .heading h1 {
+#home-about .main-about .heading h1,
+#home-services .main-about .heading h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -125,8 +142,8 @@
   padding: 20px 0px 20px;
 }
 
-#home #home-about .main-about .para p,
-#home #home-services .main-about .para p {
+#home-about .main-about .para p,
+#home-services .main-about .para p {
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -137,13 +154,13 @@
   color: #4a4a4a;
 }
 
-#home #home-about .main-about .about-btn,
-#home #home-services .main-about .about-btn {
+#home-about .main-about .about-btn,
+#home-services .main-about .about-btn {
   margin: 40px 0px 0px;
 }
 
-#home #home-about .main-about .about-btn .home-about-btn,
-#home #home-services .main-about .about-btn .home-about-btn {
+#home-about .main-about .about-btn .home-about-btn,
+#home-services .main-about .about-btn .home-about-btn {
   background: #0c5791;
   font-style: normal;
   font-weight: 700;
@@ -157,13 +174,18 @@
   color: #ffffff;
 }
 
-#home #home-portfolio,
-#home #home-technologies {
+#home-about .main-about .about-btn .home-about-btn:hover,
+#home-services .main-about .about-btn .home-about-btn:hover {
+  background-color: #000525;
+}
+
+#home-portfolio,
+#home-technologies {
   background: #000525;
 }
 
-#home #home-portfolio .main-portfolio .tabbing-link .heading h1,
-#home #home-technologies .main-portfolio .tabbing-link .heading h1 {
+#home-portfolio .main-portfolio .tabbing-link .heading h1,
+#home-technologies .main-portfolio .tabbing-link .heading h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -173,8 +195,8 @@
   color: #ffffff;
 }
 
-#home #home-portfolio .main-portfolio .tabbing-link .heading .underline,
-#home #home-technologies .main-portfolio .tabbing-link .heading .underline {
+#home-portfolio .main-portfolio .tabbing-link .heading .underline,
+#home-technologies .main-portfolio .tabbing-link .heading .underline {
   border-bottom: 4px solid #24b3d6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,15 +205,15 @@
   margin: 12px 0px 35px;
 }
 
-#home #home-portfolio .main-portfolio .tabbing-link .links ul,
-#home #home-technologies .main-portfolio .tabbing-link .links ul {
+#home-portfolio .main-portfolio .tabbing-link .links ul,
+#home-technologies .main-portfolio .tabbing-link .links ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#home #home-portfolio .main-portfolio .tabbing-link .links ul li,
-#home #home-technologies .main-portfolio .tabbing-link .links ul li {
+#home-portfolio .main-portfolio .tabbing-link .links ul li,
+#home-technologies .main-portfolio .tabbing-link .links ul li {
   color: white;
   padding: 4px 15px;
   margin: 5px 0px;
@@ -201,30 +223,37 @@
   transition: all 0.5s;
 }
 
-#home #home-portfolio .main-portfolio .tabbing-link .links ul li:hover,
-#home #home-technologies .main-portfolio .tabbing-link .links ul li:hover {
+#home-portfolio .main-portfolio .tabbing-link .links ul li:hover,
+#home-technologies .main-portfolio .tabbing-link .links ul li:hover {
   background-color: #24b3d6;
   cursor: pointer;
 }
 
-#home #home-portfolio .main-portfolio .tabbing-link .links ul li:hover a,
-#home #home-technologies .main-portfolio .tabbing-link .links ul li:hover a {
+#home-portfolio .main-portfolio .tabbing-link .links ul li:hover a,
+#home-technologies .main-portfolio .tabbing-link .links ul li:hover a {
   font-weight: 500;
 }
 
-#home #home-portfolio .main-portfolio .tabbing-link .links ul li a,
-#home #home-technologies .main-portfolio .tabbing-link .links ul li a {
+#home-portfolio .main-portfolio .tabbing-link .links ul li a,
+#home-technologies .main-portfolio .tabbing-link .links ul li a {
   text-decoration: none;
   color: white;
 }
 
-#home #home-portfolio .main-portfolio .tabbing-img,
-#home #home-technologies .main-portfolio .tabbing-img {
+@media (max-width: 1200px) {
+  #home-portfolio .main-portfolio .tabbing-link .links ul li a,
+  #home-technologies .main-portfolio .tabbing-link .links ul li a {
+    font-size: 14px;
+  }
+}
+
+#home-portfolio .main-portfolio .tabbing-img,
+#home-technologies .main-portfolio .tabbing-img {
   background: #cfcfcf;
 }
 
-#home #home-portfolio .main-portfolio .more-work-btn,
-#home #home-technologies .main-portfolio .more-work-btn {
+#home-portfolio .main-portfolio .more-work-btn,
+#home-technologies .main-portfolio .more-work-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,13 +263,18 @@
   margin: 100px 0px 0px;
 }
 
-#home #home-portfolio .main-portfolio .more-work-btn .btn,
-#home #home-technologies .main-portfolio .more-work-btn .btn {
+#home-portfolio .main-portfolio .more-work-btn .btn,
+#home-technologies .main-portfolio .more-work-btn .btn {
   background-color: #0c5791;
 }
 
-#home #home-portfolio .main-portfolio .more-work-btn .btn a,
-#home #home-technologies .main-portfolio .more-work-btn .btn a {
+#home-portfolio .main-portfolio .more-work-btn .btn:hover,
+#home-technologies .main-portfolio .more-work-btn .btn:hover {
+  background-color: #000525;
+}
+
+#home-portfolio .main-portfolio .more-work-btn .btn a,
+#home-technologies .main-portfolio .more-work-btn .btn a {
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
@@ -251,7 +285,7 @@
   text-decoration: none;
 }
 
-#home #home-services .main-services .underline {
+#home-services .main-services .underline {
   border-bottom: 4px solid #24b3d6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,18 +295,18 @@
   margin: 0px auto 35px;
 }
 
-#home #home-services .main-services .main-services-card .card {
+#home-services .main-services .main-services-card .card {
   -webkit-transition: all 0.9s;
   transition: all 0.9s;
   padding: 50px;
   border: 0;
 }
 
-#home #home-services .main-services .main-services-card .card .service-card-image .white {
+#home-services .main-services .main-services-card .card .service-card-image .white {
   display: none;
 }
 
-#home #home-services .main-services .main-services-card .card .service-card-heading h2 {
+#home-services .main-services .main-services-card .card .service-card-heading h2 {
   font-size: 30px;
   line-height: 120%;
   text-align: center;
@@ -280,7 +314,7 @@
   color: #000525;
 }
 
-#home #home-services .main-services .main-services-card .card .service-card-para {
+#home-services .main-services .main-services-card .card .service-card-para {
   font-weight: 500;
   font-size: 20px;
   line-height: 130%;
@@ -288,42 +322,42 @@
   letter-spacing: 0.02em;
 }
 
-#home #home-services .main-services .main-services-card .card:hover {
+#home-services .main-services .main-services-card .card:hover {
   background: linear-gradient(62.79deg, #000525 1.08%, #24b3d6 100%);
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
   cursor: pointer;
 }
 
-#home #home-services .main-services .main-services-card .card:hover h2 {
+#home-services .main-services .main-services-card .card:hover h2 {
   color: #ffffff;
 }
 
-#home #home-services .main-services .main-services-card .card:hover p {
+#home-services .main-services .main-services-card .card:hover p {
   color: #ffffff;
 }
 
-#home #home-services .main-services .main-services-card .card:hover .service-card-image .black {
+#home-services .main-services .main-services-card .card:hover .service-card-image .black {
   display: none;
 }
 
-#home #home-services .main-services .main-services-card .card:hover .service-card-image .white {
+#home-services .main-services .main-services-card .card:hover .service-card-image .white {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-#home #home-technologies {
+#home-technologies {
   background: -webkit-gradient(linear, left top, right top, color-stop(16.81%, #000525), color-stop(119.48%, #24b3d6));
   background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
 }
 
-#home #home-technologies .tech-icons-main {
+#home-technologies .tech-icons-main {
   width: 600px;
   margin: 0 auto;
 }
 
-#home #home-technologies .tech-icons-main .main-technical-icons {
+#home-technologies .tech-icons-main .main-technical-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,11 +366,11 @@
           justify-content: space-between;
 }
 
-#home #home-technologies .tech-icons-main .main-technical-icons .tech-icons {
+#home-technologies .tech-icons-main .main-technical-icons .tech-icons {
   text-align: center;
 }
 
-#home #home-technologies .tech-icons-main .main-technical-icons .tech-icons h4 {
+#home-technologies .tech-icons-main .main-technical-icons .tech-icons h4 {
   font-weight: 500;
   font-size: 18px;
   line-height: 200%;

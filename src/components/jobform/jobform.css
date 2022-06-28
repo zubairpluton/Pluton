@@ -1,3 +1,37 @@
+.custom-btn {
+  width: 183px;
+  outline: none;
+  border: none;
+  height: 55px;
+  border-radius: 4px;
+  background: #24b3d6;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-btn:hover {
+  background-color: #0c5791;
+}
+
+.btn-outline-primary {
+  border-color: #24b3d6 !important;
+  color: #24b3d6 !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #24b3d6 !important;
+  border-color: #24b3d6 !important;
+}
+
 #form .main-form {
   padding: 40px 118px 80px;
 }
@@ -44,7 +78,6 @@
   position: absolute;
   inset: 0px;
   opacity: 1e-5;
-  pointer-events: none;
 }
 
 #form .main-box {

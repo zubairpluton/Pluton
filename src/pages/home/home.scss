@@ -75,6 +75,13 @@
       letter-spacing: 0.02em;
 
       color: #ffffff;
+      &:hover {
+        background-color: $secondry-color;
+        border-color: $primary-color;
+      }
+      &:active {
+        border-color: $primary-color;
+      }
     }
   }
 }
@@ -166,6 +173,9 @@
         letter-spacing: 0.02em;
 
         color: #ffffff;
+        &:hover {
+          background-color: $secondry-color;
+        }
       }
     }
   }
@@ -218,6 +228,9 @@
             a {
               text-decoration: none;
               color: white;
+              @include laptop {
+                font-size: 14px;
+              }
             }
           }
         }
@@ -233,6 +246,9 @@
       margin: 100px 0px 0px;
       .btn {
         background-color: $btn-background;
+        &:hover {
+          background-color: $secondry-color;
+        }
 
         a {
           font-weight: 700;

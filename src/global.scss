@@ -34,16 +34,16 @@ $font-secondry: "Raleway-Black";
     border-color: #24b3d6 !important;
   }
 }
-$pc-pro-max: 1440px;
+$pc-pro-max: 1600px;
 @mixin pc-pro-max {
-  @media (max-width: #{$pc-pro-max}) {
+  @media (min-width: #{$pc-pro-max}) {
     @content;
   }
 }
 
 $pc-pro: 1440px;
 @mixin pc-pro {
-  @media (max-width: #{$pc-pro}) {
+  @media (min-width: #{$pc-pro}) {
     @content;
   }
 }

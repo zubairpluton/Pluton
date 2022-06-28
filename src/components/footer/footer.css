@@ -1,3 +1,37 @@
+.custom-btn {
+  width: 183px;
+  outline: none;
+  border: none;
+  height: 55px;
+  border-radius: 4px;
+  background: #24b3d6;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-btn:hover {
+  background-color: #0c5791;
+}
+
+.btn-outline-primary {
+  border-color: #24b3d6 !important;
+  color: #24b3d6 !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #24b3d6 !important;
+  border-color: #24b3d6 !important;
+}
+
 footer {
   background: #000525;
   color: #ffffff;
@@ -25,7 +59,7 @@ footer ul li {
 }
 
 footer ul a {
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 18px;
   line-height: 30px;
   /* identical to box height, or 167% */
@@ -114,6 +148,18 @@ footer .news-letter-main .footer-news-letter input:active {
   outline: none;
 }
 
+@media (min-width: 1600px) {
+  footer .news-letter-main .footer-news-letter input {
+    width: 82%;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer .news-letter-main .footer-news-letter input {
+    width: 145px;
+  }
+}
+
 footer .news-letter-main .footer-news-letter button {
   padding: 8px 8px 8px 9px;
   border: none;
@@ -123,5 +169,21 @@ footer .news-letter-main .footer-news-letter button {
 
 footer .news-letter-main .footer-news-letter button i {
   color: #ffffff;
+}
+
+@media (max-width: 1440px) {
+  footer .news-letter-main .footer-news-letter {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  footer .news-letter-main .footer-news-letter {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
 }
 /*# sourceMappingURL=footer.css.map */
