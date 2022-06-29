@@ -13,12 +13,12 @@ const useStyles = makeStyles({
 const ServiceBanner = ({ page, title, titleSmall, para }) => {
   const classes = useStyles();
   return (
-    <div className="section">
+    <div className="home-section section ">
       <div>
         <Header />
       </div>
-      <div className="container">
-        <div className="row">
+      <div className="banner-container">
+        <div className="row mt-5 align-items-center">
           <div className="col-lg-6 d-flex  flex-column align-items-start justify-content-end ">
             <div className="title-home">
               <h1>{title}</h1>
@@ -29,7 +29,7 @@ const ServiceBanner = ({ page, title, titleSmall, para }) => {
           </div>
           <div className="col-lg-6">
             <div className="form">
-              <form action="">
+              <form action="" className="d-flex justify-content-end">
                 <div className="main-form">
                   <div className="heading">
                     <h4>Request for proposal</h4>

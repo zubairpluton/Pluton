@@ -365,30 +365,32 @@ function Home() {
                       </Link>
                     </div>
                     <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
+                      <Link to="/mobile-app-dev">
+                        <div className="card">
+                          <div className="service-card-image">
+                            <img
+                              src={BlockchainIcon}
+                              className="black"
+                              alt="BlockChain"
+                            />
+                            <img
+                              src={BlockchainIconWhite}
+                              className="white"
+                              alt="BlockChain"
+                            />
+                          </div>
+                          <div className="service-card-heading">
+                            <h2>Mobile Application Development</h2>
+                          </div>
+                          <div className="service-card-para">
+                            <p>
+                              We are the App Makers! Our expert mobile app
+                              developers strive to provide you the best user
+                              experience, custom android and iOS apps .
+                            </p>
+                          </div>
                         </div>
-                        <div className="service-card-heading">
-                          <h2>Mobile Application Development</h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            We are the App Makers! Our expert mobile app
-                            developers strive to provide you the best user
-                            experience, custom android and iOS apps .
-                          </p>
-                        </div>
-                      </div>
+                      </Link>
                     </div>
                     <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
                       <div className="card">

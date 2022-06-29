@@ -43,7 +43,7 @@
   background-size: cover;
 }
 
-.section .container .title-home h1 {
+.section .banner-container .title-home h1 {
   font-family: "Bebas-Regular";
   font-style: normal;
   font-weight: 400;
@@ -53,7 +53,7 @@
   color: #24b3d6;
 }
 
-.section .container .title-home h3 {
+.section .banner-container .title-home h3 {
   font-family: "Raleway-Black";
   font-style: normal;
   font-weight: 700;
@@ -64,7 +64,7 @@
   color: #ffffff;
 }
 
-.section .container .title-home .line {
+.section .banner-container .title-home .line {
   text-align: start;
   width: 500px;
   width: 500px;
@@ -74,7 +74,7 @@
   opacity: 1;
 }
 
-.section .container .title-home h6 {
+.section .banner-container .title-home h6 {
   font-family: "Raleway-Black";
   font-style: normal;
   font-weight: 600;
@@ -85,18 +85,19 @@
   color: #ffffff;
 }
 
-.section .container .form .main-form {
+.section .banner-container .form .main-form {
   background: black;
   opacity: 0.6;
   padding: 40px;
+  max-width: 75%;
 }
 
-.section .container .form .main-form .button {
+.section .banner-container .form .main-form .button {
   text-align: center;
   margin: 20px 0px 0px;
 }
 
-.section .container .form .main-form .heading h4 {
+.section .banner-container .form .main-form .heading h4 {
   font-weight: 700;
   font-size: 40px;
   font-family: "Raleway-Black";
@@ -106,19 +107,19 @@
   color: #24b3d6;
 }
 
-.section .container .form .main-form .fields .css-xqr4nw-MuiInputBase-root-MuiInput-root:after {
+.section .banner-container .form .main-form .fields .css-xqr4nw-MuiInputBase-root-MuiInput-root:after {
   border-bottom: 2px solid white;
 }
 
-.section .container .form .main-form .fields .css-xqr4nw-MuiInputBase-root-MuiInput-root::before {
+.section .banner-container .form .main-form .fields .css-xqr4nw-MuiInputBase-root-MuiInput-root::before {
   border-bottom: 2px solid white;
 }
 
-.section .container .form .main-form .fields .css-18nu0jg-MuiFormLabel-root-MuiInputLabel-root {
+.section .banner-container .form .main-form .fields .css-18nu0jg-MuiFormLabel-root-MuiInputLabel-root {
   color: white;
 }
 
-.section .container .form .main-form .fields .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+.section .banner-container .form .main-form .fields .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
   color: white;
 }
 /*# sourceMappingURL=service-banner.css.map */

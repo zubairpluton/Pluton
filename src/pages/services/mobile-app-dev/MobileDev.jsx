@@ -4,7 +4,7 @@ import { ServiceBanner } from "../../../components/index";
 import { Link } from "react-router-dom";
 // import { lap1, lap2, lap3, lap4 } from "../../../assets/images";s
 import Slider from "react-slick";
-import "./blockchain.scss";
+import "./mobile-dev.scss";
 import {
   BlockchainIcon,
   BlockchainIconWhite,
@@ -14,7 +14,7 @@ import {
   Hyperledger,
 } from "../../../assets/images/index";
 
-function BlockChain() {
+function MobileAppDev() {
   var settings = {
     dots: true,
     infinite: true,
@@ -54,12 +54,9 @@ function BlockChain() {
     <div id="blockchain">
       {/* =========================banner============ */}
       <ServiceBanner
-        title={`Value-Driven Custom
-                              Blockchain App Development Services`}
-        titleSmall="We provide simple and seamless"
-        para="blockchain
-                    app development solutions nurtured by innovation
-                        and inspired by the latest global practices."
+        title={`Full-stack mobile app development company`}
+        titleSmall="Delivering Sophistication through a"
+        para="Refined Process — We build purpose-driven mobile apps with your success in mind."
       />
 
       {/* ==================================custom-blockchain-services================== */}
@@ -728,4 +725,4 @@ function BlockChain() {
   );
 }
 
-export default BlockChain;
+export default MobileAppDev;
