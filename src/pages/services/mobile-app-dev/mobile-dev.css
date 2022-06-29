@@ -1,0 +1,85 @@
+.custom-btn {
+  width: 183px;
+  outline: none;
+  border: none;
+  height: 55px;
+  border-radius: 4px;
+  background: #24b3d6;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-btn:hover {
+  background-color: #0c5791;
+}
+
+.btn-outline-primary {
+  border-color: #24b3d6 !important;
+  color: #24b3d6 !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #24b3d6 !important;
+  border-color: #24b3d6 !important;
+}
+
+#mobile-app .dev-process .dev-process-box .box-border-1 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 25px;
+  background: #24b3d6;
+}
+
+#mobile-app .dev-process .dev-process-box .box-border-2 {
+  height: 25px;
+  background: #125c7d;
+}
+
+#mobile-app .dev-process .dev-process-box .box-border-3 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 25px;
+  background: #000525;
+}
+
+#mobile-app .dev-process .dev-process-box .box-content {
+  padding: 25px;
+}
+
+#mobile-app .dev-process .dev-process-box .box-content .box-heading h2 {
+  font-family: "Raleway-Black";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  /* identical to box height, or 36px */
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000525;
+}
+
+#mobile-app .dev-process .dev-process-box .box-content .box-para {
+  padding: 10px 40px;
+}
+
+#mobile-app .dev-process .dev-process-box .box-content .box-para p {
+  font-family: "Raleway-Black";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000525;
+}
+/*# sourceMappingURL=mobile-dev.css.map */

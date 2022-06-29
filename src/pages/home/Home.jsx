@@ -191,7 +191,7 @@ function Home() {
                             <a href="#">Character Design</a>
                           </li>
                           <li>
-                            <a href="#">Case Studyes</a>
+                            <Link to="/case-study">Case Studyes</Link>
                           </li>
                         </ul>
                       </div>
@@ -393,31 +393,33 @@ function Home() {
                       </Link>
                     </div>
                     <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
+                      <Link to="/web-dev">
+                        <div className="card">
+                          <div className="service-card-image">
+                            <img
+                              src={BlockchainIcon}
+                              className="black"
+                              alt="BlockChain"
+                            />
+                            <img
+                              src={BlockchainIconWhite}
+                              className="white"
+                              alt="BlockChain"
+                            />
+                          </div>
+                          <div className="service-card-heading">
+                            <h2>Ecommerce Web Development</h2>
+                          </div>
+                          <div className="service-card-para">
+                            <p>
+                              Hire our SEO specialists to assist you with
+                              on-page SEO, off-page SEO, Technical SEO, and
+                              Local SEO services to help you rank better and
+                              boost your sales.
+                            </p>
+                          </div>
                         </div>
-                        <div className="service-card-heading">
-                          <h2>Ecommerce Web Developmen</h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            Hire our SEO specialists to assist you with on-page
-                            SEO, off-page SEO, Technical SEO, and Local SEO
-                            services to help you rank better and boost your
-                            sales.
-                          </p>
-                        </div>
-                      </div>
+                      </Link>
                     </div>
                     <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
                       <div className="card">

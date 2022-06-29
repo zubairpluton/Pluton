@@ -1,0 +1,95 @@
+.custom-btn {
+  width: 183px;
+  outline: none;
+  border: none;
+  height: 55px;
+  border-radius: 4px;
+  background: #24b3d6;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-btn:hover {
+  background-color: #0c5791;
+}
+
+.btn-outline-primary {
+  border-color: #24b3d6 !important;
+  color: #24b3d6 !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #24b3d6 !important;
+  border-color: #24b3d6 !important;
+}
+
+#custom-web #custom-web-card .main-box .box-img {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-2.67%, #000525), to(#24b3d6));
+  background: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
+  position: relative;
+}
+
+#custom-web #custom-web-card .main-box .box-img .content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  right: 28%;
+}
+
+#custom-web #custom-web-card .main-box .box-img .content h3 {
+  font-family: "Raleway-Regular";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+#custom-web #custom-web-card .main-box .box-img .content .custom-btn {
+  width: 150px;
+  outline: none;
+  border: none;
+  height: 30px;
+  /* border-radius: 4px; */
+  background: #24b3d6;
+  font-family: "Raleway";
+  /* font-style: normal; */
+  /* font-weight: 700; */
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 3;
+  opacity: 1;
+}
+
+#custom-web #custom-web-card .main-box .box-img:hover .content {
+  display: block;
+}
+
+#custom-web #custom-web-card .main-box .box-img img {
+  width: 100%;
+  z-index: 1;
+}
+
+#custom-web #custom-web-card .main-box .box-img img:hover {
+  opacity: 0.2;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/*# sourceMappingURL=case-study.css.map */

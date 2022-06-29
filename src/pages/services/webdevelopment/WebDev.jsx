@@ -4,7 +4,7 @@ import { ServiceBanner } from "../../../components/index";
 import { Link } from "react-router-dom";
 // import { lap1, lap2, lap3, lap4 } from "../../../assets/images";s
 import Slider from "react-slick";
-import "./mobile-dev.scss";
+import "./web-dev.scss";
 import {
   BlockchainIcon,
   BlockchainIconWhite,
@@ -17,7 +17,7 @@ import {
   Development,
 } from "../../../assets/images/index";
 
-function MobileAppDev() {
+function WebDevelopment() {
   var settings = {
     dots: true,
     infinite: true,
@@ -54,12 +54,14 @@ function MobileAppDev() {
     // ],
   };
   return (
-    <div id="mobile-app">
+    <div id="web-dev">
       {/* =========================banner============ */}
       <ServiceBanner
-        title={`Full-stack mobile app development company`}
-        titleSmall="Delivering Sophistication through a"
-        para="Refined Process — We build purpose-driven mobile apps with your success in mind."
+        title={`Web development leaders`}
+        titleSmall="Ignite your online identity"
+        para="with cornerstone digital assets.
+ Build your presence with superb designs
+and functionality."
       />
 
       {/* ==================================custom-blockchain-services================== */}
@@ -75,17 +77,17 @@ function MobileAppDev() {
                 <div className="heading">
                   {/* <h6>Services</h6> */}
                   <h1>
-                    Mobile app <br /> development services
+                    Services we offer <br /> Build a vibrant web presence
                   </h1>
                   <span className="underline"></span>
                 </div>
 
                 <div className="para">
                   <p>
-                    We promise you top-notch service as we have the
-                    best-in-class web and mobile app development team. With a
-                    grade of pure professionals, project delivery is always on
-                    schedule with strict adherence to coding standards.
+                    Your web presence is pivotal for your brand, aside from it
+                    serving as a point of service. Get started with an
+                    experienced team that knows just what you need to take you
+                    forward.
                   </p>{" "}
                 </div>
 
@@ -220,26 +222,20 @@ function MobileAppDev() {
                 <div className="main">
                   <div className="heading">
                     {/* <h6>Services</h6> */}
-                    <h1>
-                      Work with a globally-recognized <br />
-                      mobile app development company
-                    </h1>
+                    <h1>Why choose us</h1>
                     <span className="underline"></span>
                   </div>
                   <div className="para">
                     <p>
-                      Mobile application development services hold a gigantic
-                      chunk in the economy, estimated to be valued over $6
-                      billion by 2023. We have been in the frontline of mobile
-                      app design in USA since we began our journey in 2008.
-                    </p>
-                    <p>
-                      We are recognized as one of the world’s most desired
-                      mobile app development companies. Our mobile app
-                      developers, designers, and strategists are fueled with
-                      creativity and passion for app design. This is why our
-                      mobile app services are recognized among the best in the
-                      industry.
+                      Along with designing and developing your web presence, we
+                      propose business-oriented solutions that fit your needs
+                      and speak volumes of your values as a brand. With
+                      experienced web developers and digital artisans, you get a
+                      state-of-the-art solution with a cutting-edge appeal that
+                      engages more people online. Leverage powerful technologies
+                      and robust architecture to build a web solution that
+                      fulfills your needs under packaged web development
+                      services.
                     </p>
                   </div>
                 </div>
@@ -261,18 +257,17 @@ function MobileAppDev() {
                 <div className="heading">
                   {/* <h6>Services</h6> */}
                   <h1>
-                    App
-                    <br /> Development Process
+                    Web development
+                    <br /> Process
                   </h1>
                   <span className="underline"></span>
                 </div>
 
                 <div className="para">
                   <p>
-                    Being among the top mobile app development companies, Cubix
-                    guarantees intuitive mobile apps that are
-                    performance-oriented and a lifestyle toolkit. We convert
-                    untapped ideas into mobile apps!
+                    Build a thriving web presence with programming tools like
+                    Python, Angular, React Native, and renowned cloud services
+                    with creative experts who formulate customized solutions.
                   </p>{" "}
                 </div>
 
@@ -286,7 +281,7 @@ function MobileAppDev() {
                         <div className="box-border-1"></div>
                         <div className="box-content">
                           <div className="box-heading">
-                            <h2>Plan</h2>
+                            <h2>Project Planning</h2>
                           </div>
                           <div className="box-para">
                             <p>
@@ -306,7 +301,7 @@ function MobileAppDev() {
                         <div className="box-border-2"></div>
                         <div className="box-content">
                           <div className="box-heading">
-                            <h2>Design</h2>
+                            <h2>UI/UX Design</h2>
                           </div>
                           <div className="box-para">
                             <p>
@@ -405,15 +400,15 @@ function MobileAppDev() {
                 <div className="heading">
                   {/* <h6>Services</h6> */}
                   <h1>
-                    Mobile App Development <br /> – Technology Stack
+                    Web Development <br /> – Technology Stack
                   </h1>
                   <span className="underline"></span>
                 </div>
 
                 <div className="para">
                   <p>
-                    We create mobile apps with scalable and tested technology
-                    stack to deliver apps par excellence.
+                    Experience pure creativity, skill, and expertise in
+                    Technologies for Web Development.
                   </p>{" "}
                 </div>
 
@@ -428,7 +423,7 @@ function MobileAppDev() {
                             </div>
                             <div className="service-card-heading">
                               <h2>
-                                Blockchain <br /> Consulting
+                                Frontend <br /> Development
                               </h2>
                             </div>
                             <div className="service-card-para">
@@ -450,7 +445,7 @@ function MobileAppDev() {
                             <img src={Quorum} alt="BlockChain" />
                           </div>
                           <div className="service-card-heading">
-                            <h2>Experience and Design</h2>
+                            <h2>Backend Development</h2>
                           </div>
                           <div className="service-card-para">
                             <p>
@@ -469,10 +464,7 @@ function MobileAppDev() {
                             <img src={Hyperledger} alt="BlockChain" />
                           </div>
                           <div className="service-card-heading">
-                            <h2>
-                              {" "}
-                              Enterprise <br /> Blockchain
-                            </h2>
+                            <h2> Infrastructure</h2>
                           </div>
                           <div className="service-card-para">
                             <p>
@@ -563,4 +555,4 @@ function MobileAppDev() {
   );
 }
 
-export default MobileAppDev;
+export default WebDevelopment;
