@@ -252,6 +252,71 @@
   background: #cfcfcf;
 }
 
+#home-portfolio .main-portfolio .tabbing-img .tabbing-card,
+#home-technologies .main-portfolio .tabbing-img .tabbing-card {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-2.67%, #000525), to(#24b3d6));
+  background: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
+  position: relative;
+}
+
+#home-portfolio .main-portfolio .tabbing-img .tabbing-card .content,
+#home-technologies .main-portfolio .tabbing-img .tabbing-card .content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  right: 28%;
+}
+
+#home-portfolio .main-portfolio .tabbing-img .tabbing-card .content h3,
+#home-technologies .main-portfolio .tabbing-img .tabbing-card .content h3 {
+  font-family: "Raleway-Black";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+#home-portfolio .main-portfolio .tabbing-img .tabbing-card .content .custom-btn,
+#home-technologies .main-portfolio .tabbing-img .tabbing-card .content .custom-btn {
+  width: 150px;
+  outline: none;
+  border: none;
+  height: 30px;
+  background: #24b3d6;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 3;
+  opacity: 1;
+}
+
+#home-portfolio .main-portfolio .tabbing-img .tabbing-card:hover .content,
+#home-technologies .main-portfolio .tabbing-img .tabbing-card:hover .content {
+  display: block;
+}
+
+#home-portfolio .main-portfolio .tabbing-img .tabbing-card img,
+#home-technologies .main-portfolio .tabbing-img .tabbing-card img {
+  width: 100%;
+  z-index: 1;
+}
+
+#home-portfolio .main-portfolio .tabbing-img .tabbing-card img:hover,
+#home-technologies .main-portfolio .tabbing-img .tabbing-card img:hover {
+  opacity: 0.2;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 #home-portfolio .main-portfolio .more-work-btn,
 #home-technologies .main-portfolio .more-work-btn {
   display: -webkit-box;
@@ -295,11 +360,17 @@
   margin: 0px auto 35px;
 }
 
+#home-services .main-services .main-services-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #home-services .main-services .main-services-card .card {
   -webkit-transition: all 0.9s;
   transition: all 0.9s;
   padding: 50px;
   border: 0;
+  text-decoration: none;
 }
 
 #home-services .main-services .main-services-card .card .service-card-image .white {
@@ -311,6 +382,7 @@
   line-height: 120%;
   text-align: center;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: #000525;
 }
 
@@ -320,6 +392,7 @@
   line-height: 130%;
   text-align: center;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 #home-services .main-services .main-services-card .card:hover {

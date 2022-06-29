@@ -239,6 +239,58 @@
 
     .tabbing-img {
       background: #cfcfcf;
+      .tabbing-card {
+        background: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
+        position: relative;
+
+        .content {
+          display: none;
+          position: absolute;
+          text-align: center;
+          top: 45%;
+          right: 28%;
+          h3 {
+            font-family: $font-secondry;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 100%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+          }
+          .custom-btn {
+            width: 150px;
+            outline: none;
+            border: none;
+            height: 30px;
+            background: #24b3d6;
+            font-family: "Raleway";
+
+            font-size: 18px;
+            line-height: 100%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+            transition: all 0.5s;
+            z-index: 3;
+            opacity: 1;
+          }
+        }
+        &:hover {
+          .content {
+            display: block;
+          }
+        }
+        img {
+          width: 100%;
+          z-index: 1;
+          &:hover {
+            opacity: 0.2;
+            cursor: pointer;
+            transition: all 0.5s;
+          }
+        }
+      }
     }
     .more-work-btn {
       display: flex;
@@ -275,11 +327,15 @@
       margin: 0px auto 35px;
     }
     .main-services-card {
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
       .card {
         transition: all 0.9s;
         padding: 50px;
         border: 0;
-
+        text-decoration: none;
         .service-card-image {
           .white {
             display: none;
@@ -291,7 +347,7 @@
             line-height: 120%;
             text-align: center;
             letter-spacing: 0.02em;
-
+            text-decoration: none;
             color: $secondry-color;
           }
         }
@@ -301,6 +357,7 @@
           line-height: 130%;
           text-align: center;
           letter-spacing: 0.02em;
+          text-decoration: none;
         }
 
         &:hover {

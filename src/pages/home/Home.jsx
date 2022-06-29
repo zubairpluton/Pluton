@@ -30,7 +30,7 @@ import { StyleSheet, css } from "aphrodite";
 const styles = StyleSheet.create({
   bounceIn: {
     animationName: bounceIn,
-    animationDuration: "10s",
+    animationDuration: "2s",
   },
 });
 
@@ -202,6 +202,12 @@ function Home() {
                       <div className="row gx-0">
                         <div className="col-md-5 m-0 p-0">
                           <div className="tabbing-card">
+                            <div className="content">
+                              <h3>Island Girl</h3>
+                              <button className="custom-btn ">
+                                View Case Study
+                              </button>
+                            </div>
                             <img
                               src={lap1}
                               alt="portfolio-images"
@@ -211,6 +217,12 @@ function Home() {
                         </div>
                         <div className="col-md-5  m-0 p-0">
                           <div className="tabbing-card">
+                            <div className="content">
+                              <h3>Island Girl</h3>
+                              <button className="custom-btn ">
+                                View Case Study
+                              </button>
+                            </div>
                             <img
                               src={lap2}
                               alt="portfolio-images"
@@ -220,6 +232,12 @@ function Home() {
                         </div>
                         <div className="col-md-2 m-0 p-0">
                           <div className="tabbing-card">
+                            <div className="content">
+                              <h3>Island Girl</h3>
+                              <button className="custom-btn ">
+                                View Case Study
+                              </button>
+                            </div>
                             <img
                               src={pluton}
                               alt="portfolio-images"
@@ -230,6 +248,12 @@ function Home() {
 
                         <div className="col-md-2 m-0 p-0">
                           <div className="tabbing-card">
+                            <div className="content">
+                              <h3>Island Girl</h3>
+                              <button className="custom-btn ">
+                                View Case Study
+                              </button>
+                            </div>
                             <img
                               src={character}
                               alt="portfolio-images"
@@ -239,6 +263,12 @@ function Home() {
                         </div>
                         <div className="col-md-5 m-0 p-0">
                           <div className="tabbing-card">
+                            <div className="content">
+                              <h3>Island Girl</h3>
+                              <button className="custom-btn ">
+                                View Case Study
+                              </button>
+                            </div>
                             <img
                               src={lap3}
                               alt="portfolio-images"
@@ -248,6 +278,12 @@ function Home() {
                         </div>
                         <div className="col-md-5 m-0 p-0">
                           <div className="tabbing-card">
+                            <div className="content">
+                              <h3>Island Girl</h3>
+                              <button className="custom-btn ">
+                                View Case Study
+                              </button>
+                            </div>
                             <img
                               src={lap4}
                               alt="portfolio-images"
@@ -276,8 +312,9 @@ function Home() {
           <div className="container">
             <div className="sec-padding">
               <div className="line">
-                <div className="straight-line"></div>
-                <span className="ellipse"></span>
+                {/* <div className="straight-line"></div>
+                <span className="ellipse"></span> */}
+                <img src={lineImage} alt="" />
               </div>
 
               <div className="main-about main-services text-center">
@@ -300,30 +337,32 @@ function Home() {
                 <div className="main-services-card">
                   <div className="row gx-0">
                     <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
+                      <Link to="/blockchain-dev">
+                        <div className="card">
+                          <div className="service-card-image">
+                            <img
+                              src={BlockchainIcon}
+                              className="black"
+                              alt="BlockChain"
+                            />
+                            <img
+                              src={BlockchainIconWhite}
+                              className="white"
+                              alt="BlockChain"
+                            />
+                          </div>
+                          <div className="service-card-heading">
+                            <h2>Block chain Development</h2>
+                          </div>
+                          <div className="service-card-para">
+                            <p>
+                              Create and Launch your NFTs and ICOs with us, and
+                              compete the world by following the latest
+                              technologies.
+                            </p>
+                          </div>
                         </div>
-                        <div className="service-card-heading">
-                          <h2>Block chain Development</h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            Create and Launch your NFTs and ICOs with us, and
-                            compete the world by following the latest
-                            technologies.
-                          </p>
-                        </div>
-                      </div>
+                      </Link>
                     </div>
                     <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
                       <div className="card">

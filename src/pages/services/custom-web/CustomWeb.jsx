@@ -1,7 +1,7 @@
 import React from "react";
-import { Footer, Header } from "../../components";
-import { CareerBanner } from "../career/Career";
-import { lap1, lap2, lap3, lap4 } from "../../assets/images";
+import { Footer, Header } from "../../../components";
+import { CareerBanner } from "../../career/Career";
+import { lap1, lap2, lap3, lap4 } from "../../../assets/images";
 import "./custome-web.scss";
 
 function CustomWeb() {

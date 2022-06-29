@@ -5,8 +5,8 @@
   font-weight: bold;
 }
 @font-face {
-  font-family: "Raleway-black";
-  src: local("Raleway-black"),
+  font-family: "Raleway-Regular";
+  src: local("Raleway-Regular"),
     url("./assets/font/Raleway-Regular.ttf") format("truetype");
 }
 

@@ -1,0 +1,79 @@
+@import "../../../global.scss";
+#banner {
+  background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
+  opacity: 0.9;
+}
+
+#why-choose {
+  background-color: #000525;
+
+  .main {
+    .heading {
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.5;
+        text-align: left;
+        letter-spacing: 0.02em;
+        color: white;
+        padding: 20px 0px 0px;
+      }
+      .underline {
+        border-bottom: 4px solid #24b3d6;
+        display: flex;
+        width: 25%;
+        text-align: center;
+      }
+    }
+
+    .para {
+      p:first-child {
+        margin: 50px 0px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 2;
+        text-align: justify;
+        letter-spacing: 0.02em;
+        color: white;
+      }
+    }
+  }
+}
+#home-services {
+  .blockchain-app {
+    .main-about {
+      .main-services-card {
+        .slick-prev,
+        .slick-next {
+          background: gray;
+        }
+        padding: 60px;
+        .card {
+          padding: 35px;
+          margin: 10px;
+          background: #fbfbfb;
+          &:hover {
+            background: #fbfbfb;
+            box-shadow: -2px 2px 13px -3px rgb(0 0 0 / 45%);
+            cursor: pointer;
+            h2 {
+              color: #000525;
+            }
+            p {
+              color: #000525;
+            }
+          }
+          .service-card-image {
+            img {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

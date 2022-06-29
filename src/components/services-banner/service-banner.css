@@ -1,0 +1,124 @@
+.custom-btn {
+  width: 183px;
+  outline: none;
+  border: none;
+  height: 55px;
+  border-radius: 4px;
+  background: #24b3d6;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-btn:hover {
+  background-color: #0c5791;
+}
+
+.btn-outline-primary {
+  border-color: #24b3d6 !important;
+  color: #24b3d6 !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #24b3d6 !important;
+  border-color: #24b3d6 !important;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16.81%, #000525), color-stop(119.48%, #24b3d6));
+  background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
+  opacity: 0.9;
+  background-image: url("../../assets/images/services-img/service-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section .container .title-home h1 {
+  font-family: "Bebas-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #24b3d6;
+}
+
+.section .container .title-home h3 {
+  font-family: "Raleway-Black";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  /* or 48px */
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.section .container .title-home .line {
+  text-align: start;
+  width: 500px;
+  width: 500px;
+  color: #24b3d6;
+  border: 0;
+  border-top: 3px solid #24b3d6;
+  opacity: 1;
+}
+
+.section .container .title-home h6 {
+  font-family: "Raleway-Black";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  /* or 36px */
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.section .container .form .main-form {
+  background: black;
+  opacity: 0.6;
+  padding: 40px;
+}
+
+.section .container .form .main-form .button {
+  text-align: center;
+  margin: 20px 0px 0px;
+}
+
+.section .container .form .main-form .heading h4 {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Raleway-Black";
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #24b3d6;
+}
+
+.section .container .form .main-form .fields .css-xqr4nw-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 2px solid white;
+}
+
+.section .container .form .main-form .fields .css-xqr4nw-MuiInputBase-root-MuiInput-root::before {
+  border-bottom: 2px solid white;
+}
+
+.section .container .form .main-form .fields .css-18nu0jg-MuiFormLabel-root-MuiInputLabel-root {
+  color: white;
+}
+
+.section .container .form .main-form .fields .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: white;
+}
+/*# sourceMappingURL=service-banner.css.map */

@@ -37,6 +37,11 @@ footer {
   color: #ffffff;
 }
 
+footer .banner-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 footer .footer-about h2 {
   color: #24b3d6;
   font-size: 45px;
