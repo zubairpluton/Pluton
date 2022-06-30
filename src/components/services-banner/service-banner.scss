@@ -4,7 +4,6 @@
   height: 100vh;
   width: 100%;
   background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
-  opacity: 0.9;
   background-image: url("../../assets/images/services-img/service-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,14 +55,29 @@
     }
     .form {
       .main-form {
-        background: black;
+        background: rgb(0 0 0 / 57%);
         opacity: 0.6;
-        padding: 40px;
-        max-width: 75%;
-
+        padding: 20px 70px;
+        max-width: 70%;
+        z-index: 1;
+        .css-1ptx2yq-MuiInputBase-root-MuiInput-root:before {
+          border-bottom: 2px solid #ffffff;
+        }
+        .css-1ptx2yq-MuiInputBase-root-MuiInput-root:after {
+          border-bottom: 2px solid #f8f9fa;
+        }
+        .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+          color: #ffffff;
+        }
+        .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+          transform: translate(0px);
+        }
         .button {
           text-align: center;
           margin: 20px 0px 0px;
+        }
+        .fields {
+          margin: 20px 0px;
         }
 
         .heading {
@@ -91,6 +105,13 @@
           .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
             color: white;
           }
+        }
+        .custom-btn {
+          width: 160px;
+
+          height: 40px;
+          border-radius: 0px;
+          background: #0c5791;
         }
       }
     }

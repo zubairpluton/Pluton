@@ -1,5 +1,8 @@
 @import "../../global.scss";
 #about {
+  #banner {
+    opacity: 1;
+  }
   #about-content {
     p {
       font-family: $font-secondry;

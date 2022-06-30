@@ -1,60 +1,130 @@
 @import "../../global.scss";
 #custom-web {
-  #custom-web-card {
-    .main-box {
-      .box-img {
-        background: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
-        position: relative;
+  .banner {
+    opacity: 1 !important;
+    .banner-container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
+    opacity: 0.9;
+    height: 100vh;
 
-        .content {
-          display: none;
-          position: absolute;
-          text-align: center;
-          top: 45%;
-          right: 28%;
-          h3 {
-            font-family: $font-secondry;
+    .title-home {
+      h2 {
+        font-weight: 400;
+
+        font-size: 80px;
+        font-family: $font-primary;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      .line {
+        text-align: start;
+        width: 500px;
+        width: 500px;
+        color: #24b3d6;
+        border: 0;
+        border-top: 3px solid #24b3d6;
+        opacity: 1;
+      }
+    }
+    .banner-img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .underline {
+    border-bottom: 4px solid #24b3d6;
+    display: flex;
+    width: 70%;
+
+    margin: 0px 0px 35px;
+  }
+  .case-container {
+    margin-top: 180px;
+    max-width: 55%;
+    margin: 0 auto;
+  }
+  .heading {
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 100%;
+      text-align: left;
+      letter-spacing: 0.02em;
+      color: #000525;
+      padding: 20px 0px 20px;
+    }
+  }
+  #case-study-content {
+    .container {
+      margin-top: 180px;
+      max-width: 55%;
+      .banner-img {
+        max-width: 100%;
+      }
+      .content {
+        .heading {
+          h1 {
+            font-style: normal;
             font-weight: 700;
-            font-size: 35px;
+            font-size: 40px;
             line-height: 100%;
-            text-align: center;
+            text-align: left;
             letter-spacing: 0.02em;
-            color: #ffffff;
+            color: #000525;
+            padding: 20px 0px 20px;
           }
-          .custom-btn {
-            width: 150px;
-            outline: none;
-            border: none;
-            height: 30px;
-            /* border-radius: 4px; */
-            background: #24b3d6;
-            font-family: "Raleway";
-            /* font-style: normal; */
-            /* font-weight: 700; */
-            font-size: 18px;
-            line-height: 100%;
-            text-align: center;
+        }
+        .para {
+          p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 130%;
+            text-align: left;
             letter-spacing: 0.02em;
-            color: #ffffff;
-            transition: all 0.5s;
-            z-index: 3;
-            opacity: 1;
+            color: #4a4a4a;
           }
         }
-        &:hover {
-          .content {
-            display: block;
-          }
-        }
-        img {
-          width: 100%;
-          z-index: 1;
-          &:hover {
-            opacity: 0.2;
-            cursor: pointer;
-            transition: all 0.5s;
-          }
-        }
+      }
+    }
+  }
+  .tech-we-work {
+    background: #000525;
+    .container {
+      width: 45%;
+    }
+    .heading {
+      h1 {
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1;
+        text-align: left;
+        letter-spacing: 0.02em;
+        padding: 20px 0px 20px;
+      }
+      .underline {
+        width: 65%;
+      }
+    }
+  }
+  .years-of-working {
+    background: white;
+    .custom-btn {
+      width: 165px;
+      height: 40px;
+      border-radius: 0px;
+      background: $btn-background;
+      text-align: center;
+      &:hover {
+        background: $primary-color;
       }
     }
   }

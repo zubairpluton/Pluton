@@ -1,9 +1,30 @@
 @import "../../global.scss";
 
 #home {
+  #banner {
+    opacity: 1;
+  }
   .banner-container {
     width: 90%;
     margin: 0 auto;
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+    .slick-dots {
+      display: flex !important;
+      flex-direction: column;
+      align-items: end;
+      top: 45%;
+      li {
+        margin: 5px 5px;
+        button {
+          &::before {
+            font-size: 25px !important;
+          }
+        }
+      }
+    }
   }
   #banner {
     background: $banner-background-color;
@@ -238,11 +259,17 @@
     }
 
     .tabbing-img {
+      .height-img {
+        height: 498px;
+      }
       background: #cfcfcf;
       .tabbing-card {
         background: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
         position: relative;
-
+        .small-content {
+          top: 45% !important;
+          right: 20px !important;
+        }
         .content {
           display: none;
           position: absolute;
@@ -298,8 +325,10 @@
       margin: 100px 0px 0px;
       .btn {
         background-color: $btn-background;
+
         &:hover {
-          background-color: $secondry-color;
+          border-color: transparent;
+          background-color: #24b3d6;
         }
 
         a {
@@ -319,6 +348,10 @@
 
 #home-services {
   .main-services {
+    .slick-prev:before,
+    .slick-next:before {
+      display: none;
+    }
     .underline {
       border-bottom: 4px solid #24b3d6;
       display: flex;
@@ -337,6 +370,9 @@
         border: 0;
         text-decoration: none;
         .service-card-image {
+          .black {
+            display: inline-block;
+          }
           .white {
             display: none;
           }
