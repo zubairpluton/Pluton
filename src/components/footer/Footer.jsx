@@ -89,7 +89,7 @@ function Footer() {
                     Latest News, Offer and Promotions
                   </p>{" "}
                   <form action="#">
-                    <div className="footer-news-letter d-flex justify-content-between">
+                    <div className="footer-news-letter d-inline-flex">
                       <span>
                         <input type="text" placeholder="Enter Email Address" />
                       </span>

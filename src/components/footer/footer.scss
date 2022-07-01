@@ -32,6 +32,9 @@ footer {
       /* identical to box height, or 167% */
       font-feature-settings: "salt" on, "liga" off;
       color: #ffffff;
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
   .social-icons {
@@ -48,6 +51,10 @@ footer {
           padding: 0px 5px 4px;
           font-size: 25px;
           border-radius: 50%;
+
+          &:hover {
+            color: $secondry-color;
+          }
         }
       }
     }
@@ -92,11 +99,15 @@ footer {
 
     .footer-news-letter {
       border: 1px solid $primary-color;
+      span:first-child {
+        width: 200px;
+      }
       input {
         background: transparent;
         border: none;
         padding: 6px;
         margin: 2px;
+        width: 100% !important;
         color: #ffffff;
         &:focus {
           border: none;

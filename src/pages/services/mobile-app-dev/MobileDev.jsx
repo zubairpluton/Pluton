@@ -113,7 +113,7 @@ function MobileAppDev() {
                           </div>
                           <div className="service-card-para">
                             <p>
-                              Develop visually pleasing <br /> apps optimized to
+                              Develop visually pleasing apps optimized to
                               swiftly grow your global business revenue.
                             </p>
                           </div>
@@ -141,9 +141,9 @@ function MobileAppDev() {
                         </div>
                         <div className="service-card-para">
                           <p>
-                            Be it cryptocurrency <br /> development or an ICO
-                            launch, our blockchain experts create secure
-                            decentralized apps.
+                            Be it cryptocurrency development or an ICO launch,
+                            our blockchain experts create secure decentralized
+                            apps.
                           </p>
                         </div>
                       </div>
@@ -170,8 +170,8 @@ function MobileAppDev() {
                         </div>
                         <div className="service-card-para">
                           <p>
-                            Let your customers <br /> experience the beauty and
-                            power of AR, VR and motion capture technologies.
+                            Let your customers experience the beauty and power
+                            of AR, VR and motion capture technologies.
                           </p>
                         </div>
                       </div>
@@ -198,8 +198,8 @@ function MobileAppDev() {
                         </div>
                         <div className="service-card-para">
                           <p>
-                            Build spectacular 2D and 3D <br /> multiplayer games
-                            for mobile devices powered by addictive gameplay.
+                            Build spectacular 2D and 3D multiplayer games for
+                            mobile devices powered by addictive gameplay.
                           </p>
                         </div>
                       </div>

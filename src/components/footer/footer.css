@@ -73,6 +73,10 @@ footer ul a {
   color: #ffffff;
 }
 
+footer ul a:hover {
+  color: #24b3d6;
+}
+
 footer .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +99,10 @@ footer .social-icons .social-icons-menu li a {
   padding: 0px 5px 4px;
   font-size: 25px;
   border-radius: 50%;
+}
+
+footer .social-icons .social-icons-menu li a:hover {
+  color: #000525;
 }
 
 footer .useful-links h4 {
@@ -135,11 +143,16 @@ footer .news-letter-main .footer-news-letter {
   border: 1px solid #24b3d6;
 }
 
+footer .news-letter-main .footer-news-letter span:first-child {
+  width: 200px;
+}
+
 footer .news-letter-main .footer-news-letter input {
   background: transparent;
   border: none;
   padding: 6px;
   margin: 2px;
+  width: 100% !important;
   color: #ffffff;
 }
 

@@ -27,26 +27,19 @@ function CaseStudy() {
     <div id="custom-web">
       {/* =========================banner============ */}
       <section className="banner">
+        <Header />
         <div className="banner-container">
-          <Header />
-        </div>
-        <div className="container">
-          <div className="sec-padding">
-            <div className="row">
-              <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end ">
-                <div className="title-home">
-                  <h2>
-                    A classic side-scrolling runner game <br /> played with NFTs
-                  </h2>
-                  <hr className="line" />
-                </div>
-              </div>
-              <div className="col-lg-12 d-flex  flex-column align-items-center justify-content-end ">
-                <div className="banner-img">
-                  <img src={Islandgirl1} alt="" />
-                </div>
-              </div>
+          <div className="banner-content mt-lg-5">
+            <div className="title-home">
+              <h2>
+                A classic side-scrolling runner game <br /> played with NFTs
+              </h2>
+              <hr className="line" />
             </div>
+          </div>
+
+          <div className="banner-img">
+            <img src={Islandgirl1} alt="" />
           </div>
         </div>
       </section>

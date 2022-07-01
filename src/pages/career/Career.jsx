@@ -16,22 +16,25 @@ import { Header } from "../../components";
 export const CareerBanner = ({ page, title, para }) => {
   return (
     <div className="home-section">
+      <Header />
+
       <div>
-        <Header />
-      </div>
-      <div className="container">
-        <div className="row">
-          <div
-            className="col-lg-12 d-flex  flex-column align-items-start justify-content-end "
-            style={{ height: "30vh" }}
-          >
-            <div className="heading">
-              <h4>{page}</h4>
-            </div>
-            <div className="title-home">
-              <h1>{title}</h1>
-              <h6 className="para">{para}</h6>
-              <hr className="line" />
+        <div className="container">
+          <div className="sec-padding">
+            <div className="row">
+              <div
+                className="col-lg-12 d-flex  flex-column align-items-start justify-content-end "
+                style={{ height: "30vh" }}
+              >
+                <div className="heading">
+                  <h4>{page}</h4>
+                </div>
+                <div className="title-home">
+                  <h1>{title}</h1>
+                  <h6 className="para">{para}</h6>
+                  <hr className="line" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

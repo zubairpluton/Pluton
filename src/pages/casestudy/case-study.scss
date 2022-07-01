@@ -9,7 +9,7 @@
     background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
     opacity: 0.9;
     height: 100vh;
-
+    position: relative;
     .title-home {
       h2 {
         font-weight: 400;
@@ -33,6 +33,11 @@
     .banner-img {
       img {
         max-width: 100%;
+        position: absolute;
+        z-index: 1;
+        right: 50%;
+        transform: translate(50%, 300px);
+        bottom: 0;
       }
     }
   }
@@ -65,7 +70,9 @@
       margin-top: 180px;
       max-width: 55%;
       .banner-img {
-        max-width: 100%;
+        img {
+          width: 100%;
+        }
       }
       .content {
         .heading {
@@ -73,7 +80,7 @@
             font-style: normal;
             font-weight: 700;
             font-size: 40px;
-            line-height: 100%;
+
             text-align: left;
             letter-spacing: 0.02em;
             color: #000525;
@@ -83,11 +90,11 @@
         .para {
           p {
             font-style: normal;
-            font-weight: 500;
-            font-size: 22px;
-            line-height: 130%;
+
+            font-size: 20px;
+
             text-align: left;
-            letter-spacing: 0.02em;
+
             color: #4a4a4a;
           }
         }

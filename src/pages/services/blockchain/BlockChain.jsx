@@ -583,7 +583,7 @@ function BlockChain() {
                 </div>
 
                 <div className="main-services-card">
-                  <div className="row gx-0">
+                  <div className="row gx-0 p-5 m-1">
                     <Slider {...settings}>
                       <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
                         <Link to="/blockchain-dev">

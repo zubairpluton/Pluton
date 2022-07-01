@@ -33,7 +33,6 @@
 }
 
 .home-section {
-  height: 50vh;
   width: 100%;
   background: #0f639a;
   background-image: url("../../assets/images/banner/career-banner.png");
@@ -93,6 +92,7 @@
 
 #career .icon-section .title-home .line {
   width: 20%;
+  margin: 0 auto;
 }
 
 #career .icon-section .box-img {

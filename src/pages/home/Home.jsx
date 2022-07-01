@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./home.scss";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
@@ -26,7 +26,8 @@ import {
   Swift,
   lineImage,
 } from "../../assets/images/index";
-import { bounce, bounceIn } from "react-animations";
+import { bounce, bounceIn, bounceInDown, bounceInUp } from "react-animations";
+import WOW from "wowjs";
 import { StyleSheet, css } from "aphrodite";
 import { EqualHeight, EqualHeightElement } from "react-equal-height";
 
@@ -35,15 +36,29 @@ const styles = StyleSheet.create({
     animationName: bounceIn,
     animationDuration: "2s",
   },
+  bounceInUp: {
+    animationName: bounceInUp,
+    animationDuration: "2s",
+  },
+  bounceInDown: {
+    animationName: bounceInDown,
+    animationDuration: "2s",
+  },
 });
 
 function Home() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
   var BannerSettings = {
     dots: true,
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    fade: true,
+    speed: 1000,
+    // fade: true,
     vertical: true,
     verticalSwiping: true,
     centerPadding: "60px",
@@ -53,6 +68,41 @@ function Home() {
     afterChange: function (currentSlide) {
       console.log("after change", currentSlide);
     },
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          vertical: true,
+          verticalSwiping: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          vertical: false,
+          verticalSwiping: false,
+          centerPadding: "60px",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          vertical: false,
+          verticalSwiping: false,
+          centerPadding: "60px",
+        },
+      },
+    ],
   };
 
   var serviceSettings = {
@@ -61,6 +111,7 @@ function Home() {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
   return (
     <div id="home">
       {/* ==============================section-banner========================== */}
@@ -69,7 +120,7 @@ function Home() {
         <div className="main-banner">
           <div className="banner-container ">
             <Slider {...BannerSettings}>
-              <div className="main">
+              <div className="main main-1">
                 <div className="row">
                   <div className="col-md-6">
                     <div className="main-banner-content">
@@ -81,21 +132,15 @@ function Home() {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="main-banner-image">
-                      <div
-                        className={`image text-center ${css(styles.bounceIn)}`}
-                      >
-                        <img src={bannerGroup} alt="" />
-                        {/* <img
-                      src={bannerBackgroundImg}
-                      alt="banner-background-image"
-                      className="banner-background-img"
-                    /> */}
-                        {/* <img
-                      src={bannerImg}
-                      alt="banner-image"
-                      className="banner-img"
-                    /> */}
+                    <div className="banner-column">
+                      <div className="main-banner-image">
+                        <div
+                          className={`image text-center wow ${css(
+                            styles.bounceIn
+                          )}`}
+                        >
+                          <img src={bannerGroup} alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -132,10 +177,10 @@ function Home() {
                 </div>
               </div> */}
               </div>
-              <div className="main">
+              <div className="main main-2">
                 <div className="row">
                   <div className="col-md-6">
-                    <div className="main-banner-content">
+                    <div className="main-banner-content main-banner-content-2 ">
                       <div className="content">
                         <h2>One of the Top</h2>
                         <h1>Blockchain</h1>
@@ -144,23 +189,15 @@ function Home() {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="main-banner-image">
-                      <div
-                        className={`image text-center wow ${css(
-                          styles.bounceIn
-                        )}`}
-                      >
-                        <img src={bannerImg2} alt="banner-image-2" />
-                        {/* <img
-                      src={bannerBackgroundImg}
-                      alt="banner-background-image"
-                      className="banner-background-img"
-                    /> */}
-                        {/* <img
-                      src={bannerImg}
-                      alt="banner-image"
-                      className="banner-img"
-                    /> */}
+                    <div className="banner-column">
+                      <div className="main-banner-image">
+                        <div
+                          className={`image text-center wow ${css(
+                            styles.bounceIn
+                          )}`}
+                        >
+                          <img src={bannerImg2} alt="banner-image-2" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -177,7 +214,7 @@ function Home() {
       </section>
       {/* =============================section-about========================== */}
       <section id="home-about">
-        <div className="main">
+        <div className="main ">
           <div className="container">
             <div className="sec-padding">
               <div className="line">
@@ -186,7 +223,7 @@ function Home() {
                 <img src={lineImage} alt="" />
               </div>
 
-              <div className="main-about text-center">
+              <div className="main-about text-center ">
                 <div className="heading">
                   <h6>About</h6>
                   <h1>Providing Assistance with Excellence!</h1>
@@ -247,13 +284,13 @@ function Home() {
         </div>
       </section>
       {/* =============================section-portfolio========================== */}
-      <section id="home-portfolio" className="home-portfolio">
+      <section id="home-portfolio" className={`home-portfolio`}>
         <div className="main">
           <div className="banner-container">
             <div className="sec-padding">
               <div className="main-portfolio">
                 <div className="row">
-                  <div className="col-md-3 d-flex flex-column justify-content-evenly">
+                  <div className="col-md-3 col-sm-3 col-xsm-12 d-flex flex-column justify-content-evenly">
                     <div className="tabbing-link">
                       <div className="heading">
                         <h1>
@@ -294,11 +331,15 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-9">
+                  <div className="col-md-9 col-sm-9 col-xsm-12">
                     <div className="tabbing-img">
                       <div className="row gx-0">
                         <div className="col-md-5 m-0 p-0">
-                          <div className="tabbing-card">
+                          <div
+                            className={`tabbing-card WOW ${css(
+                              styles.bounceIn
+                            )}`}
+                          >
                             <div className="content">
                               <h3>Island Girl</h3>
                               <button className="custom-btn ">
@@ -313,7 +354,11 @@ function Home() {
                           </div>
                         </div>
                         <div className="col-md-5  m-0 p-0">
-                          <div className="tabbing-card">
+                          <div
+                            className={`tabbing-card WOW ${css(
+                              styles.bounceIn
+                            )}`}
+                          >
                             <div className="content">
                               <h3>Island Girl</h3>
                               <button className="custom-btn ">
@@ -328,13 +373,16 @@ function Home() {
                           </div>
                         </div>
                         <div className="col-md-2 m-0 p-0">
-                          <div className="tabbing-card">
+                          <div
+                            className={`tabbing-card ${css(styles.bounceInUp)}`}
+                          >
                             <div className="small-content content">
                               <h3>Island Girl</h3>
                               <button className="custom-btn ">
                                 View Case Study
                               </button>
                             </div>
+
                             <img
                               src={pluton}
                               alt="portfolio-images"
@@ -344,7 +392,9 @@ function Home() {
                         </div>
 
                         <div className="col-md-2 m-0 p-0">
-                          <div className="tabbing-card">
+                          <div
+                            className={`tabbing-card ${css(styles.bounceInUp)}`}
+                          >
                             <div className="small-content content">
                               <h3>Island Girl</h3>
                               <button className="custom-btn ">
@@ -359,7 +409,9 @@ function Home() {
                           </div>
                         </div>
                         <div className="col-md-5 m-0 p-0">
-                          <div className="tabbing-card">
+                          <div
+                            className={`tabbing-card ${css(styles.bounceIn)}`}
+                          >
                             <div className="content">
                               <h3>Island Girl</h3>
                               <button className="custom-btn ">
@@ -374,7 +426,9 @@ function Home() {
                           </div>
                         </div>
                         <div className="col-md-5 m-0 p-0">
-                          <div className="tabbing-card">
+                          <div
+                            className={`tabbing-card ${css(styles.bounceIn)}`}
+                          >
                             <div className="content">
                               <h3>Island Girl</h3>
                               <button className="custom-btn ">
@@ -776,7 +830,7 @@ function Home() {
 
       {/* =============================section-portfolio========================== */}
       <section id="home-technologies" className="home-portfolio">
-        <div className="main">
+        <div className="main wow fadeDown">
           <div className="banner-container">
             <div className="sec-padding">
               <div className="main-portfolio">

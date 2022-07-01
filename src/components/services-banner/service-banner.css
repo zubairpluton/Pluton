@@ -35,7 +35,13 @@
 .section {
   height: 100vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(16.81%, #000525), color-stop(119.48%, #24b3d6));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(16.81%, #000525),
+    color-stop(119.48%, #24b3d6)
+  );
   background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
   opacity: 0.9;
   background-image: url("../../assets/images/services-img/service-banner.png");
@@ -48,7 +54,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 70px;
-  line-height: 100%;
+
   letter-spacing: 0.02em;
   color: #24b3d6;
 }
@@ -79,7 +85,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
-  line-height: 120%;
+
   /* or 36px */
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -101,25 +107,44 @@
   font-weight: 700;
   font-size: 40px;
   font-family: "Raleway-Black";
-  line-height: 120%;
   text-align: center;
   letter-spacing: 0.02em;
   color: #24b3d6;
 }
 
-.section .banner-container .form .main-form .fields .css-xqr4nw-MuiInputBase-root-MuiInput-root:after {
+.section
+  .banner-container
+  .form
+  .main-form
+  .fields
+  .css-xqr4nw-MuiInputBase-root-MuiInput-root:after {
   border-bottom: 2px solid white;
 }
 
-.section .banner-container .form .main-form .fields .css-xqr4nw-MuiInputBase-root-MuiInput-root::before {
+.section
+  .banner-container
+  .form
+  .main-form
+  .fields
+  .css-xqr4nw-MuiInputBase-root-MuiInput-root::before {
   border-bottom: 2px solid white;
 }
 
-.section .banner-container .form .main-form .fields .css-18nu0jg-MuiFormLabel-root-MuiInputLabel-root {
+.section
+  .banner-container
+  .form
+  .main-form
+  .fields
+  .css-18nu0jg-MuiFormLabel-root-MuiInputLabel-root {
   color: white;
 }
 
-.section .banner-container .form .main-form .fields .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+.section
+  .banner-container
+  .form
+  .main-form
+  .fields
+  .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
   color: white;
 }
 /*# sourceMappingURL=service-banner.css.map */

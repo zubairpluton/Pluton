@@ -30,4 +30,13 @@
   background-color: #24b3d6 !important;
   border-color: #24b3d6 !important;
 }
-/*# sourceMappingURL=global.css.map */
+
+header .main .banner-container .nav-btn-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=header.css.map */

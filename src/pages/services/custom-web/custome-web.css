@@ -32,6 +32,10 @@
   border-color: #24b3d6 !important;
 }
 
+#custom-web #banner {
+  opacity: 1;
+}
+
 #custom-web #custom-web-card .main-box .box-img {
   background: -webkit-gradient(linear, left top, right top, color-stop(-2.67%, #000525), to(#24b3d6));
   background: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
@@ -47,7 +51,7 @@
 }
 
 #custom-web #custom-web-card .main-box .box-img .content h3 {
-  font-family: "Raleway-Black";
+  font-family: "Raleway-Regular";
   font-weight: 700;
   font-size: 35px;
   line-height: 100%;

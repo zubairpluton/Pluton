@@ -7,6 +7,13 @@
   .banner-container {
     width: 90%;
     margin: 0 auto;
+    .main {
+      .banner-column {
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+    }
     .slick-prev,
     .slick-next {
       display: none !important;
@@ -16,6 +23,12 @@
       flex-direction: column;
       align-items: end;
       top: 45%;
+
+      @include tablet {
+        top: 0%;
+        flex-direction: row;
+        justify-content: center;
+      }
       li {
         margin: 5px 5px;
         button {
@@ -29,80 +42,118 @@
   #banner {
     background: $banner-background-color;
     padding: 0px 0px 80px;
-
-    .main-banner-content {
-      height: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      .content {
-        h2 {
-          font-weight: 700;
-          font-size: 40px;
-          letter-spacing: 0.02em;
-          color: #ffffff;
-        }
-        h1 {
-          font-family: "Bebas";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 80px;
-          line-height: 100%;
-          letter-spacing: 0.02em;
-          color: #24b3d6;
-        }
+    // .main-2 {
+    //   @include tablet {
+    //     margin-top: -125px;
+    //   }
+    @include tablet {
+      .main-1 {
+        margin-bottom: 60px;
       }
-    }
 
-    .main-banner-image {
-      .image {
-        position: relative;
-        img {
-          width: 70%;
-        }
-        // .banner-img {
-        //   z-index: 3333;
-        //   position: relative;
-        // }
-        // .banner-background-img {
-        //   position: absolute;
-        //   top: -80px;
-        //   left: 80px;
-        //   z-index: 1;
-
-        //   @media (min-width: 1800px) {
-        //     left: 120px;
-        //   }
-        //   @media (min-width: 2000px) {
-        //     left: 175px;
-        //   }
-        // }
+      .banner-btn {
+        display: flex;
+        justify-content: center;
       }
     }
   }
-  .banner-btn {
-    .custom-btn {
-      width: 183px;
-      height: 46px;
-      background: #24b3d6;
-      font-family: "Raleway";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 100%;
-      /* identical to box height, or 24px */
+  .main-banner-content {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @include tablet {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 60px;
+      align-items: center;
+    }
+    .content {
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 0.02em;
+        color: #ffffff;
 
-      text-align: center;
-      letter-spacing: 0.02em;
+        @include laptop {
+          font-size: 35px;
+        }
+        @include ipad-pro {
+          font-size: 28px;
+        }
+      }
+      h1 {
+        font-family: "Bebas";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+        color: #24b3d6;
+        @include laptop {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+  .main-banner-content-2 {
+    // @include tablet {
+    //   height: 370px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: end;
+    // }
+  }
+  .main-banner-image {
+    .image {
+      position: relative;
+      img {
+        width: 70%;
+      }
+      // .banner-img {
+      //   z-index: 3333;
+      //   position: relative;
+      // }
+      // .banner-background-img {
+      //   position: absolute;
+      //   top: -80px;
+      //   left: 80px;
+      //   z-index: 1;
 
-      color: #ffffff;
-      &:hover {
-        background-color: $secondry-color;
-        border-color: $primary-color;
-      }
-      &:active {
-        border-color: $primary-color;
-      }
+      //   @media (min-width: 1800px) {
+      //     left: 120px;
+      //   }
+      //   @media (min-width: 2000px) {
+      //     left: 175px;
+      //   }
+      // }
+    }
+  }
+}
+.banner-btn {
+  .custom-btn {
+    width: 183px;
+    height: 46px;
+    background: #24b3d6;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    /* identical to box height, or 24px */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+    &:hover {
+      background-color: $secondry-color;
+      border-color: $primary-color;
+    }
+    &:active {
+      border-color: $primary-color;
     }
   }
 }
@@ -167,16 +218,14 @@
     }
     .para {
       p {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 130%;
-        /* or 26px */
-
+        font-size: 20px;
         text-align: center;
-        letter-spacing: 0.02em;
+        font-family: $font-secondry;
 
         color: #4a4a4a;
+        @include laptop {
+          font-size: 17px;
+        }
       }
     }
     .about-btn {
@@ -218,6 +267,9 @@
           letter-spacing: 0.02em;
 
           color: #ffffff;
+          @include laptop {
+            font-size: 28px;
+          }
         }
         .underline {
           border-bottom: 4px solid #24b3d6;
@@ -261,21 +313,38 @@
     .tabbing-img {
       .height-img {
         height: 498px;
+
+        @include pc {
+          height: 402px;
+        }
+        @include laptop {
+          height: 286px;
+        }
+        @include ipad-pro-max {
+          height: 213px;
+        }
       }
       background: #cfcfcf;
       .tabbing-card {
         background: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
         position: relative;
-        .small-content {
-          top: 45% !important;
-          right: 20px !important;
-        }
+
         .content {
-          display: none;
+          // display: none;
+          // position: absolute;
+          // text-align: center;
+          // top: 45%;
+
+          // right: 30%;
+          transition: 0.5s ease;
+          opacity: 0;
           position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
           text-align: center;
-          top: 45%;
-          right: 28%;
+
           h3 {
             font-family: $font-secondry;
             font-weight: 700;
@@ -292,29 +361,50 @@
             height: 30px;
             background: #24b3d6;
             font-family: "Raleway";
-
             font-size: 18px;
             line-height: 100%;
             text-align: center;
-            letter-spacing: 0.02em;
+
             color: #ffffff;
             transition: all 0.5s;
             z-index: 3;
             opacity: 1;
+            box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 36%);
+            border-radius: 0px;
           }
         }
-        &:hover {
-          .content {
-            display: block;
+
+        .small-content {
+          h3 {
+            font-size: 20px !important;
+          }
+          button {
+            font-size: 11px !important;
+            width: 100px !important;
           }
         }
         img {
           width: 100%;
-          z-index: 1;
-          &:hover {
-            opacity: 0.2;
-            cursor: pointer;
-            transition: all 0.5s;
+          opacity: 1;
+          display: block;
+          width: 100%;
+
+          transition: 0.5s ease;
+          backface-visibility: hidden;
+          // &:hover {
+          //   opacity: 0.2;
+          //   cursor: pointer;
+          //   transition: all 0.5s;
+          // }
+        }
+
+        &:hover {
+          cursor: pointer;
+          .content {
+            opacity: 1;
+          }
+          img {
+            opacity: 0.3;
           }
         }
       }
@@ -364,10 +454,11 @@
         text-decoration: none;
         color: inherit;
       }
+
       .card {
-        transition: all 0.9s;
         padding: 50px;
         border: 0;
+        transition: all 0.5s;
         text-decoration: none;
         .service-card-image {
           .black {
@@ -385,15 +476,23 @@
             letter-spacing: 0.02em;
             text-decoration: none;
             color: $secondry-color;
+            @include laptop {
+              font-size: 24px;
+              line-height: normal;
+              letter-spacing: 0;
+            }
           }
         }
         .service-card-para {
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 130%;
-          text-align: center;
-          letter-spacing: 0.02em;
-          text-decoration: none;
+          p {
+            font-size: 20px;
+            font-family: $font-secondry;
+            text-align: center;
+            text-decoration: none;
+            @include laptop {
+              font-size: 16px;
+            }
+          }
         }
 
         &:hover {

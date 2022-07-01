@@ -16,7 +16,6 @@ $font-secondry: "Raleway-Regular";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 100%;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -48,7 +47,7 @@ $pc-pro: 1440px;
   }
 }
 
-$pc: 1440px;
+$pc: 1441px;
 @mixin pc {
   @media (max-width: #{$pc}) {
     @content;
@@ -76,26 +75,26 @@ $ipad-pro: 991px;
   }
 }
 
-$ipad: 768px;
-@mixin mobile {
-  @media (max-width: #{$ipad}) {
+$tablet: 768px;
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
     @content;
   }
 }
 $mobile: 425px;
-@mixin mini-mobile {
+@mixin mobile {
   @media (max-width: #{$mobile}) {
     @content;
   }
 }
 $mini-mobile: 360px;
-@mixin mini-mobile-max {
+@mixin mini-mobile {
   @media (max-width: #{$mini-mobile}) {
     @content;
   }
 }
 $mini-mobile-pro: 320px;
-@mixin mini-mobile-max {
+@mixin mini-mobile-pro {
   @media (max-width: #{$mini-mobile-pro}) {
     @content;
   }
