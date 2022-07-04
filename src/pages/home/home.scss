@@ -1,5 +1,29 @@
 @import "../../global.scss";
+.banner-btn {
+  .custom-btn {
+    width: 183px;
+    height: 46px;
+    background: #24b3d6;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    /* identical to box height, or 24px */
 
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+    &:hover {
+      background-color: $secondry-color;
+      border-color: $primary-color;
+    }
+    &:active {
+      border-color: $primary-color;
+    }
+  }
+}
 #home {
   #banner {
     opacity: 1;
@@ -69,6 +93,7 @@
       justify-content: space-around;
       margin-top: 60px;
       align-items: center;
+      text-align: center;
     }
     .content {
       h2 {
@@ -96,6 +121,14 @@
           font-size: 60px;
         }
       }
+      @include mini-mobile {
+        h1 {
+          font-size: 45px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+      }
     }
   }
   .main-banner-content-2 {
@@ -111,6 +144,10 @@
       position: relative;
       img {
         width: 70%;
+        margin: 0 auto;
+        position: relative;
+        -webkit-animation: rocket 3s linear infinite;
+        animation: rocket 3s linear infinite;
       }
       // .banner-img {
       //   z-index: 3333;
@@ -129,31 +166,6 @@
       //     left: 175px;
       //   }
       // }
-    }
-  }
-}
-.banner-btn {
-  .custom-btn {
-    width: 183px;
-    height: 46px;
-    background: #24b3d6;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 100%;
-    /* identical to box height, or 24px */
-
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    color: #ffffff;
-    &:hover {
-      background-color: $secondry-color;
-      border-color: $primary-color;
-    }
-    &:active {
-      border-color: $primary-color;
     }
   }
 }
@@ -214,6 +226,13 @@
         letter-spacing: 0.02em;
         color: #000525;
         padding: 20px 0px 20px;
+
+        @include tablet {
+          font-size: 30px;
+        }
+        @include mini-mobile {
+          font-size: 24px;
+        }
       }
     }
     .para {
@@ -224,7 +243,10 @@
 
         color: #4a4a4a;
         @include laptop {
-          font-size: 17px;
+          font-size: 16px;
+        }
+        @include tablet {
+          font-size: 14px;
         }
       }
     }
@@ -245,6 +267,12 @@
         color: #ffffff;
         &:hover {
           background-color: $secondry-color;
+        }
+
+        @include mobile {
+          font-size: 16px;
+          width: 150px;
+          height: 35px;
         }
       }
     }
@@ -269,6 +297,9 @@
           color: #ffffff;
           @include laptop {
             font-size: 28px;
+          }
+          @include mini-mobile {
+            font-size: 24px;
           }
         }
         .underline {
@@ -305,6 +336,27 @@
                 font-size: 14px;
               }
             }
+
+            @include ipad-pro {
+              padding: 4px 0px;
+            }
+          }
+        }
+      }
+      @include tablet {
+        .heading {
+          text-align: center;
+          .underline {
+            margin: 12px auto 35px;
+          }
+        }
+        .links {
+          padding: 20px;
+          ul {
+            li {
+              padding: 7px 15px;
+              width: 100%;
+            }
           }
         }
       }
@@ -324,11 +376,13 @@
           height: 213px;
         }
       }
-      background: #cfcfcf;
+      // background: #cfcfcf;
       .tabbing-card {
         background: linear-gradient(90deg, #000525 -2.67%, #24b3d6 100%);
         position: relative;
-
+        @include tablet {
+          margin: 20px 0px;
+        }
         .content {
           // display: none;
           // position: absolute;
@@ -431,6 +485,14 @@
           color: #ffffff;
           text-decoration: none;
         }
+        @include mobile {
+          font-size: 16px;
+          width: 150px;
+          height: 35px;
+          a {
+            font-size: 16px;
+          }
+        }
       }
     }
   }
@@ -492,6 +554,9 @@
             @include laptop {
               font-size: 16px;
             }
+            @include mobile {
+              font-size: 14px;
+            }
           }
         }
 
@@ -542,8 +607,72 @@
           letter-spacing: 0.02em;
 
           color: #ffffff;
+          @include mobile {
+            font-size: 14px;
+          }
         }
       }
     }
+  }
+
+  @include tablet {
+    .tech-icons-main {
+      margin: 20px auto;
+    }
+  }
+  @include mobile {
+    .tech-icons-main {
+      .tech-icons {
+        img {
+          width: 35px;
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes rocket {
+  0% {
+    left: 20px;
+    bottom: 20px;
+  }
+  25% {
+    left: -20px;
+    bottom: 20px;
+  }
+  50% {
+    left: -20px;
+    bottom: 0px;
+  }
+  75% {
+    left: 0px;
+    bottom: 0px;
+  }
+  100% {
+    left: 20px;
+    bottom: 20px;
+  }
+}
+
+@keyframes rocket {
+  0% {
+    left: 20px;
+    bottom: 20px;
+  }
+  25% {
+    left: -20px;
+    bottom: 20px;
+  }
+  50% {
+    left: -20px;
+    bottom: 0px;
+  }
+  75% {
+    left: 0px;
+    bottom: 0px;
+  }
+  100% {
+    left: 20px;
+    bottom: 20px;
   }
 }

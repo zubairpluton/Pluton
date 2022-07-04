@@ -9,7 +9,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 100%;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -67,6 +66,12 @@
   color: #000525;
 }
 
+@media (max-width: 768px) {
+  #mobile-app .dev-process .dev-process-box .box-content .box-heading h2 {
+    font-size: 24px;
+  }
+}
+
 #mobile-app .dev-process .dev-process-box .box-content .box-para {
   padding: 10px 40px;
 }
@@ -81,5 +86,19 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: #000525;
+}
+
+@media (max-width: 1200px) {
+  #mobile-app .dev-process .dev-process-box .box-content .box-para p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  #mobile-app .dev-process .dev-process-box .box-border-1,
+  #mobile-app .dev-process .dev-process-box .box-border-2,
+  #mobile-app .dev-process .dev-process-box .box-border-3 {
+    border-radius: 10px;
+  }
 }
 /*# sourceMappingURL=mobile-dev.css.map */

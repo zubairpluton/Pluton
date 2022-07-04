@@ -9,7 +9,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 100%;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -189,7 +188,7 @@ footer .news-letter-main .footer-news-letter button i {
   color: #ffffff;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1441px) {
   footer .news-letter-main .footer-news-letter {
     -webkit-box-pack: end !important;
         -ms-flex-pack: end !important;
@@ -202,6 +201,34 @@ footer .news-letter-main .footer-news-letter button i {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  footer .social-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .main-address {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  footer .footer-about p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  footer .main-address .address address {
+    font-size: 14px;
+  }
+  footer .news-letter-main p {
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 /*# sourceMappingURL=footer.css.map */

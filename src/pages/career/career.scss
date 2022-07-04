@@ -42,6 +42,9 @@
         border: 0;
         border-top: 3px solid #24b3d6;
         opacity: 1;
+        @include tablet {
+          width: 100% !important ;
+        }
       }
     }
   }

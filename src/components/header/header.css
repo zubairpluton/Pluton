@@ -39,4 +39,10 @@ header .main .banner-container .nav-btn-main {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
+@media (max-width: 425px) {
+  header .logo img {
+    width: 50px;
+  }
+}
 /*# sourceMappingURL=header.css.map */

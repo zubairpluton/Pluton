@@ -121,4 +121,79 @@
       }
     }
   }
+  @include laptop {
+    .banner-container {
+      .title-home {
+        h1 {
+          font-size: 50px;
+        }
+        h3 {
+          font-size: 35px;
+        }
+        h6 {
+          font-size: 24px;
+        }
+        .line {
+          width: 410px;
+        }
+        @include ipad-pro {
+          text-align: center;
+          .line {
+            margin: 0 auto;
+          }
+          h6,
+          h3,
+          h1 {
+            margin-top: 20px;
+          }
+
+          @include tablet {
+            h6 {
+              font-size: 18px;
+            }
+            h3 {
+              font-size: 24px;
+            }
+            h1 {
+              font-size: 24px;
+            }
+            .line {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .form {
+        form {
+          justify-content: center;
+          .main-form {
+            max-width: 100%;
+            .heading {
+              h4 {
+                font-size: 35px;
+
+                @include tablet {
+                  font-size: 24px;
+                }
+              }
+            }
+
+            @include ipad-pro {
+              margin-top: 30px;
+
+              @include mobile {
+                padding: 20px 30px;
+              }
+            }
+          }
+        }
+      }
+      .sec-padding {
+        @include mobile {
+          padding: 30px 0px;
+        }
+      }
+    }
+  }
 }

@@ -143,4 +143,35 @@ footer {
       }
     }
   }
+  @include tablet {
+    text-align: center;
+
+    .social-icons {
+      justify-content: center;
+    }
+    .main-address {
+      margin-top: 40px;
+    }
+  }
+  @include mini-mobile {
+    .footer-about {
+      p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+    .main-address {
+      .address {
+        address {
+          font-size: 14px;
+        }
+      }
+    }
+    .news-letter-main {
+      p {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
 }

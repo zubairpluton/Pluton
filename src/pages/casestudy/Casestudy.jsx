@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer, Header } from "../../components";
 // import { CareerBanner } from "../career/Career";
+import { Zoom } from "react-reveal";
 import "./case-study.scss";
 import {
   GameLogic,
@@ -29,7 +30,7 @@ function CaseStudy() {
       <section className="banner">
         <Header />
         <div className="banner-container">
-          <div className="banner-content mt-lg-5">
+          <div className="banner-content mt-5">
             <div className="title-home">
               <h2>
                 A classic side-scrolling runner game <br /> played with NFTs
@@ -70,7 +71,9 @@ function CaseStudy() {
               </div>
               <div className="col-lg-12 mt-2 d-flex  flex-column align-items-center justify-content-end ">
                 <div className="banner-img">
-                  <img src={Islandgirl2} alt="Island girl image" />
+                  <Zoom>
+                    <img src={Islandgirl2} alt="Island girl image" />
+                  </Zoom>
                 </div>
               </div>
             </div>
@@ -203,14 +206,14 @@ function CaseStudy() {
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row justify-content-center">
               <div className="col-lg-12">
                 <div className="heading">
                   <h1>Technicalities</h1>
                   <span className="underline"></span>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
                 <div className="technicalities text-center">
                   <div className="img">
                     <img src={UIicon} alt="UI/UX" />
@@ -220,7 +223,7 @@ function CaseStudy() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
                 <div className="technicalities text-center">
                   <div className="img">
                     <img src={SmartContract} alt="SmartContract" />
@@ -230,7 +233,7 @@ function CaseStudy() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
                 <div className="technicalities text-center">
                   <div className="img">
                     <img src={TokenIcon} alt="Token Image" />
@@ -240,7 +243,7 @@ function CaseStudy() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
                 <div className="technicalities text-center">
                   <div className="img">
                     <img src={GameLogic} alt="Game Logic" />
@@ -251,25 +254,23 @@ function CaseStudy() {
                 </div>
               </div>
 
-              <div className="row justify-content-center">
-                <div className="col-md-3">
-                  <div className="technicalities text-center">
-                    <div className="img">
-                      <img src={NftContract} alt="Nft Contract" />
-                    </div>
-                    <div className="content">
-                      <p>NFT Contract</p>
-                    </div>
+              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
+                <div className="technicalities text-center">
+                  <div className="img">
+                    <img src={NftContract} alt="Nft Contract" />
+                  </div>
+                  <div className="content">
+                    <p>NFT Contract</p>
                   </div>
                 </div>
-                <div className="col-md-3">
-                  <div className="technicalities text-center">
-                    <div className="img">
-                      <img src={Metamask} alt="Meta Mask Integration" />
-                    </div>
-                    <div className="content">
-                      <p>Meta Mask integration</p>
-                    </div>
+              </div>
+              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
+                <div className="technicalities text-center">
+                  <div className="img">
+                    <img src={Metamask} alt="Meta Mask Integration" />
+                  </div>
+                  <div className="content">
+                    <p>Meta Mask integration</p>
                   </div>
                 </div>
               </div>

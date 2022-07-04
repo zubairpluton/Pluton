@@ -26,32 +26,32 @@ function WebDevelopment() {
     slidesToShow: 3,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 1,
-    //       infinite: true,
-    //       dots: true,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //       initialSlide: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div id="web-dev">
@@ -93,7 +93,7 @@ and functionality."
 
                 <div className="main-services-card">
                   <div className="row gx-0">
-                    <div className="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xsm-12">
+                    <div className="col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-12">
                       <Link to="/blockchain-dev">
                         <div className="card">
                           <div className="service-card-image">
@@ -122,7 +122,7 @@ and functionality."
                         </div>
                       </Link>
                     </div>
-                    <div className="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xsm-12">
+                    <div className="col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-12">
                       <div className="card">
                         <div className="service-card-image">
                           <img
@@ -150,7 +150,7 @@ and functionality."
                         </div>
                       </div>
                     </div>
-                    <div className="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xsm-12">
+                    <div className="col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-12">
                       <div className="card">
                         <div className="service-card-image">
                           <img
@@ -178,7 +178,7 @@ and functionality."
                         </div>
                       </div>
                     </div>
-                    <div className="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xsm-12">
+                    <div className="col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-12">
                       <div className="card">
                         <div className="service-card-image">
                           <img
@@ -273,7 +273,7 @@ and functionality."
 
                 <div className="main-services-card">
                   <div className="row gx-0 my-5">
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                    <div className="col-xlg-4 col-lg-4 col-md-12 col-sm-6 col-xsm-12">
                       <div className="dev-process-box">
                         <div className="box-image">
                           <img src={Plan} className="img" alt="BlockChain" />
@@ -293,7 +293,7 @@ and functionality."
                         </div>
                       </div>
                     </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                    <div className="col-xlg-4 col-lg-4 col-md-12 col-sm-6 col-xsm-12">
                       <div className="dev-process-box">
                         <div className="box-image">
                           <img src={Design} className="img" alt="BlockChain" />
@@ -312,7 +312,7 @@ and functionality."
                         </div>
                       </div>
                     </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                    <div className="col-xlg-4 col-lg-4 col-md-12 col-sm-6 col-xsm-12">
                       <div className="dev-process-box">
                         <div className="box-image">
                           <img

@@ -22,13 +22,10 @@ export const CareerBanner = ({ page, title, para }) => {
         <div className="container">
           <div className="sec-padding">
             <div className="row">
-              <div
-                className="col-lg-12 d-flex  flex-column align-items-start justify-content-end "
-                style={{ height: "30vh" }}
-              >
-                <div className="heading">
+              <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end ">
+                {/* <div className="heading">
                   <h4>{page}</h4>
-                </div>
+                </div> */}
                 <div className="title-home">
                   <h1>{title}</h1>
                   <h6 className="para">{para}</h6>

@@ -9,4 +9,12 @@ header {
       }
     }
   }
+
+  @include mobile {
+    .logo {
+      img {
+        width: 50px;
+      }
+    }
+  }
 }

@@ -10,6 +10,7 @@
   font-weight: 700;
   font-size: 24px;
   text-align: center;
+  letter-spacing: 0.02em;
   color: #ffffff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -44,14 +45,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 300px;
   background-color: #eef2f5;
   border: 2px dashed #979797;

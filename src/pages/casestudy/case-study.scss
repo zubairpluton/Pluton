@@ -19,15 +19,25 @@
         letter-spacing: 0.02em;
         color: #ffffff;
         text-transform: uppercase;
+
+        @include laptop {
+          font-size: 40px;
+        }
+        @include mobile {
+          font-size: 24px;
+        }
       }
       .line {
         text-align: start;
         width: 500px;
-        width: 500px;
+
         color: #24b3d6;
         border: 0;
         border-top: 3px solid #24b3d6;
         opacity: 1;
+        @include tablet {
+          width: 100%;
+        }
       }
     }
     .banner-img {
@@ -38,6 +48,43 @@
         right: 50%;
         transform: translate(50%, 300px);
         bottom: 0;
+
+        @include laptop {
+          transform: translate(50%, 250px);
+          max-width: 70%;
+        }
+        @include ipad-pro {
+          transform: translate(50%, 200px);
+          max-width: 70%;
+        }
+        @include ipad-pro {
+          transform: translate(50%, 175px);
+          max-width: 60%;
+        }
+        @include tablet {
+          transform: translate(50%, 130px);
+          max-width: 80%;
+        }
+        @include mobile {
+          transform: translate(50%, 85px);
+          max-width: 80%;
+        }
+      }
+    }
+    @include laptop {
+      height: 80vh;
+    }
+    @include ipad-pro {
+      height: 60vh;
+    }
+    @include tablet {
+      height: 50vh;
+      .logo {
+        a {
+          img {
+            width: 50%;
+          }
+        }
       }
     }
   }
@@ -52,6 +99,9 @@
     margin-top: 180px;
     max-width: 55%;
     margin: 0 auto;
+    @include tablet {
+      max-width: 80%;
+    }
   }
   .heading {
     h1 {
@@ -63,6 +113,14 @@
       letter-spacing: 0.02em;
       color: #000525;
       padding: 20px 0px 20px;
+
+      @include laptop {
+        font-size: 35px;
+      }
+
+      @include ipad-pro {
+        font-size: 24px;
+      }
     }
   }
   #case-study-content {
@@ -85,6 +143,12 @@
             letter-spacing: 0.02em;
             color: #000525;
             padding: 20px 0px 20px;
+            @include laptop {
+              font-size: 35px;
+            }
+            @include ipad-pro {
+              font-size: 24px;
+            }
           }
         }
         .para {
@@ -96,11 +160,42 @@
             text-align: left;
 
             color: #4a4a4a;
+            @include laptop {
+              font-size: 16px;
+            }
           }
         }
       }
     }
+    @include laptop {
+      .technicalities {
+        .img {
+          img {
+            width: 60%;
+          }
+        }
+        .content {
+          p {
+            @include ipad-pro {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .container {
+        @include ipad-pro {
+          margin-top: 100px;
+          max-width: 80%;
+        }
+        @include mobile {
+          margin-top: 0px;
+          max-width: 80%;
+        }
+      }
+    }
   }
+
   .tech-we-work {
     background: #000525;
     .container {
@@ -116,6 +211,9 @@
         text-align: left;
         letter-spacing: 0.02em;
         padding: 20px 0px 20px;
+        @include ipad-pro {
+          font-size: 24px;
+        }
       }
       .underline {
         width: 65%;

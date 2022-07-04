@@ -9,7 +9,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 100%;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -55,14 +54,31 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 1200px) {
+  #custom-web .banner .title-home h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  #custom-web .banner .title-home h2 {
+    font-size: 24px;
+  }
+}
+
 #custom-web .banner .title-home .line {
   text-align: start;
-  width: 500px;
   width: 500px;
   color: #24b3d6;
   border: 0;
   border-top: 3px solid #24b3d6;
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  #custom-web .banner .title-home .line {
+    width: 100%;
+  }
 }
 
 #custom-web .banner .banner-img img {
@@ -73,6 +89,67 @@
   -webkit-transform: translate(50%, 300px);
           transform: translate(50%, 300px);
   bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  #custom-web .banner .banner-img img {
+    -webkit-transform: translate(50%, 250px);
+            transform: translate(50%, 250px);
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 991px) {
+  #custom-web .banner .banner-img img {
+    -webkit-transform: translate(50%, 200px);
+            transform: translate(50%, 200px);
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 991px) {
+  #custom-web .banner .banner-img img {
+    -webkit-transform: translate(50%, 175px);
+            transform: translate(50%, 175px);
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #custom-web .banner .banner-img img {
+    -webkit-transform: translate(50%, 130px);
+            transform: translate(50%, 130px);
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  #custom-web .banner .banner-img img {
+    -webkit-transform: translate(50%, 85px);
+            transform: translate(50%, 85px);
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #custom-web .banner {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 991px) {
+  #custom-web .banner {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #custom-web .banner {
+    height: 50vh;
+  }
+  #custom-web .banner .logo a img {
+    width: 50%;
+  }
 }
 
 #custom-web .underline {
@@ -90,6 +167,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  #custom-web .case-container {
+    max-width: 80%;
+  }
+}
+
 #custom-web .heading h1 {
   font-style: normal;
   font-weight: 700;
@@ -99,6 +182,18 @@
   letter-spacing: 0.02em;
   color: #000525;
   padding: 20px 0px 20px;
+}
+
+@media (max-width: 1200px) {
+  #custom-web .heading h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  #custom-web .heading h1 {
+    font-size: 24px;
+  }
 }
 
 #custom-web #case-study-content .container {
@@ -120,11 +215,55 @@
   padding: 20px 0px 20px;
 }
 
+@media (max-width: 1200px) {
+  #custom-web #case-study-content .container .content .heading h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  #custom-web #case-study-content .container .content .heading h1 {
+    font-size: 24px;
+  }
+}
+
 #custom-web #case-study-content .container .content .para p {
   font-style: normal;
   font-size: 20px;
   text-align: left;
   color: #4a4a4a;
+}
+
+@media (max-width: 1200px) {
+  #custom-web #case-study-content .container .content .para p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #custom-web #case-study-content .technicalities .img img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 991px) {
+  #custom-web #case-study-content .technicalities .content p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 991px) {
+  #custom-web #case-study-content .container {
+    margin-top: 100px;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 425px) {
+  #custom-web #case-study-content .container {
+    margin-top: 0px;
+    max-width: 80%;
+  }
 }
 
 #custom-web .tech-we-work {
@@ -144,6 +283,12 @@
   text-align: left;
   letter-spacing: 0.02em;
   padding: 20px 0px 20px;
+}
+
+@media (max-width: 991px) {
+  #custom-web .tech-we-work .heading h1 {
+    font-size: 24px;
+  }
 }
 
 #custom-web .tech-we-work .heading .underline {

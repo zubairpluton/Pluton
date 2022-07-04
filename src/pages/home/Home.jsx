@@ -30,7 +30,7 @@ import { bounce, bounceIn, bounceInDown, bounceInUp } from "react-animations";
 import WOW from "wowjs";
 import { StyleSheet, css } from "aphrodite";
 import { EqualHeight, EqualHeightElement } from "react-equal-height";
-
+const wow = new WOW().init();
 const styles = StyleSheet.create({
   bounceIn: {
     animationName: bounceIn,
@@ -54,11 +54,11 @@ function Home() {
   }, []);
   var BannerSettings = {
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1000,
-    // fade: true,
+    fade: true,
     vertical: true,
     verticalSwiping: true,
     centerPadding: "60px",
@@ -182,9 +182,9 @@ function Home() {
                   <div className="col-md-6">
                     <div className="main-banner-content main-banner-content-2 ">
                       <div className="content">
-                        <h2>One of the Top</h2>
+                        <h2>second heading for</h2>
                         <h1>Blockchain</h1>
-                        <h2>Company at your disposal</h2>
+                        <h2>Content at our website lorem</h2>
                       </div>
                     </div>
                   </div>
@@ -325,7 +325,7 @@ function Home() {
                             <a href="#">Character Design</a>
                           </li>
                           <li>
-                            <Link to="/case-study">Case Studyes</Link>
+                            <Link to="/case-study">Case Studies</Link>
                           </li>
                         </ul>
                       </div>
@@ -489,7 +489,7 @@ function Home() {
                     <div className="row gx-0">
                       <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
                         <Link to="/blockchain-dev">
-                          <div className="card">
+                          <div className="card ">
                             <div className="service-card-image">
                               <img
                                 src={BlockchainIcon}
@@ -875,7 +875,7 @@ function Home() {
                       <div className="row">
                         <div className="col-md-12 pb-3">
                           <div className="main-technical-icons">
-                            <div className="tech-icons">
+                            <div className="tech-icons wow fadeInBottomLeft">
                               <img src={Apple} alt="" />
                               <h4>IOS</h4>
                             </div>
