@@ -27,10 +27,8 @@ import {
   lineImage,
 } from "../../assets/images/index";
 import { bounce, bounceIn, bounceInDown, bounceInUp } from "react-animations";
-import WOW from "wowjs";
 import { StyleSheet, css } from "aphrodite";
 import { EqualHeight, EqualHeightElement } from "react-equal-height";
-const wow = new WOW().init();
 const styles = StyleSheet.create({
   bounceIn: {
     animationName: bounceIn,
@@ -47,11 +45,6 @@ const styles = StyleSheet.create({
 });
 
 function Home() {
-  useEffect(() => {
-    new WOW.WOW({
-      live: false,
-    }).init();
-  }, []);
   var BannerSettings = {
     dots: true,
     // autoplay: true,
