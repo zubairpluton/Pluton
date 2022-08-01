@@ -6,18 +6,8 @@ import { Header, Footer } from "../../components/index";
 import {
   Apple,
   BlockchainIcon,
-  BlockchainIconWhite,
-  bannerImg,
-  TechBanner,
   bannerImg2,
   bannerGroup,
-  bannerBackgroundImg,
-  lap1,
-  lap2,
-  lap3,
-  lap4,
-  pluton,
-  character,
   Android,
   Flutter,
   Ionic,
@@ -25,6 +15,13 @@ import {
   Kotlin,
   Swift,
   lineImage,
+  LineBlack,
+  Blockchain,
+  Seo,
+  CustomSoftware,
+  Ecommerce,
+  Mobileapp,
+  GraphicDesign,
 } from "../../assets/images/index";
 import { bounce, bounceIn, bounceInDown, bounceInUp } from "react-animations";
 import { StyleSheet, css } from "aphrodite";
@@ -47,7 +44,7 @@ const styles = StyleSheet.create({
 function Home() {
   var BannerSettings = {
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1000,
@@ -220,6 +217,7 @@ function Home() {
                 <div className="heading">
                   <h6>About</h6>
                   <h1>Providing Assistance with Excellence!</h1>
+                  <span className="underline"></span>
                 </div>
 
                 <div className="para">
@@ -277,7 +275,7 @@ function Home() {
         </div>
       </section>
       {/* =============================section-portfolio========================== */}
-      <section id="home-portfolio" className={`home-portfolio`}>
+      {/* <section id="home-portfolio" className={`home-portfolio`}>
         <div className="main">
           <div className="banner-container">
             <div className="sec-padding">
@@ -448,7 +446,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* =============================section-services========================== */}
       <section id="home-services">
@@ -458,18 +456,18 @@ function Home() {
               <div className="line">
                 {/* <div className="straight-line"></div>
                 <span className="ellipse"></span> */}
-                <img src={lineImage} alt="" />
+                <img src={LineBlack} alt="" />
               </div>
 
               <div className="main-about main-services text-center">
                 <div className="heading">
-                  <h6>Services</h6>
-                  <h1>Our Awesome Services</h1>
+                  <h6 className="text-grey">Services</h6>
+                  <h1 className="text-secondry">Our Awesome Services</h1>
                   <span className="underline"></span>
                 </div>
 
                 <div className="para">
-                  <p>
+                  <p className=" text-secondry">
                     Pluton’s establishment was laid in 2018. Our experience
                     started determined to utilize state-of-the-art innovation to{" "}
                     <br />
@@ -477,263 +475,175 @@ function Home() {
                     processes.
                   </p>{" "}
                 </div>
-                <Slider {...serviceSettings}>
-                  <div className="main-services-card">
-                    <div className="row gx-0">
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <Link to="/blockchain-dev">
-                          <div className="card ">
-                            <div className="service-card-image">
-                              <img
-                                src={BlockchainIcon}
-                                className="black"
-                                alt="BlockChain"
-                              />
-                              <img
-                                src={BlockchainIconWhite}
-                                className="white"
-                                alt="BlockChain"
-                              />
-                            </div>
-                            <div className="service-card-heading">
-                              <h2>Block chain Development</h2>
-                            </div>
-                            <div className="service-card-para">
-                              <p>
-                                Create and Launch your NFTs and ICOs with us,
-                                and compete the world by following the latest
-                                technologies.
-                              </p>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <Link to="/mobile-app-dev">
-                          <div className="card">
-                            <div className="service-card-image">
-                              <img
-                                src={BlockchainIcon}
-                                className="black"
-                                alt="BlockChain"
-                              />
-                              <img
-                                src={BlockchainIconWhite}
-                                className="white"
-                                alt="BlockChain"
-                              />
-                            </div>
-                            <div className="service-card-heading">
-                              <h2>Mobile Application Development</h2>
-                            </div>
-                            <div className="service-card-para">
-                              <p>
-                                We are the App Makers! Our expert mobile app
-                                developers strive to provide you the best user
-                                experience, custom android and iOS apps .
-                              </p>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <Link to="/web-dev">
-                          <div className="card">
-                            <div className="service-card-image">
-                              <img
-                                src={BlockchainIcon}
-                                className="black"
-                                alt="BlockChain"
-                              />
-                              <img
-                                src={BlockchainIconWhite}
-                                className="white"
-                                alt="BlockChain"
-                              />
-                            </div>
-                            <div className="service-card-heading">
-                              <h2>Ecommerce Web Development</h2>
-                            </div>
-                            <div className="service-card-para">
-                              <p>
-                                Hire our SEO specialists to assist you with
-                                on-page SEO, off-page SEO, Technical SEO, and
-                                Local SEO services to help you rank better and
-                                boost your sales.
-                              </p>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <div className="card">
+                {/* <Slider {...serviceSettings}> */}
+                <div className="main-services-card">
+                  <div className="row gx-0 gy-2">
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <Link to="/blockchain-dev">
+                        <div className="card service-card mx-2">
                           <div className="service-card-image">
                             <img
-                              src={BlockchainIcon}
+                              src={Blockchain}
                               className="black"
                               alt="BlockChain"
                             />
-                            <img
+                            {/* <img
                               src={BlockchainIconWhite}
                               className="white"
                               alt="BlockChain"
-                            />
+                            /> */}
                           </div>
                           <div className="service-card-heading">
-                            <h2>Website Maintenance & Support</h2>
+                            <h2>Block chain Development</h2>
+                          </div>
+                          <div className="service-card-para">
+                            <p>
+                              Create and Launch your NFTs and ICOs with us, and
+                              compete the world by following the latest
+                              technologies.
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <Link to="/mobile-app-dev">
+                        <div className="card service-card mx-2">
+                          <div className="service-card-image">
+                            <img
+                              src={Mobileapp}
+                              className="black"
+                              alt="Mobileapp.png"
+                            />
+                            {/* <img
+                              src={BlockchainIconWhite}
+                              className="white"
+                              alt="BlockChain"
+                            /> */}
+                          </div>
+                          <div className="service-card-heading">
+                            <h2>Mobile Application Development</h2>
+                          </div>
+                          <div className="service-card-para">
+                            <p>
+                              We are the App Makers! Our expert mobile app
+                              developers strive to provide you the best user
+                              experience, custom android and iOS apps .
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <Link to="/web-dev">
+                        <div className="card service-card mx-2">
+                          <div className="service-card-image">
+                            <img
+                              src={Ecommerce}
+                              className="black"
+                              alt="Ecommerce.png"
+                            />
+                            {/* <img
+                              src={BlockchainIconWhite}
+                              className="white"
+                              alt="BlockChain"
+                            /> */}
+                          </div>
+                          <div className="service-card-heading">
+                            <h2>Ecommerce Web Development</h2>
                           </div>
                           <div className="service-card-para">
                             <p>
                               Hire our SEO specialists to assist you with
                               on-page SEO, off-page SEO, Technical SEO, and
                               Local SEO services to help you rank better and
-                              boost your sales
+                              boost your sales.
                             </p>
                           </div>
                         </div>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <div className="card">
-                          <div className="service-card-image">
-                            <img
-                              src={BlockchainIcon}
-                              className="black"
-                              alt="BlockChain"
-                            />
-                            <img
-                              src={BlockchainIconWhite}
-                              className="white"
-                              alt="BlockChain"
-                            />
-                          </div>
-                          <div className="service-card-heading">
-                            <h2>Creative Graphic Designs</h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              The best digital designers team up together to
-                              bring you creative, beautiful and engaging
-                              designs. We create excellence!
-                            </p>
-                          </div>
+                      </Link>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card service-card mx-2">
+                        <div className="service-card-image">
+                          <img src={Seo} className="black" alt="SEO.png" />
+                          {/* <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          /> */}
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Website Maintenance & Support</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            Hire our SEO specialists to assist you with on-page
+                            SEO, off-page SEO, Technical SEO, and Local SEO
+                            services to help you rank better and boost your
+                            sales
+                          </p>
                         </div>
                       </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <div className="card">
-                          <div className="service-card-image">
-                            <img
-                              src={BlockchainIcon}
-                              className="black"
-                              alt="BlockChain"
-                            />
-                            <img
-                              src={BlockchainIconWhite}
-                              className="white"
-                              alt="BlockChain"
-                            />
-                          </div>
-                          <div className="service-card-heading">
-                            <h2>Custom Software Development</h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              Our custom software development services aim to
-                              design, engineer, deploy, and support various
-                              types of software
-                            </p>
-                          </div>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card service-card mx-2">
+                        <div className="service-card-image">
+                          <img
+                            src={GraphicDesign}
+                            className="black"
+                            alt="GraphicDesign.png"
+                          />
+                          {/* <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          /> */}
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Creative Graphic Designs</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            The best digital designers team up together to bring
+                            you creative, beautiful and engaging designs. We
+                            create excellence!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card service-card mx-2">
+                        <div className="service-card-image">
+                          <img
+                            src={CustomSoftware}
+                            className="black"
+                            alt="CustomSoftware.png"
+                          />
+                          {/* <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          /> */}
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Custom Software Development</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            Our custom software development services aim to
+                            design, engineer, deploy, and support various types
+                            of software
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="main-services-card">
-                    <div className="row gx-0">
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <Link to="/blockchain-dev">
-                          <div className="card">
-                            <div className="service-card-image">
-                              <img
-                                src={BlockchainIcon}
-                                className="black"
-                                alt="BlockChain"
-                              />
-                              <img
-                                src={BlockchainIconWhite}
-                                className="white"
-                                alt="BlockChain"
-                              />
-                            </div>
-                            <div className="service-card-heading">
-                              <h2>Block chain Development</h2>
-                            </div>
-                            <div className="service-card-para">
-                              <p>
-                                Create and Launch your NFTs and ICOs with us,
-                                and compete the world by following the latest
-                                technologies.
-                              </p>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <Link to="/mobile-app-dev">
-                          <div className="card">
-                            <div className="service-card-image">
-                              <img
-                                src={BlockchainIcon}
-                                className="black"
-                                alt="BlockChain"
-                              />
-                              <img
-                                src={BlockchainIconWhite}
-                                className="white"
-                                alt="BlockChain"
-                              />
-                            </div>
-                            <div className="service-card-heading">
-                              <h2>Mobile Application Development</h2>
-                            </div>
-                            <div className="service-card-para">
-                              <p>
-                                We are the App Makers! Our expert mobile app
-                                developers strive to provide you the best user
-                                experience, custom android and iOS apps .
-                              </p>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <Link to="/web-dev">
-                          <div className="card">
-                            <div className="service-card-image">
-                              <img
-                                src={BlockchainIcon}
-                                className="black"
-                                alt="BlockChain"
-                              />
-                              <img
-                                src={BlockchainIconWhite}
-                                className="white"
-                                alt="BlockChain"
-                              />
-                            </div>
-                            <div className="service-card-heading">
-                              <h2>Ecommerce Web Development</h2>
-                            </div>
-                            <div className="service-card-para">
-                              <p>
-                                Hire our SEO specialists to assist you with
-                                on-page SEO, off-page SEO, Technical SEO, and
-                                Local SEO services to help you rank better and
-                                boost your sales.
-                              </p>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                </div>
+                {/* <div className="main-services-card">
+                  <div className="row gx-0">
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <Link to="/blockchain-dev">
                         <div className="card">
                           <div className="service-card-image">
                             <img
@@ -748,73 +658,157 @@ function Home() {
                             />
                           </div>
                           <div className="service-card-heading">
-                            <h2>Website Maintenance & Support</h2>
+                            <h2>Block chain Development</h2>
+                          </div>
+                          <div className="service-card-para">
+                            <p>
+                              Create and Launch your NFTs and ICOs with us, and
+                              compete the world by following the latest
+                              technologies.
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <Link to="/mobile-app-dev">
+                        <div className="card">
+                          <div className="service-card-image">
+                            <img
+                              src={BlockchainIcon}
+                              className="black"
+                              alt="BlockChain"
+                            />
+                            <img
+                              src={BlockchainIconWhite}
+                              className="white"
+                              alt="BlockChain"
+                            />
+                          </div>
+                          <div className="service-card-heading">
+                            <h2>Mobile Application Development</h2>
+                          </div>
+                          <div className="service-card-para">
+                            <p>
+                              We are the App Makers! Our expert mobile app
+                              developers strive to provide you the best user
+                              experience, custom android and iOS apps .
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <Link to="/web-dev">
+                        <div className="card">
+                          <div className="service-card-image">
+                            <img
+                              src={BlockchainIcon}
+                              className="black"
+                              alt="BlockChain"
+                            />
+                            <img
+                              src={BlockchainIconWhite}
+                              className="white"
+                              alt="BlockChain"
+                            />
+                          </div>
+                          <div className="service-card-heading">
+                            <h2>Ecommerce Web Development</h2>
                           </div>
                           <div className="service-card-para">
                             <p>
                               Hire our SEO specialists to assist you with
                               on-page SEO, off-page SEO, Technical SEO, and
                               Local SEO services to help you rank better and
-                              boost your sales
+                              boost your sales.
                             </p>
                           </div>
                         </div>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <div className="card">
-                          <div className="service-card-image">
-                            <img
-                              src={BlockchainIcon}
-                              className="black"
-                              alt="BlockChain"
-                            />
-                            <img
-                              src={BlockchainIconWhite}
-                              className="white"
-                              alt="BlockChain"
-                            />
-                          </div>
-                          <div className="service-card-heading">
-                            <h2>Creative Graphic Designs</h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              The best digital designers team up together to
-                              bring you creative, beautiful and engaging
-                              designs. We create excellence!
-                            </p>
-                          </div>
+                      </Link>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img
+                            src={BlockchainIcon}
+                            className="black"
+                            alt="BlockChain"
+                          />
+                          <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Website Maintenance & Support</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            Hire our SEO specialists to assist you with on-page
+                            SEO, off-page SEO, Technical SEO, and Local SEO
+                            services to help you rank better and boost your
+                            sales
+                          </p>
                         </div>
                       </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <div className="card">
-                          <div className="service-card-image">
-                            <img
-                              src={BlockchainIcon}
-                              className="black"
-                              alt="BlockChain"
-                            />
-                            <img
-                              src={BlockchainIconWhite}
-                              className="white"
-                              alt="BlockChain"
-                            />
-                          </div>
-                          <div className="service-card-heading">
-                            <h2>Custom Software Development</h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              Our custom software development services aim to
-                              design, engineer, deploy, and support various
-                              types of software
-                            </p>
-                          </div>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img
+                            src={BlockchainIcon}
+                            className="black"
+                            alt="BlockChain"
+                          />
+                          <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Creative Graphic Designs</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            The best digital designers team up together to bring
+                            you creative, beautiful and engaging designs. We
+                            create excellence!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img
+                            src={BlockchainIcon}
+                            className="black"
+                            alt="BlockChain"
+                          />
+                          <img
+                            src={BlockchainIconWhite}
+                            className="white"
+                            alt="BlockChain"
+                          />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Custom Software Development</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            Our custom software development services aim to
+                            design, engineer, deploy, and support various types
+                            of software
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                </Slider>
+                </div> */}
+                {/* </Slider> */}
               </div>
             </div>
           </div>
@@ -841,7 +835,7 @@ function Home() {
                       </div>
                       <div className="links">
                         <ul>
-                          <li>
+                          <li className="active">
                             <a href="#">Mobile</a>
                           </li>
                           <li>

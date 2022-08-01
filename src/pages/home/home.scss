@@ -24,6 +24,12 @@
     }
   }
 }
+.underline {
+  border-bottom: 4px solid #24b3d6;
+  display: flex;
+  width: 35%;
+  margin: 0 auto 35px;
+}
 #home {
   #banner {
     opacity: 1;
@@ -169,7 +175,9 @@
     }
   }
 }
-
+#home-about {
+  background: #000525;
+}
 #home-about,
 #home-services {
   .line {
@@ -198,7 +206,7 @@
     img {
       position: absolute;
       left: 50%;
-      top: -82px;
+      top: -80px;
     }
   }
   .main-about {
@@ -215,7 +223,7 @@
         text-align: center;
         letter-spacing: 0.02em;
 
-        color: #706e6e;
+        color: #ffffff;
       }
       h1 {
         font-style: normal;
@@ -224,7 +232,7 @@
         line-height: 100%;
         text-align: center;
         letter-spacing: 0.02em;
-        color: #000525;
+        color: #ffffff;
         padding: 20px 0px 20px;
 
         @include tablet {
@@ -241,7 +249,7 @@
         text-align: center;
         font-family: $font-secondry;
 
-        color: #4a4a4a;
+        color: #ffffff;
         @include laptop {
           font-size: 16px;
         }
@@ -266,7 +274,7 @@
 
         color: #ffffff;
         &:hover {
-          background-color: $secondry-color;
+          background-color: $primary-color;
         }
 
         @include mobile {
@@ -294,7 +302,7 @@
 
           letter-spacing: 0.02em;
 
-          color: #ffffff;
+          color: $secondry-color;
           @include laptop {
             font-size: 28px;
           }
@@ -316,7 +324,7 @@
           list-style: none;
 
           li {
-            color: white;
+            color: $secondry-color;
             padding: 4px 15px;
             margin: 5px 0px;
             text-align: left;
@@ -327,11 +335,12 @@
               cursor: pointer;
               a {
                 font-weight: 500;
+                color: #ffffff;
               }
             }
             a {
               text-decoration: none;
-              color: white;
+              color: $secondry-color;
               @include laptop {
                 font-size: 14px;
               }
@@ -339,6 +348,13 @@
 
             @include ipad-pro {
               padding: 4px 0px;
+            }
+          }
+          .active {
+            background-color: $primary-color;
+            a {
+              color: #ffffff;
+              font-weight: 600;
             }
           }
         }
@@ -512,13 +528,14 @@
       margin: 0px auto 35px;
     }
     .main-services-card {
+      margin-top: 40px;
       a {
         text-decoration: none;
         color: inherit;
       }
 
       .card {
-        padding: 50px;
+        padding: 40px;
         border: 0;
         transition: all 0.5s;
         text-decoration: none;
@@ -547,10 +564,11 @@
         }
         .service-card-para {
           p {
-            font-size: 20px;
+            font-size: 18px;
             font-family: $font-secondry;
             text-align: center;
             text-decoration: none;
+            color: $font-secondry;
             @include laptop {
               font-size: 16px;
             }
@@ -581,12 +599,31 @@
           }
         }
       }
+      .service-card {
+        &:hover {
+          background: #fbfbfb;
+          box-shadow: 0px 0px 20px rgba(12, 87, 145, 0.3);
+
+          h2 {
+            color: $secondry-color;
+          }
+          p {
+            color: $secondry-color;
+          }
+          .service-card-image {
+            .black {
+              display: inline-flex;
+            }
+          }
+        }
+      }
     }
   }
 }
 #home-technologies {
-  background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
+  // background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
   // opacity: 0.8;
+  background-color: #f3f3f3 !important;
   .tech-icons-main {
     width: 600px;
     margin: 0 auto;
@@ -606,7 +643,7 @@
 
           letter-spacing: 0.02em;
 
-          color: #ffffff;
+          color: $secondry-color;
           @include mobile {
             font-size: 14px;
           }
