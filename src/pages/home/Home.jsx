@@ -22,24 +22,13 @@ import {
   Ecommerce,
   Mobileapp,
   GraphicDesign,
+  OluaryLogo,
+  Oluary,
+  BarterExchange,
+  BarterExchangeLogo,
+  IslandGirl,
+  IslandGirlLogo,
 } from "../../assets/images/index";
-import { bounce, bounceIn, bounceInDown, bounceInUp } from "react-animations";
-import { StyleSheet, css } from "aphrodite";
-import { EqualHeight, EqualHeightElement } from "react-equal-height";
-const styles = StyleSheet.create({
-  bounceIn: {
-    animationName: bounceIn,
-    animationDuration: "2s",
-  },
-  bounceInUp: {
-    animationName: bounceInUp,
-    animationDuration: "2s",
-  },
-  bounceInDown: {
-    animationName: bounceInDown,
-    animationDuration: "2s",
-  },
-});
 
 function Home() {
   var BannerSettings = {
@@ -124,11 +113,7 @@ function Home() {
                   <div className="col-md-6">
                     <div className="banner-column">
                       <div className="main-banner-image">
-                        <div
-                          className={`image text-center wow ${css(
-                            styles.bounceIn
-                          )}`}
-                        >
+                        <div className={`image text-center wow`}>
                           <img src={bannerGroup} alt="" />
                         </div>
                       </div>
@@ -181,11 +166,7 @@ function Home() {
                   <div className="col-md-6">
                     <div className="banner-column">
                       <div className="main-banner-image">
-                        <div
-                          className={`image text-center wow ${css(
-                            styles.bounceIn
-                          )}`}
-                        >
+                        <div className={`image text-center wow `}>
                           <img src={bannerImg2} alt="banner-image-2" />
                         </div>
                       </div>
@@ -809,6 +790,142 @@ function Home() {
                   </div>
                 </div> */}
                 {/* </Slider> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================section-caseStudy========================== */}
+      <section id="case-study">
+        <div className="main">
+          <div className="container">
+            <div className="main-row">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="img d-flex justify-content-center">
+                    <img src={Oluary} alt="oluary.png" className="w-100" />
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="content">
+                    <div className="logo mt-5">
+                      <img
+                        src={OluaryLogo}
+                        alt="oluary-logo.png"
+                        className="w-15"
+                      />
+                      <div className="heading mt-3">
+                        <h1>Oluary</h1>
+                      </div>
+                    </div>
+                    <div className="sub-heading mt-5">
+                      <h2>
+                        MicroPets side- <br /> scrolling nft
+                      </h2>
+                    </div>
+                    <div className="para">
+                      <p className="text-secondry">
+                        MicroPets Runner is a classic side-scrolling runner game
+                        that allows users to proceed with their game character
+                        (a MicroPets NFT product) picking up coins (to earn
+                        rewards) on their way past monsters and <br /> obstacles
+                      </p>
+                    </div>
+                    <div className="button mt-4">
+                      <a href="#" className="custome-btn-secondry">
+                        View Case Study
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="content">
+                    <div className="logo mt-5">
+                      <img
+                        src={IslandGirlLogo}
+                        alt="IslandGirlLogo.png"
+                        className="w-15"
+                      />
+                      <div className="heading mt-3">
+                        <h1>Oluary</h1>
+                      </div>
+                    </div>
+                    <div className="sub-heading mt-5">
+                      <h2>Island</h2>
+                      <h1>GIRL</h1>
+                    </div>
+                    <div className="para">
+                      <p className="text-secondry">
+                        MicroPets Runner is a classic side-scrolling runner game
+                        that allows users to proceed with their game character
+                        (a MicroPets NFT product) picking up coins (to earn
+                        rewards) on their way past monsters and <br /> obstacles
+                      </p>
+                    </div>
+                    <div className="button mt-4">
+                      <a href="#" className="custome-btn-secondry">
+                        View Case Study
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="img d-flex justify-content-center">
+                    <img
+                      src={IslandGirl}
+                      alt="Island-girl.png"
+                      className="w-100"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="img d-flex justify-content-center">
+                    <img
+                      src={BarterExchange}
+                      alt="BarterExchange.png"
+                      className="w-100"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="content">
+                    <div className="logo mt-5">
+                      <img
+                        src={BarterExchangeLogo}
+                        alt="barter-exchange-logo.png"
+                        className="w-15"
+                      />
+                      <div className="heading mt-3">
+                        <h1>BARTER</h1>
+
+                        <h2>EXCHANGE</h2>
+                      </div>
+                    </div>
+                    <div className="sub-heading mt-3">
+                      <h2>
+                        MicroPets side- <br /> scrolling nft
+                      </h2>
+                    </div>
+                    <div className="para">
+                      <p className="text-secondry">
+                        MicroPets Runner is a classic side-scrolling runner game
+                        that allows users to proceed with their game character
+                        (a MicroPets NFT product) picking up coins (to earn
+                        rewards) on their way past monsters and <br /> obstacles
+                      </p>
+                    </div>
+                    <div className="button mt-4">
+                      <a href="#" className="custome-btn-secondry">
+                        View Case Study
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

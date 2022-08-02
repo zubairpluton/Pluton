@@ -45,6 +45,29 @@ $font-secondry: "Raleway-Regular";
     border-color: #24b3d6 !important;
   }
 }
+.custome-btn-secondry {
+  background: #0c5791;
+  font-style: normal;
+  font-weight: 600;
+  width: 183px;
+  outline: none;
+  border: none;
+  height: 55px;
+  font-size: 24px;
+  padding: 5px 10px;
+  line-height: 0.5;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  transition: all 0.5s;
+  text-decoration: none;
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
 $pc-pro-max: 1600px;
 @mixin pc-pro-max {
   @media (min-width: #{$pc-pro-max}) {

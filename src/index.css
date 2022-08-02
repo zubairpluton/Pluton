@@ -9,6 +9,11 @@
   src: local("Raleway-Regular"),
     url("./assets/font/Raleway-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Dark-College";
+  src: local("Dark-college"),
+    url("./assets/font/Dark-College.otf") format("truetype");
+}
 
 .app {
   height: 100vh;
