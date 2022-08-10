@@ -850,7 +850,8 @@ function Home() {
                         className="w-15"
                       />
                       <div className="heading mt-3">
-                        <h1>Oluary</h1>
+                        <h2>Island</h2>
+                        <h1>GIRL</h1>
                       </div>
                     </div>
                     <div className="sub-heading mt-5">
