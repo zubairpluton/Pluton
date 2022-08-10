@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import "./home.scss";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { Header, Footer } from "../../components/index";
 import {
   Apple,
-  BlockchainIcon,
+  // BlockchainIcon,
   bannerImg2,
   bannerGroup,
   Android,
@@ -84,12 +84,12 @@ function Home() {
     ],
   };
 
-  var serviceSettings = {
-    dots: true,
-    autoplay: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  // var serviceSettings = {
+  //   dots: true,
+  //   autoplay: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
 
   return (
     <div id="home">
@@ -167,7 +167,7 @@ function Home() {
                     <div className="banner-column">
                       <div className="main-banner-image">
                         <div className={`image text-center wow `}>
-                          <img src={bannerImg2} alt="banner-image-2" />
+                          <img src={bannerImg2} alt="banner-2" />
                         </div>
                       </div>
                     </div>
@@ -191,7 +191,7 @@ function Home() {
               <div className="line">
                 {/* <div className="straight-line"></div>
                 <span className="ellipse"></span> */}
-                <img src={lineImage} alt="" />
+                <img src={lineImage} alt="line.png" />
               </div>
 
               <div className="main-about text-center ">
@@ -833,7 +833,7 @@ function Home() {
                       </p>
                     </div>
                     <div className="button mt-4">
-                      <a href="#" className="custome-btn-secondry">
+                      <a href="#view" className="custome-btn-secondry">
                         View Case Study
                       </a>
                     </div>
@@ -854,10 +854,7 @@ function Home() {
                         <h1>GIRL</h1>
                       </div>
                     </div>
-                    <div className="sub-heading mt-5">
-                      <h2>Island</h2>
-                      <h1>GIRL</h1>
-                    </div>
+
                     <div className="para">
                       <p className="text-secondry">
                         MicroPets Runner is a classic side-scrolling runner game
@@ -867,7 +864,7 @@ function Home() {
                       </p>
                     </div>
                     <div className="button mt-4">
-                      <a href="#" className="custome-btn-secondry">
+                      <a href="#view" className="custome-btn-secondry">
                         View Case Study
                       </a>
                     </div>
@@ -921,7 +918,7 @@ function Home() {
                       </p>
                     </div>
                     <div className="button mt-4">
-                      <a href="#" className="custome-btn-secondry">
+                      <a href={"#view"} className="custome-btn-secondry">
                         View Case Study
                       </a>
                     </div>
@@ -954,22 +951,22 @@ function Home() {
                       <div className="links">
                         <ul>
                           <li className="active">
-                            <a href="#">Mobile</a>
+                            <a href="#mobile">Mobile</a>
                           </li>
                           <li>
-                            <a href="#">Front end</a>
+                            <a href="#front-end">Front end</a>
                           </li>
                           <li>
-                            <a href="#">Data base</a>
+                            <a href="#data-base">Data base</a>
                           </li>
                           <li>
-                            <a href="#">Backend</a>
+                            <a href="#backend">Backend</a>
                           </li>
                           <li>
-                            <a href="#">CMS</a>
+                            <a href="#cms">CMS</a>
                           </li>
                           <li>
-                            <a href="#">Infra & develop</a>
+                            <a href="#infra-develop">Infra & develop</a>
                           </li>
                         </ul>
                       </div>
