@@ -52,7 +52,7 @@ export const BlockchainDevProcess = [
   },
   {
     card_href: "/blockchain-dev",
-    card_title: "Enterprise <br /> Blockchain",
+    card_title: "Enterprise  Blockchain",
     card_para:
       " From ideation to design and development, our blockchain developers formulate and build enterprise-grade applications that are robust and ready to implement for maximum ROI (Return on Investment).",
   },
@@ -70,7 +70,7 @@ export const BlockchainDevProcess = [
   },
   {
     card_href: "/blockchain-dev",
-    card_title: "Migration and <br /> Updates",
+    card_title: "Migration and  Updates",
     card_para:
       "We move your existing operation to the blockchain, and we produce a roadmap that includes migration, testing, and updation to ensure your business processes keep running and don't suffer any downtime.",
   },

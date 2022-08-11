@@ -2,6 +2,7 @@ import React from "react";
 import {
   Footer,
   Header,
+  BlogSection,
   TechServices,
   ServiceBanner,
 } from "../../../components";
@@ -55,6 +56,8 @@ function BlockChain() {
     slidesToShow: 3,
     slidesToScroll: 1,
     adaptiveHeight: true,
+    showArrows: true,
+
     responsive: [
       {
         breakpoint: 1024,
@@ -158,44 +161,16 @@ function BlockChain() {
         </div>
       </section>
       {/* ================================why-chose====================== */}
-      <section id="why-choose">
-        <div className="container">
-          <div className="sec-padding">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="main">
-                  <div className="heading">
-                    {/* <h6>Services</h6> */}
-                    <h1>
-                      Why choose Our Blockchain <br /> Development Services?
-                    </h1>
-                    <span className="underline"></span>
-                  </div>
-                  <div className="para">
-                    <p>
-                      Accurate data-driven consultation to develop and implement
-                      your blockchain development projects with ease.{" "}
-                    </p>
-                    <p>
-                      We harness scalability with niche expertise through our
-                      time-tested development process. Our Blockchain app
-                      development services offer data-driven solutions to match
-                      your business needs, whether you’re a startup or
-                      enterprise. We help you secure and validate ownership of
-                      your digital assets and decentralize your network to
-                      manage your data with smart contracts. Our custom
-                      blockchain app development solutions fit businesses
-                      searching for optimum scalability in fintech, e-commerce,
-                      gaming, financial institutions, IoT, education, retail,
-                      health, and much more.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BlogSection
+        id="why-choose"
+        heading={"Why choose Our Blockchain Development Services?"}
+        para1={
+          "  Accurate data-driven consultation to develop and implement your blockchain development projects with ease."
+        }
+        para2={
+          "We harness scalability with niche expertise through our time-tested development process. Our Blockchain app development services offer data-driven solutions to match your business needs, whether you’re a startup or enterprise. We help you secure and validate ownership of your digital assets and decentralize your network to  manage your data with smart contracts. Our custom blockchain app development solutions fit businesses searching for optimum scalability in fintech, e-commerce, gaming, financial institutions, IoT, education, retail,  health, and much more."
+        }
+      />
       {/* ==================================blockchain-dev-process================== */}
       <section id="home-services">
         <div className="blockchain-dev-sol">
@@ -233,69 +208,27 @@ function BlockChain() {
         </div>
       </section>
       {/* ================================why-chose====================== */}
-      <section id="why-choose">
-        <div className="container">
-          <div className="sec-padding">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="main">
-                  <div className="heading">
-                    {/* <h6>Services</h6> */}
-                    <h1>
-                      Why is Blockchain the Future <br /> of Hybrid Projects?
-                    </h1>
-                    <span className="underline"></span>
-                  </div>
-                  <div className="para">
-                    <p>
-                      Security is always the number one reason enterprises opt
-                      for custom blockchain application development solutions
-                      and blockchain app development company A major pain point
-                      when it comes to the future of blockchain usage is
-                      scalability. The idea of hybrid solutions can solve many
-                      issues related to scalability, a traditionally known
-                      limitation.
-                    </p>
-                    <p>
-                      A fully functional hybrid blockchain seamlessly
-                      integrating a public chain with a private network is a
-                      tremendous achievement. A hybrid blockchain comprises a
-                      permissioned blockchain with a public blockchain, allowing
-                      entities to enjoy secure background transactions with
-                      associates while allowing consumers to access product
-                      information on an open ledger.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BlogSection
+        heading={"Why is Blockchain the Future of Hybrid Projects?"}
+        para1={
+          " Security is always the number one reason enterprises opt for custom blockchain application development solutions and blockchain app development company A major pain point when it comes to the future of blockchain usage is scalability. The idea of hybrid solutions can solve many issues related to scalability, a traditionally known limitation."
+        }
+        para2={
+          "  A fully functional hybrid blockchain seamlessly integrating a public chain with a private network is a tremendous achievement. A hybrid blockchain comprises a permissioned blockchain with a public blockchain, allowing entities to enjoy secure background transactions with associates while allowing consumers to access product information on an open ledger."
+        }
+      />
       {/* ==================================blockchain-app-dev-service-stack================== */}
       <section id="home-services">
-        <div className="blockchain-app">
+        <div className="slider-cards blockchain-dev-sol">
           <div className="container">
             <div className="sec-padding">
-              <div className="line">
-                <img src={LineBlack} alt="" />
-              </div>
-
               <div className="main-about main-services text-center">
-                <div className="heading">
-                  {/* <h6>Services</h6> */}
-                  <h1>
-                    Blockchain App Development <br /> – Technology Stack
-                  </h1>
-                  <span className="underline"></span>
-                </div>
-
-                <div className="para">
-                  <p>
-                    We offer Custom Blockchain development service with scalable
-                    and tested technologies to deliver excellence.
-                  </p>{" "}
-                </div>
+                <TechServices
+                  heading={"Blockchain App Development - Technology Stack"}
+                  para={
+                    "We offer Custom Blockchain development service with scalable and tested technologies to deliver excellence."
+                  }
+                />
 
                 <div className="main-services-card">
                   <div className="row gx-0 p-5 m-1">

@@ -4,7 +4,7 @@
   opacity: 0.9;
 }
 
-#why-choose {
+.blog-section {
   background-color: #000525;
 
   .main {
@@ -24,12 +24,13 @@
         display: flex;
         width: 25%;
         text-align: center;
+        margin: 0 !important;
       }
     }
 
     .para {
       p:first-child {
-        margin: 50px 0px;
+        margin: 30px 0px;
       }
       p {
         font-size: 20px;
@@ -64,6 +65,35 @@
   }
 }
 
+.slider-cards {
+  .main-about {
+    .main-services-card {
+      .card {
+        background: #fbfbfb !important;
+        margin: 0px 10px;
+        &:hover {
+          background: #fbfbfb !important;
+          box-shadow: 0px 0px 13px 4px rgba(12, 87, 145, 0.3) !important;
+          h2 {
+            color: $secondry-color !important;
+          }
+          p {
+            color: $secondry-color !important;
+          }
+          .service-card-image {
+            .black {
+              display: inline-flex;
+            }
+          }
+        }
+        .service-card-image {
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+  }
+}
 // ============================responsive=====================
 
 @include laptop {

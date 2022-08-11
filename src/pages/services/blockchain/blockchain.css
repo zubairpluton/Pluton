@@ -33,16 +33,22 @@
 }
 
 #banner {
-  background: -webkit-gradient(linear, left top, right top, color-stop(16.81%, #000525), color-stop(119.48%, #24b3d6));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(16.81%, #000525),
+    color-stop(119.48%, #24b3d6)
+  );
   background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
   opacity: 0.9;
 }
 
-#why-choose {
+.blog-section {
   background-color: #000525;
 }
 
-#why-choose .main .heading h1 {
+.blog-section .main .heading h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -53,7 +59,7 @@
   padding: 20px 0px 0px;
 }
 
-#why-choose .main .heading .underline {
+.blog-section .main .heading .underline {
   border-bottom: 4px solid #24b3d6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,11 +68,11 @@
   text-align: center;
 }
 
-#why-choose .main .para p:first-child {
+.blog-section .main .para p:first-child {
   margin: 50px 0px;
 }
 
-#why-choose .main .para p {
+.blog-section .main .para p {
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -80,7 +86,13 @@
   background-color: antiquewhite;
 }
 
-#home-services .main .main-about .main-services-card .card .service-card-image img {
+#home-services
+  .main
+  .main-about
+  .main-services-card
+  .card
+  .service-card-image
+  img {
   display: inline-block;
 }
 /*# sourceMappingURL=blockchain.css.map */

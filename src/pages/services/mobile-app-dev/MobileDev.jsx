@@ -212,7 +212,7 @@ function MobileAppDev() {
         </div>
       </section>
       {/* ================================why-chose====================== */}
-      <section id="why-choose">
+      <section id="why-choose" className="blog-section">
         <div className="container">
           <div className="sec-padding">
             <div className="row">
@@ -348,7 +348,7 @@ function MobileAppDev() {
         </div>
       </section>
       {/* ================================why-chose====================== */}
-      <section id="why-choose">
+      <section id="why-choose" className="blog-section">
         <div className="container">
           <div className="sec-padding">
             <div className="row">
