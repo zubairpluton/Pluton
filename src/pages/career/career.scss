@@ -19,7 +19,7 @@
     }
     .title-home {
       text-align: center;
-      max-width: 75%;
+      max-width: 85%;
       h1 {
         font-size: 7vw;
         font-weight: bold;
@@ -33,6 +33,9 @@
         font-size: 40px;
         line-height: 60px;
         text-align: justify;
+        span {
+          color: $primary-color;
+        }
       }
       .line {
         text-align: start;

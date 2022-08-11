@@ -16,7 +16,7 @@
         line-height: 1.5;
         text-align: left;
         letter-spacing: 0.02em;
-        color: white;
+        color: white !important;
         padding: 20px 0px 0px;
       }
       .underline {
@@ -63,65 +63,16 @@
     }
   }
 }
-#home-services {
-  .blockchain-app {
-    .main-about {
-      .main-services-card {
-        .slick-prev,
-        .slick-next {
-          &::before {
-            color: #000525;
-          }
-        }
 
-        padding: 60px 0px;
+// ============================responsive=====================
 
-        .card {
-          padding: 35px;
-          margin: 10px;
-          background: #fbfbfb;
-          &:hover {
-            background: #fbfbfb;
-            box-shadow: -2px 2px 13px -3px rgb(0 0 0 / 45%);
-            cursor: pointer;
-            h2 {
-              color: #000525;
-            }
-            p {
-              color: #000525;
-            }
-          }
-          .service-card-image {
-            img {
-              display: inline-block;
-            }
-          }
-          @include mobile {
-            padding: 15px;
-          }
-        }
+@include laptop {
+  .main-about {
+    .heading {
+      h1 {
+        font-size: 35px;
         @include tablet {
-          padding: 0;
-        }
-        @include tablet {
-          .row {
-            padding: 1rem !important;
-          }
-        }
-      }
-    }
-  }
-
-  // ============================responsive=====================
-
-  @include laptop {
-    .main-about {
-      .heading {
-        h1 {
-          font-size: 35px;
-          @include tablet {
-            font-size: 24px;
-          }
+          font-size: 24px;
         }
       }
     }

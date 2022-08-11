@@ -28,7 +28,7 @@ export const CareerBanner = ({ page, title, para }) => {
                 </div> */}
                 <div className="title-home">
                   <h1>{title}</h1>
-                  <h6 className="para">{para}</h6>
+                  {para}
                   <hr className="line" />
                 </div>
               </div>

@@ -20,7 +20,7 @@ function CustomWeb() {
                   <div className="box-img">
                     <div className="content">
                       <h3>Java Times Caffe</h3>
-                      <button className="custom-btn ">View Case Study</button>
+                      <button className="custom-btn">View Case Study</button>
                     </div>
                     <img src={lap1} alt="" />
                   </div>

@@ -1,26 +1,23 @@
 @import "../../global.scss";
 .banner-btn {
-  .custom-btn {
+  .button {
     width: 183px;
     height: 46px;
     background: #24b3d6;
     font-family: "Raleway";
     font-style: normal;
+    border: none;
+    outline: none;
     font-weight: 700;
     font-size: 24px;
     line-height: 100%;
-    /* identical to box height, or 24px */
-
     text-align: center;
     letter-spacing: 0.02em;
-
     color: #ffffff;
+    border-radius: 0px !important;
     &:hover {
+      cursor: pointer;
       background-color: $secondry-color;
-      border-color: $primary-color;
-    }
-    &:active {
-      border-color: $primary-color;
     }
   }
 }
@@ -154,6 +151,10 @@
         position: relative;
         -webkit-animation: rocket 3s linear infinite;
         animation: rocket 3s linear infinite;
+
+        @include pc {
+          margin: 35px auto;
+        }
       }
       // .banner-img {
       //   z-index: 3333;
@@ -183,7 +184,9 @@
   .line {
     position: relative;
     height: 100px;
-
+    @include tablet {
+      height: 140px;
+    }
     // .straight-line {
     //   position: absolute;
     //   width: 164px;
@@ -207,6 +210,9 @@
       position: absolute;
       left: 50%;
       top: -80px;
+      @include tablet {
+        top: -40px;
+      }
     }
   }
   .main-about {
@@ -268,6 +274,8 @@
         width: 183px;
         height: 46px;
         line-height: 0.5;
+        border: none;
+        outline: none;
         /* identical to box height, or 24px */
         text-align: center;
         letter-spacing: 0.02em;
@@ -671,18 +679,39 @@
 
 #case-study {
   .main {
+    .content-2 {
+      margin-left: 140px;
+      @include ipad-pro {
+        margin-left: 0px;
+      }
+    }
     .content {
       .logo {
         img {
           width: 15%;
         }
         .heading {
+          h2 {
+            font-family: "Dark-College";
+            color: #888888;
+            margin-bottom: -10px;
+            font-size: 40px;
+          }
           h1 {
             font-size: 50px;
             font-family: "Dark-College";
             color: #5e5e5e;
-            letter-spacing: 1.2px;
           }
+          .light-grey {
+            color: #888888;
+            margin-bottom: -10px;
+          }
+          .dark-grey {
+            color: #5e5e5e;
+          }
+        }
+        @include laptop {
+          margin-top: 0px !important;
         }
       }
       .sub-heading {
@@ -700,6 +729,9 @@
             letter-spacing: 0;
           }
         }
+        @include laptop {
+          margin-top: 1rem !important;
+        }
       }
       .para {
         p {
@@ -709,6 +741,16 @@
       .button {
         a {
           font-size: 18px;
+        }
+      }
+    }
+    .img {
+      img {
+        @include ipad-pro {
+          width: 70% !important;
+        }
+        @include tablet {
+          width: 100% !important;
         }
       }
     }

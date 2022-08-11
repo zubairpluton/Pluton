@@ -10,7 +10,7 @@ header {
     }
   }
 
-  @include mobile {
+  @include ipad-pro {
     .logo {
       img {
         width: 50px;

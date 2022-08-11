@@ -1,6 +1,11 @@
 import React from "react";
-import { Footer, Header } from "../../../components";
-import { ServiceBanner } from "../../../components/index";
+import {
+  Footer,
+  Header,
+  TechServices,
+  ServiceBanner,
+} from "../../../components";
+
 import { Link } from "react-router-dom";
 // import { lap1, lap2, lap3, lap4 } from "../../../assets/images";s
 import Slider from "react-slick";
@@ -8,13 +13,40 @@ import "./blockchain.scss";
 import {
   BlockchainIcon,
   BlockchainIconWhite,
-  lineImage,
+  LineBlack,
   Cardano,
   Quorum,
   Hyperledger,
 } from "../../../assets/images/index";
+import {
+  BlockchainServices,
+  BlockchainDevProcess,
+} from "../../../components/fake-data/TechServicesData";
+
+export const Card = ({ card_href, card_title, card_para }) => {
+  return (
+    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+      <Link to={card_href}>
+        <div className="card">
+          <div className="service-card-image">
+            <img src={BlockchainIcon} className="black" alt="BlockChain" />
+            <img src={BlockchainIconWhite} className="white" alt="BlockChain" />
+          </div>
+          <div className="service-card-heading">
+            <h2>{card_title}</h2>
+          </div>
+          <div className="service-card-para">
+            <p>{card_para}</p>
+          </div>
+        </div>
+      </Link>
+    </div>
+  );
+};
 
 function BlockChain() {
+  let data = BlockchainServices;
+  let devProcessdata = BlockchainDevProcess;
   var settings = {
     dots: true,
     infinite: true,
@@ -64,64 +96,29 @@ function BlockChain() {
 
       {/* ==================================custom-blockchain-services================== */}
       <section id="home-services">
-        <div className="main">
+        <div className="blockchain-dev-sol">
           <div className="container">
             <div className="sec-padding">
-              <div className="line">
-                <img src={lineImage} alt="" />
-              </div>
-
               <div className="main-about main-services text-center">
-                <div className="heading">
-                  {/* <h6>Services</h6> */}
-                  <h1>
-                    Custom Blockchain <br /> Development Solutions We Offer
-                  </h1>
-                  <span className="underline"></span>
-                </div>
-
-                <div className="para">
-                  <p>
-                    Enjoy heightened security, efficiency, and transparency.
-                    Gain the very best in blockchain application development,
-                    integration and adaptation from the top Blockchain
-                    Development Company in USA.
-                  </p>{" "}
-                </div>
-
-                <div className="main-services-card">
-                  <div className="row gx-0">
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <Link to="/blockchain-dev">
-                        <div className="card">
-                          <div className="service-card-image">
-                            <img
-                              src={BlockchainIcon}
-                              className="black"
-                              alt="BlockChain"
-                            />
-                            <img
-                              src={BlockchainIconWhite}
-                              className="white"
-                              alt="BlockChain"
-                            />
-                          </div>
-                          <div className="service-card-heading">
-                            <h2>
-                              Blockchain <br /> Consulting
-                            </h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              Brainstorm and ideate <br /> blockchain solutions
-                              for fintech, healthcare, telecom, real estate, and
-                              media.
-                            </p>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                <TechServices
+                  heading={"Custom Blockchain Development Solutions We Offer "}
+                  para={
+                    "Enjoy heightened security, efficiency, and transparency. Gain the very best in blockchain application development, integration and adaptation from the top Blockchain Development Company in USA."
+                  }
+                />
+                <div className="tech-services">
+                  <div className="main-services-card">
+                    <div className="row gx-0">
+                      {data.map((data, ind) => (
+                        <Card
+                          key={ind}
+                          card_href={data.card_href}
+                          card_title={data.card_title}
+                          card_para={data.card_para}
+                        />
+                      ))}
+                      {/* <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                    <Link to="/blockchain-dev">
                       <div className="card">
                         <div className="service-card-image">
                           <img
@@ -137,126 +134,21 @@ function BlockChain() {
                         </div>
                         <div className="service-card-heading">
                           <h2>
-                            Co Development <br /> Model
+                            Blockchain <br /> Consulting
                           </h2>
                         </div>
                         <div className="service-card-para">
                           <p>
-                            Collaborative solutions <br /> across multiple
-                            technologies fusing R&D and value-chain
-                            participation strategies.
+                            We identify your organization’s blockchain
+                            potential. From market research, project feasibility
+                            assessment and blockchain platform analysis, to
+                            preferred tool selection and feature prioritization,
+                            we cover every area required.
                           </p>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
-                        </div>
-                        <div className="service-card-heading">
-                          <h2>
-                            {" "}
-                            Smart contract <br /> development{" "}
-                          </h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            Build secure and reliable <br /> crypto wallets
-                            compatible with multiple cryptocurrencies.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
-                        </div>
-                        <div className="service-card-heading">
-                          <h2>
-                            Blockchain <br /> Decentralization
-                          </h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            Ensure strict security with a <br /> decentralized
-                            setup laid out by experts for every
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
-                        </div>
-                        <div className="service-card-heading">
-                          <h2>
-                            E-Wallet <br /> Platforms
-                          </h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            Robust and secure platforms <br /> and e-wallets
-                            built under one roof to serve various
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
-                        </div>
-                        <div className="service-card-heading">
-                          <h2>
-                            Blockchain cloud <br /> services
-                          </h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            Access blockchain solutions <br /> from anywhere
-                            with availability across multiple technologies.
-                          </p>
-                        </div>
-                      </div>
+                    </Link>
+                  </div> */}
                     </div>
                   </div>
                 </div>
@@ -306,212 +198,35 @@ function BlockChain() {
       </section>
       {/* ==================================blockchain-dev-process================== */}
       <section id="home-services">
-        <div className="main">
+        <div className="blockchain-dev-sol">
           <div className="container">
             <div className="sec-padding">
-              <div className="line">
-                <img src={lineImage} alt="" />
-              </div>
-
               <div className="main-about main-services text-center">
-                <div className="heading">
-                  {/* <h6>Services</h6> */}
-                  <h1>
-                    Blockchain <br /> Development Process
-                  </h1>
-                  <span className="underline"></span>
-                </div>
+                <TechServices
+                  heading={"Blockchain Development Process"}
+                  para={
+                    "Leverage our refined process - Run rapid tests and achieve product maturity at the earliest stages to transform your ideas into scalable and robust applications. Our tailored process is optimized to meet existing blockchain industry changes."
+                  }
+                />
 
-                <div className="para">
-                  <p>
-                    Leverage our refined process - Run rapid tests and achieve
-                    product maturity at the earliest stages to transform your
-                    ideas into scalable and robust applications. Our tailored
-                    process is optimized to meet existing blockchain industry
-                    changes.
-                  </p>{" "}
-                </div>
+                {/* <div className="line">
+                <img src={LineBlack} alt="" />
+              </div> */}
 
+                {/* <div className="main-about main-services text-center"> */}
                 <div className="main-services-card">
                   <div className="row gx-0">
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <Link to="/blockchain-dev">
-                        <div className="card">
-                          <div className="service-card-image">
-                            <img
-                              src={BlockchainIcon}
-                              className="black"
-                              alt="BlockChain"
-                            />
-                            <img
-                              src={BlockchainIconWhite}
-                              className="white"
-                              alt="BlockChain"
-                            />
-                          </div>
-                          <div className="service-card-heading">
-                            <h2>
-                              Blockchain <br /> Consulting
-                            </h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              We identify your organization’s blockchain
-                              potential. From market research, project
-                              feasibility assessment and blockchain platform
-                              analysis, to preferred tool selection and feature
-                              prioritization, we cover every area required.
-                            </p>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
-                        </div>
-                        <div className="service-card-heading">
-                          <h2>Experience and Design</h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            Our engaging designs produce seamless user
-                            experience, and are based on system blueprint design
-                            comprising technical components. Moreover, user
-                            preferences play a critical role in the eventual
-                            technical design.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
-                        </div>
-                        <div className="service-card-heading">
-                          <h2>
-                            {" "}
-                            Enterprise <br /> Blockchain
-                          </h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            From ideation to design and development, our
-                            blockchain developers formulate and build
-                            enterprise-grade applications that are robust and
-                            ready to implement for maximum ROI (Return on
-                            Investment).
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
-                        </div>
-                        <div className="service-card-heading">
-                          <h2>Blockchain Deployement</h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            Access the platform you need at the right stage to
-                            harness the true power of blockchain technology. Our
-                            development team deploys permissioned and public
-                            blockchain in your cloud environment too.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
-                        </div>
-                        <div className="service-card-heading">
-                          <h2>Blockchain Maintenance</h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            We give you peace of mind with our monitoring system
-                            through support and maintenance for your OS release,
-                            3rd party upgrades, and new releases. We stand by
-                            you and help you tackle any amount of minor and
-                            critical issues.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                      <div className="card">
-                        <div className="service-card-image">
-                          <img
-                            src={BlockchainIcon}
-                            className="black"
-                            alt="BlockChain"
-                          />
-                          <img
-                            src={BlockchainIconWhite}
-                            className="white"
-                            alt="BlockChain"
-                          />
-                        </div>
-                        <div className="service-card-heading">
-                          <h2>
-                            Migration and <br /> Updates
-                          </h2>
-                        </div>
-                        <div className="service-card-para">
-                          <p>
-                            We move your existing operation to the blockchain,
-                            and we produce a roadmap that includes migration,
-                            testing, and updation to ensure your business
-                            processes keep running and don't suffer any
-                            downtime.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                    {devProcessdata.map((data, ind) => (
+                      <Card
+                        key={ind}
+                        card_href={data.card_href}
+                        card_title={data.card_title}
+                        card_para={data.card_para}
+                      />
+                    ))}
                   </div>
                 </div>
+                {/* </div> */}
               </div>
             </div>
           </div>
@@ -563,7 +278,7 @@ function BlockChain() {
           <div className="container">
             <div className="sec-padding">
               <div className="line">
-                <img src={lineImage} alt="" />
+                <img src={LineBlack} alt="" />
               </div>
 
               <div className="main-about main-services text-center">

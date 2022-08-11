@@ -52,11 +52,6 @@
   color: white;
 }
 
-.home-section .container .title-home {
-  text-align: center;
-  max-width: 75%;
-}
-
 .home-section .container .title-home h1 {
   font-size: 7vw;
   font-weight: bold;
@@ -147,12 +142,12 @@
 
 #career .form-section .input-field .css-1gyr8kh {
   -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
+  flex-basis: 90%;
 }
 
 #career .form-section .input-field .search-btn {
   -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
+  flex-basis: 10%;
 }
 
 #career .form-section .input-field .search-btn .btn {
@@ -170,18 +165,18 @@
   margin-bottom: -1px;
   padding-bottom: 0px;
   -ms-flex-preferred-size: 17%;
-      flex-basis: 17%;
+  flex-basis: 17%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #career .job-list .main-job-list .table-header .jobs-heading h3 {
@@ -201,7 +196,13 @@
   color: black;
 }
 
-#career .job-list .main-job-list .jobs .main-row .job-title-upper .job-title:hover {
+#career
+  .job-list
+  .main-job-list
+  .jobs
+  .main-row
+  .job-title-upper
+  .job-title:hover {
   color: #24b3d6;
   cursor: pointer;
 }

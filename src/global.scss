@@ -5,7 +5,7 @@ $btn-background: #0c5791;
 $font-primary: "Bebas-Regular";
 $font-secondry: "Raleway-Regular";
 
-.text-primary {
+.color-primary {
   color: #24b3d6 !important;
 }
 .text-secondry {
@@ -16,6 +16,15 @@ $font-secondry: "Raleway-Regular";
 }
 .text-grey {
   color: #706e6e !important;
+}
+.text-dark-grey {
+  color: #4a4a4a !important;
+}
+.sec-padding {
+  padding: 80px 0px;
+  @media (max-width: 768px) {
+    padding: 40px 0px;
+  }
 }
 .custom-btn {
   width: 183px;

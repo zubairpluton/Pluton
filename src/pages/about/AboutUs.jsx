@@ -4,14 +4,20 @@ import { CareerBanner } from "../career/Career";
 import "./aboutus.scss";
 
 function AboutUs() {
+  const para = (
+    <h6 className="para">
+      WE’RE AN <span className="color-primary"> INDEPENDENT</span> DIGITAL
+      AGENCY WITH A TEAM OF DESIGNERS & CREATIVE{" "}
+      <span className="color-primary"> DEVELOPERS </span>WHO LOVE IN CRAFTING
+      <span className="color-primary">DIGITAL </span> EXPERIENCES
+    </h6>
+  );
+
   return (
     <div id="about">
       {/* =========================banner============ */}
       <section id="banner">
-        <CareerBanner
-          page="about"
-          para={`WE’RE AN INDEPENDENT DIGITAL AGENCY WITH A TEAM OF DESIGNERS & CREATIVE DEVELOPERS WHO LOVE IN CRAFTING DIGITAL EXPERIENCES`}
-        />
+        <CareerBanner page="about" para={para} />
       </section>
       <section id="about-content">
         <div className="container">

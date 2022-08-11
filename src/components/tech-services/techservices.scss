@@ -1,0 +1,168 @@
+@import "../../global.scss";
+// #home-services {
+//   .main-services {
+//     .slick-prev:before,
+//     .slick-next:before {
+//       display: none;
+//     }
+//     .underline {
+//       border-bottom: 4px solid #24b3d6;
+//       display: flex;
+//       width: 25%;
+//       text-align: center;
+//       margin: 0px auto 35px;
+//     }
+//     .main-services-card {
+//       margin-top: 40px;
+//       a {
+//         text-decoration: none;
+//         color: inherit;
+//       }
+
+//       .card {
+//         padding: 40px;
+//         border: 0;
+//         transition: all 0.5s;
+//         text-decoration: none;
+//         .service-card-image {
+//           .black {
+//             display: inline-block;
+//           }
+//           .white {
+//             display: none;
+//           }
+//         }
+//         .service-card-heading {
+//           h2 {
+//             font-size: 30px;
+//             line-height: 120%;
+//             text-align: center;
+//             letter-spacing: 0.02em;
+//             text-decoration: none;
+//             color: $secondry-color;
+//             font-weight: 700;
+//             @include laptop {
+//               font-size: 24px;
+//               line-height: normal;
+//               letter-spacing: 0;
+//             }
+//           }
+//         }
+//         .service-card-para {
+//           p {
+//             font-size: 18px;
+//             font-family: $font-secondry;
+//             text-align: center;
+//             text-decoration: none;
+//             color: $font-secondry;
+//             @include laptop {
+//               font-size: 16px;
+//             }
+//             @include mobile {
+//               font-size: 14px;
+//             }
+//           }
+//         }
+
+//         &:hover {
+//           background: linear-gradient(62.79deg, #000525 1.08%, #24b3d6 100%);
+//           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
+//           cursor: pointer;
+
+//           h2 {
+//             color: #ffffff;
+//           }
+//           p {
+//             color: #ffffff;
+//           }
+//           .service-card-image {
+//             .black {
+//               display: none;
+//             }
+//             .white {
+//               display: inline-flex;
+//             }
+//           }
+//         }
+//       }
+//       .service-card {
+//         &:hover {
+//           background: #fbfbfb;
+//           box-shadow: 0px 0px 20px rgba(12, 87, 145, 0.3);
+
+//           h2 {
+//             color: $secondry-color;
+//           }
+//           p {
+//             color: $secondry-color;
+//           }
+//           .service-card-image {
+//             .black {
+//               display: inline-flex;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+.blockchain-dev-sol {
+  .tech-services {
+    .main-about {
+      .heading {
+        h1 {
+          color: $secondry-color !important;
+        }
+      }
+      .para {
+        p {
+          color: #4a4a4a !important;
+        }
+      }
+
+      .main-services-card {
+        .slick-prev,
+        .slick-next {
+          &::before {
+            color: #000525;
+          }
+        }
+
+        padding: 60px 0px;
+
+        .card {
+          padding: 35px;
+          margin: 10px;
+          background: #fbfbfb;
+          &:hover {
+            background: #fbfbfb;
+            box-shadow: -2px 2px 13px -3px rgb(0 0 0 / 45%);
+            cursor: pointer;
+            h2 {
+              color: #000525;
+            }
+            p {
+              color: #000525;
+            }
+          }
+          .service-card-image {
+            img {
+              display: inline-block;
+            }
+          }
+          @include mobile {
+            padding: 15px;
+          }
+        }
+        @include tablet {
+          padding: 0;
+        }
+        @include tablet {
+          .row {
+            padding: 1rem !important;
+          }
+        }
+      }
+    }
+  }
+}
