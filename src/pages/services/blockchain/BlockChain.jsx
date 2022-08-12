@@ -5,45 +5,18 @@ import {
   BlogSection,
   TechServices,
   ServiceBanner,
+  Card,
 } from "../../../components";
 
 import { Link } from "react-router-dom";
 // import { lap1, lap2, lap3, lap4 } from "../../../assets/images";s
 import Slider from "react-slick";
 import "./blockchain.scss";
-import {
-  BlockchainIcon,
-  BlockchainIconWhite,
-  LineBlack,
-  Cardano,
-  Quorum,
-  Hyperledger,
-} from "../../../assets/images/index";
+import { Cardano, Quorum, Hyperledger } from "../../../assets/images/index";
 import {
   BlockchainServices,
   BlockchainDevProcess,
 } from "../../../components/fake-data/TechServicesData";
-
-export const Card = ({ card_href, card_title, card_para }) => {
-  return (
-    <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-      <Link to={card_href}>
-        <div className="card">
-          <div className="service-card-image">
-            <img src={BlockchainIcon} className="black" alt="BlockChain" />
-            <img src={BlockchainIconWhite} className="white" alt="BlockChain" />
-          </div>
-          <div className="service-card-heading">
-            <h2>{card_title}</h2>
-          </div>
-          <div className="service-card-para">
-            <p>{card_para}</p>
-          </div>
-        </div>
-      </Link>
-    </div>
-  );
-};
 
 function BlockChain() {
   let data = BlockchainServices;
@@ -53,10 +26,10 @@ function BlockChain() {
     infinite: true,
     // fade: true,
     speed: 500,
+    autoPlay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    showArrows: true,
 
     responsive: [
       {
@@ -89,12 +62,9 @@ function BlockChain() {
     <div id="blockchain">
       {/* =========================banner============ */}
       <ServiceBanner
-        title={`Value-Driven Custom
-                              Blockchain App Development Services`}
-        titleSmall="We provide simple and seamless"
-        para="blockchain
-                    app development solutions nurtured by innovation
-                        and inspired by the latest global practices."
+        title={`Function-based system of Blockchain App Development Services`}
+        titleSmall="We provide consistency and continuity"
+        para="Blockchain app development solutions that are nourished by creativity and influenced by the most recent international standards."
       />
 
       {/* ==================================custom-blockchain-services================== */}
@@ -231,140 +201,138 @@ function BlockChain() {
                 />
 
                 <div className="main-services-card">
-                  <div className="row gx-0 p-5 m-1">
-                    <Slider {...settings}>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <Link to="/blockchain-dev">
-                          <div className="card">
-                            <div className="service-card-image">
-                              <img src={Cardano} alt="BlockChain" />
-                            </div>
-                            <div className="service-card-heading">
-                              <h2>
-                                Blockchain <br /> Consulting
-                              </h2>
-                            </div>
-                            <div className="service-card-para">
-                              <p>
-                                We identify your organization’s blockchain
-                                potential. From market research, project
-                                feasibility assessment and blockchain platform
-                                analysis, to preferred tool selection and
-                                feature prioritization, we cover every area
-                                required.
-                              </p>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                  {/* <div className="row gx-0 p-5 m-1"> */}
+                  <Slider {...settings}>
+                    <div>
+                      <Link to="/blockchain-dev">
                         <div className="card">
                           <div className="service-card-image">
-                            <img src={Quorum} alt="BlockChain" />
-                          </div>
-                          <div className="service-card-heading">
-                            <h2>Experience and Design</h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              Our engaging designs produce seamless user
-                              experience, and are based on system blueprint
-                              design comprising technical components. Moreover,
-                              user preferences play a critical role in the
-                              eventual technical design.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <div className="card">
-                          <div className="service-card-image">
-                            <img src={Hyperledger} alt="BlockChain" />
+                            <img src={Cardano} alt="BlockChain" />
                           </div>
                           <div className="service-card-heading">
                             <h2>
-                              {" "}
-                              Enterprise <br /> Blockchain
+                              Blockchain <br /> Consulting
                             </h2>
                           </div>
                           <div className="service-card-para">
                             <p>
-                              From ideation to design and development, our
-                              blockchain developers formulate and build
-                              enterprise-grade applications that are robust and
-                              ready to implement for maximum ROI (Return on
-                              Investment).
+                              We identify your organization’s blockchain
+                              potential. From market research, project
+                              feasibility assessment and blockchain platform
+                              analysis, to preferred tool selection and feature
+                              prioritization, we cover every area required.
                             </p>
                           </div>
                         </div>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <Link to="/blockchain-dev">
-                          <div className="card">
-                            <div className="service-card-image">
-                              <img src={Cardano} alt="BlockChain" />
-                            </div>
-                            <div className="service-card-heading">
-                              <h2>
-                                Blockchain <br /> Consulting
-                              </h2>
-                            </div>
-                            <div className="service-card-para">
-                              <p>
-                                We identify your organization’s blockchain
-                                potential. From market research, project
-                                feasibility assessment and blockchain platform
-                                analysis, to preferred tool selection and
-                                feature prioritization, we cover every area
-                                required.
-                              </p>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
-                        <div className="card">
-                          <div className="service-card-image">
-                            <img src={Quorum} alt="BlockChain" />
-                          </div>
-                          <div className="service-card-heading">
-                            <h2>Experience and Design</h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              Our engaging designs produce seamless user
-                              experience, and are based on system blueprint
-                              design comprising technical components. Moreover,
-                              user preferences play a critical role in the
-                              eventual technical design.
-                            </p>
-                          </div>
+                      </Link>
+                    </div>
+                    <div>
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img src={Quorum} alt="BlockChain" />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Experience and Design</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            Our engaging designs produce seamless user
+                            experience, and are based on system blueprint design
+                            comprising technical components. Moreover, user
+                            preferences play a critical role in the eventual
+                            technical design.
+                          </p>
                         </div>
                       </div>
-                      <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
+                    </div>
+                    <div>
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img src={Hyperledger} alt="BlockChain" />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>
+                            {" "}
+                            Enterprise <br /> Blockchain
+                          </h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            From ideation to design and development, our
+                            blockchain developers formulate and build
+                            enterprise-grade applications that are robust and
+                            ready to implement for maximum ROI (Return on
+                            Investment).
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <Link to="/blockchain-dev">
                         <div className="card">
                           <div className="service-card-image">
-                            <img src={Hyperledger} alt="BlockChain" />
+                            <img src={Cardano} alt="BlockChain" />
                           </div>
                           <div className="service-card-heading">
                             <h2>
-                              {" "}
-                              Enterprise <br /> Blockchain
+                              Blockchain <br /> Consulting
                             </h2>
                           </div>
                           <div className="service-card-para">
                             <p>
-                              From ideation to design and development, our
-                              blockchain developers formulate and build
-                              enterprise-grade applications that are robust and
-                              ready to implement for maximum ROI (Return on
-                              Investment).
+                              We identify your organization’s blockchain
+                              potential. From market research, project
+                              feasibility assessment and blockchain platform
+                              analysis, to preferred tool selection and feature
+                              prioritization, we cover every area required.
                             </p>
                           </div>
                         </div>
+                      </Link>
+                    </div>
+                    <div>
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img src={Quorum} alt="BlockChain" />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>Experience and Design</h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            Our engaging designs produce seamless user
+                            experience, and are based on system blueprint design
+                            comprising technical components. Moreover, user
+                            preferences play a critical role in the eventual
+                            technical design.
+                          </p>
+                        </div>
                       </div>
-                    </Slider>
-                  </div>
+                    </div>
+                    <div>
+                      <div className="card">
+                        <div className="service-card-image">
+                          <img src={Hyperledger} alt="BlockChain" />
+                        </div>
+                        <div className="service-card-heading">
+                          <h2>
+                            {" "}
+                            Enterprise <br /> Blockchain
+                          </h2>
+                        </div>
+                        <div className="service-card-para">
+                          <p>
+                            From ideation to design and development, our
+                            blockchain developers formulate and build
+                            enterprise-grade applications that are robust and
+                            ready to implement for maximum ROI (Return on
+                            Investment).
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </Slider>
+                  {/* </div> */}
                 </div>
               </div>
             </div>

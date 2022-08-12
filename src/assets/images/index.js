@@ -57,6 +57,8 @@ export { default as UIicon } from "./casestudy/ui-icon.png";
 export { default as GameLogic } from "./casestudy/game-logic-icon.png";
 export { default as IslandGirlLogo } from "./casestudy/island-girl-logo.png";
 export { default as IslandGirl } from "./casestudy/island-girl.png";
+export { default as IslandGirlBanner } from "./casestudy/island-girl-banner.png";
+export { default as islandGirlBgLayer } from "./casestudy/island-girl-bg-layer.png";
 export { default as Oluary } from "./casestudy/oluary.png";
 export { default as OluaryLogo } from "./casestudy/oluary-logo.png";
 export { default as BarterExchangeLogo } from "./casestudy/barter-exchange-logo.png";

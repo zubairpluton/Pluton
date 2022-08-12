@@ -1,6 +1,6 @@
 import React from "react";
 
-function BlogSection({ heading, para1, para2 }) {
+function BlogSection({ heading, para1, para2, para3 }) {
   return (
     <section id="why-choose" className="blog-section">
       <div className="container">
@@ -19,6 +19,7 @@ function BlogSection({ heading, para1, para2 }) {
                 <div className="para">
                   <p>{para1}</p>
                   <p>{para2}</p>
+                  <p>{para3}</p>
                 </div>
               </div>
             </div>

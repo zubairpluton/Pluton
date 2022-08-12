@@ -1,6 +1,12 @@
 import React from "react";
-import { Footer, Header } from "../../../components";
-import { ServiceBanner } from "../../../components/index";
+
+import {
+  ServiceBanner,
+  TechServices,
+  Footer,
+  Card,
+  BlogSection,
+} from "../../../components/index";
 import { Link } from "react-router-dom";
 // import { lap1, lap2, lap3, lap4 } from "../../../assets/images";s
 import Slider from "react-slick";
@@ -16,8 +22,9 @@ import {
   Design,
   Development,
 } from "../../../assets/images/index";
-
+import { WebDevServices } from "../../../components/fake-data/TechServicesData";
 function WebDevelopment() {
+  let data = WebDevServices;
   var settings = {
     dots: true,
     infinite: true,
@@ -58,42 +65,37 @@ function WebDevelopment() {
       {/* =========================banner============ */}
       <ServiceBanner
         title={`Web development leaders`}
-        titleSmall="Ignite your online identity"
-        para="with cornerstone digital assets.
- Build your presence with superb designs
-and functionality."
+        titleSmall="Design impressive, quick, and secure web applications with us"
+        //         para="with cornerstone digital assets.
+        //  Build your presence with superb designs
+        // and functionality."
       />
 
       {/* ==================================custom-blockchain-services================== */}
       <section id="home-services">
-        <div className="main">
+        <div className="main blockchain-dev-sol">
           <div className="container">
             <div className="sec-padding">
-              <div className="line">
-                <img src={lineImage} alt="" />
-              </div>
-
               <div className="main-about main-services text-center">
-                <div className="heading">
-                  {/* <h6>Services</h6> */}
-                  <h1>
-                    Services we offer <br /> Build a vibrant web presence
-                  </h1>
-                  <span className="underline"></span>
-                </div>
-
-                <div className="para">
-                  <p>
-                    Your web presence is pivotal for your brand, aside from it
-                    serving as a point of service. Get started with an
-                    experienced team that knows just what you need to take you
-                    forward.
-                  </p>{" "}
-                </div>
+                <TechServices
+                  heading={"Services we offer Build an attractive web presence"}
+                  para={
+                    "A successful digital product involves a complicated process that includes selecting the proper partner, implementing technologies, and adhering procedures."
+                  }
+                />
 
                 <div className="main-services-card">
                   <div className="row gx-0">
-                    <div className="col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-12">
+                    {data.map((data, ind) => (
+                      <Card
+                        key={ind}
+                        card_href={data.card_href}
+                        card_title={data.card_title}
+                        card_para={data.card_para}
+                      />
+                    ))}
+
+                    {/* <div className="col-xlg-3 col-lg-6 col-md-6 col-sm-6 col-xsm-12">
                       <Link to="/blockchain-dev">
                         <div className="card">
                           <div className="service-card-image">
@@ -205,7 +207,7 @@ and functionality."
                           </p>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -213,63 +215,25 @@ and functionality."
           </div>
         </div>
       </section>
-      {/* ================================why-chose====================== */}
-      <section id="why-choose" className="blog-section">
-        <div className="container">
-          <div className="sec-padding">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="main">
-                  <div className="heading">
-                    {/* <h6>Services</h6> */}
-                    <h1>Why choose us</h1>
-                    <span className="underline"></span>
-                  </div>
-                  <div className="para">
-                    <p>
-                      Along with designing and developing your web presence, we
-                      propose business-oriented solutions that fit your needs
-                      and speak volumes of your values as a brand. With
-                      experienced web developers and digital artisans, you get a
-                      state-of-the-art solution with a cutting-edge appeal that
-                      engages more people online. Leverage powerful technologies
-                      and robust architecture to build a web solution that
-                      fulfills your needs under packaged web development
-                      services.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ===============================why-choose-us================ */}
+      <BlogSection
+        heading={"Why choose us"}
+        para1={
+          "Pluton tends to combine front-end, back-end, and architecture using cutting-edge web development methodologies to satisfy your business objectives. A balanced strategy is necessary for effective product development. We combine our worldwide scope with individualized, in-depth technical advice."
+        }
+      />
       {/* ==================================Mobile-dev-process================== */}
       <section id="home-services">
-        <div className="main dev-process">
+        <div className="main dev-process blockchain-dev-sol">
           <div className="container">
             <div className="sec-padding">
-              <div className="line">
-                <img src={lineImage} alt="" />
-              </div>
-
               <div className="main-about main-services text-center">
-                <div className="heading">
-                  {/* <h6>Services</h6> */}
-                  <h1>
-                    Web development
-                    <br /> Process
-                  </h1>
-                  <span className="underline"></span>
-                </div>
-
-                <div className="para">
-                  <p>
-                    Build a thriving web presence with programming tools like
-                    Python, Angular, React Native, and renowned cloud services
-                    with creative experts who formulate customized solutions.
-                  </p>{" "}
-                </div>
+                <TechServices
+                  heading={"Web development process "}
+                  para={
+                    "Build a thriving web presence with programming tools like Python, Angular, React Native, and renowned cloud services with creative experts who formulate customized solutions."
+                  }
+                />
 
                 <div className="main-services-card">
                   <div className="row gx-0 my-5">
@@ -343,74 +307,24 @@ and functionality."
         </div>
       </section>
       {/* ================================why-chose====================== */}
-      <section id="why-choose" className="blog-section">
-        <div className="container">
-          <div className="sec-padding">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="main">
-                  <div className="heading">
-                    {/* <h6>Services</h6> */}
-                    <h1>
-                      World-famous mobile application <br /> development company
-                    </h1>
-                    <span className="underline"></span>
-                  </div>
-                  <div className="para">
-                    <p>
-                      Mobile apps indeed hold a significant chunk of the market,
-                      currently (about 58%), making it important for your
-                      business to invest in one. If you have a wide customer
-                      base from your e-commerce website, imagine the power of
-                      pairing that with a mobile app!
-                    </p>
-                    <p>
-                      Cubix is a popular mobile app development company that
-                      helps you achieve your goals. We examine your particular
-                      need and work to develop your app solution to perfection!
-                      And it all starts with a rock-solid plan that not only
-                      sets the parameters of your project features, but also
-                      minutely defines and strategizes the length and breadth of
-                      programming required. This concrete plan is matched
-                      against a strict timeline to ensure delivery on time.
-                    </p>
-                    <p>
-                      Every customer is important to us, as we believe in taking
-                      everyone who approaches us to the next level. So, no
-                      matter what kind of app you are desirous of building; we
-                      can build anything for you from scratch.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BlogSection
+        heading={"World-famous Web Development Company"}
+        para1={
+          "Pluton was designed to ease the work of innovators and developers. We achieve this by continuously abstracting away work that adds little value and is redundant, while never restricting a developer's ability to assume total control."
+        }
+      />
       {/* ==================================blockchain-app-dev-service-stack================== */}
       <section id="home-services">
-        <div className="blockchain-app">
+        <div className="slider-cards blockchain-dev-sol">
           <div className="container">
             <div className="sec-padding">
-              <div className="line">
-                <img src={lineImage} alt="" />
-              </div>
-
               <div className="main-about main-services text-center">
-                <div className="heading">
-                  {/* <h6>Services</h6> */}
-                  <h1>
-                    Web Development <br /> – Technology Stack
-                  </h1>
-                  <span className="underline"></span>
-                </div>
-
-                <div className="para">
-                  <p>
-                    Experience pure creativity, skill, and expertise in
-                    Technologies for Web Development.
-                  </p>{" "}
-                </div>
+                <TechServices
+                  heading={"Web development technology stack"}
+                  para={
+                    "Experience pure creativity, skill, and expertise in Technologies for Web Development."
+                  }
+                />
 
                 <div className="main-services-card">
                   <div className="row gx-0">

@@ -560,83 +560,89 @@ function Home() {
                     </div>
                     <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
                       <Slide left>
-                        <div className="card service-card mx-2">
-                          <div className="service-card-image">
-                            <img src={Seo} className="black" alt="SEO.png" />
-                            {/* <img
+                        <Link to="/digital-marketing">
+                          <div className="card service-card mx-2">
+                            <div className="service-card-image">
+                              <img src={Seo} className="black" alt="SEO.png" />
+                              {/* <img
                             src={BlockchainIconWhite}
                             className="white"
                             alt="BlockChain"
                           /> */}
+                            </div>
+                            <div className="service-card-heading">
+                              <h2>Website Maintenance & Support</h2>
+                            </div>
+                            <div className="service-card-para">
+                              <p>
+                                Hire our SEO specialists to assist you with
+                                on-page SEO, off-page SEO, Technical SEO, and
+                                Local SEO services to help you rank better and
+                                boost your sales
+                              </p>
+                            </div>
                           </div>
-                          <div className="service-card-heading">
-                            <h2>Website Maintenance & Support</h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              Hire our SEO specialists to assist you with
-                              on-page SEO, off-page SEO, Technical SEO, and
-                              Local SEO services to help you rank better and
-                              boost your sales
-                            </p>
-                          </div>
-                        </div>
+                        </Link>
                       </Slide>
                     </div>
                     <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
                       <Slide bottom>
-                        <div className="card service-card mx-2">
-                          <div className="service-card-image">
-                            <img
-                              src={GraphicDesign}
-                              className="black"
-                              alt="GraphicDesign.png"
-                            />
-                            {/* <img
+                        <Link to="/creative-design">
+                          <div className="card service-card mx-2">
+                            <div className="service-card-image">
+                              <img
+                                src={GraphicDesign}
+                                className="black"
+                                alt="GraphicDesign.png"
+                              />
+                              {/* <img
                             src={BlockchainIconWhite}
                             className="white"
                             alt="BlockChain"
                           /> */}
+                            </div>
+                            <div className="service-card-heading">
+                              <h2>Creative Graphic Designs</h2>
+                            </div>
+                            <div className="service-card-para">
+                              <p>
+                                The best digital designers team up together to
+                                bring you creative, beautiful and engaging
+                                designs. We create excellence!
+                              </p>
+                            </div>
                           </div>
-                          <div className="service-card-heading">
-                            <h2>Creative Graphic Designs</h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              The best digital designers team up together to
-                              bring you creative, beautiful and engaging
-                              designs. We create excellence!
-                            </p>
-                          </div>
-                        </div>
+                        </Link>
                       </Slide>
                     </div>
                     <div className="col-xlg-4 col-lg-4 col-md-6 col-sm-6 col-xsm-12">
                       <Slide right>
-                        <div className="card service-card mx-2">
-                          <div className="service-card-image">
-                            <img
-                              src={CustomSoftware}
-                              className="black"
-                              alt="CustomSoftware.png"
-                            />
-                            {/* <img
+                        <Link to="/software-dev">
+                          <div className="card service-card mx-2">
+                            <div className="service-card-image">
+                              <img
+                                src={CustomSoftware}
+                                className="black"
+                                alt="CustomSoftware.png"
+                              />
+                              {/* <img
                             src={BlockchainIconWhite}
                             className="white"
                             alt="BlockChain"
                           /> */}
+                            </div>
+                            <div className="service-card-heading">
+                              <h2>Custom Software Development</h2>
+                            </div>
+                            <div className="service-card-para">
+                              <p>
+                                Our custom software development services aim to
+                                design, engineer, deploy, and support various
+                                types of software
+                              </p>
+                            </div>
                           </div>
-                          <div className="service-card-heading">
-                            <h2>Custom Software Development</h2>
-                          </div>
-                          <div className="service-card-para">
-                            <p>
-                              Our custom software development services aim to
-                              design, engineer, deploy, and support various
-                              types of software
-                            </p>
-                          </div>
-                        </div>
+                        </Link>
                       </Slide>
                     </div>
                   </div>
@@ -857,9 +863,12 @@ function Home() {
                         </p>
                       </div>
                       <div className="button mt-4">
-                        <a href="#view" className="custome-btn-secondry">
+                        <Link
+                          to="/case-study-1"
+                          className="custome-btn-secondry"
+                        >
                           View Case Study
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </Fade>
@@ -896,9 +905,12 @@ function Home() {
                         </p>
                       </div>
                       <div className="button mt-4">
-                        <a href="#view" className="custome-btn-secondry">
+                        <Link
+                          to="/case-study-2"
+                          className="custome-btn-secondry"
+                        >
                           View Case Study
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </Fade>
@@ -957,9 +969,12 @@ function Home() {
                         </p>
                       </div>
                       <div className="button mt-4">
-                        <a href={"#view"} className="custome-btn-secondry">
+                        <Link
+                          to="/case-study-3"
+                          className="custome-btn-secondry"
+                        >
                           View Case Study
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </Fade>

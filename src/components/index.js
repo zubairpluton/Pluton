@@ -5,3 +5,8 @@ export { default as SidebarPortfolio } from "./portfolio/SidebarPortfolio";
 export { default as ServiceBanner } from "./services-banner/ServiceBanner";
 export { default as TechServices } from "./tech-services/TechServices";
 export { default as BlogSection } from "./blog-section/BlogSection";
+export { default as Card } from "./service-card/Card";
+export { default as TechWeWork } from "./tech-we-work/TechWeWork";
+export { default as YearsOfWork } from "./years-of-work/YearsOfWork";
+export { default as TechniCalities } from "./technicalities/TechniCalities";
+export { default as DevProcess } from "./dev-process/Devprocess";

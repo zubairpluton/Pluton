@@ -1,8 +1,14 @@
 import React from "react";
-import { Footer, Header } from "../../components";
+import {
+  Footer,
+  Header,
+  TechniCalities,
+  TechWeWork,
+  YearsOfWork,
+} from "../../../components";
 // import { CareerBanner } from "../career/Career";
 import { Zoom } from "react-reveal";
-import "./case-study.scss";
+import "./island-girl.scss";
 import {
   GameLogic,
   Islandgirl1,
@@ -12,22 +18,24 @@ import {
   Islandgirl5,
   Islandgirl6,
   Islandgirl7,
-  Metamask,
-  NftContract,
-  SmartContract,
-  TokenIcon,
-  UIicon,
-  Apple,
-  Android,
-  Flutter,
-  Reactnative,
-} from "../../assets/images/index";
+  islandGirlBgLayer,
+} from "../../../assets/images/index";
 
 function CaseStudy() {
   return (
     <div id="custom-web">
       {/* =========================banner============ */}
       <section className="banner">
+        <img
+          src={islandGirlBgLayer}
+          alt=""
+          style={{
+            zIndex: "-2",
+            position: "absolute",
+            height: "inherit",
+            width: "100%",
+          }}
+        />
         <Header />
         <div className="banner-container">
           <div className="banner-content mt-5">
@@ -35,7 +43,7 @@ function CaseStudy() {
               <h2>
                 A classic side-scrolling runner game <br /> played with NFTs
               </h2>
-              <hr className="line" />
+              <hr className="line" style={{ borderTop: "3px solid #198754" }} />
             </div>
           </div>
 
@@ -151,7 +159,11 @@ function CaseStudy() {
               </div>
               <div className="col-lg-12 mt-2 d-flex  flex-column align-items-center justify-content-end ">
                 <div className="banner-img">
-                  <img src={Islandgirl4} alt="Island girl image" />
+                  <img
+                    src={Islandgirl4}
+                    alt="Island girl image"
+                    className="island-girl-4"
+                  />
                 </div>
               </div>
             </div>
@@ -206,75 +218,7 @@ function CaseStudy() {
                 </div>
               </div>
             </div>
-            <div className="row justify-content-center">
-              <div className="col-lg-12">
-                <div className="heading">
-                  <h1>Technicalities</h1>
-                  <span className="underline"></span>
-                </div>
-              </div>
-              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
-                <div className="technicalities text-center">
-                  <div className="img">
-                    <img src={UIicon} alt="UI/UX" />
-                  </div>
-                  <div className="content">
-                    <p>UI/UX and graphics based on users’ preference</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
-                <div className="technicalities text-center">
-                  <div className="img">
-                    <img src={SmartContract} alt="SmartContract" />
-                  </div>
-                  <div className="content">
-                    <p>Smart Contract</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
-                <div className="technicalities text-center">
-                  <div className="img">
-                    <img src={TokenIcon} alt="Token Image" />
-                  </div>
-                  <div className="content">
-                    <p>Token ID</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
-                <div className="technicalities text-center">
-                  <div className="img">
-                    <img src={GameLogic} alt="Game Logic" />
-                  </div>
-                  <div className="content">
-                    <p>Game Logic</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
-                <div className="technicalities text-center">
-                  <div className="img">
-                    <img src={NftContract} alt="Nft Contract" />
-                  </div>
-                  <div className="content">
-                    <p>NFT Contract</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xlg-3 col-lg-3 col-md-4 col-sm-4 col-4">
-                <div className="technicalities text-center">
-                  <div className="img">
-                    <img src={Metamask} alt="Meta Mask Integration" />
-                  </div>
-                  <div className="content">
-                    <p>Meta Mask integration</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <TechniCalities />
             <div className="row">
               <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end ">
                 <div className="content">
@@ -370,76 +314,11 @@ function CaseStudy() {
         </div>
       </section>
       {/* ===========================tech-we-wrok======================================= */}
-      <section id="home-technologies" className="tech-we-work">
-        <div className="main">
-          <div className="case-container">
-            <div className="sec-padding">
-              <div className="main-portfolio">
-                <div className="row">
-                  <div className="col-md-12 d-flex align-items-sm-end">
-                    <div className="heading">
-                      <h1>
-                        Technologies
-                        <br /> we work with
-                      </h1>
+      <TechWeWork />
 
-                      <span className="underline"></span>
-                    </div>
-                  </div>
-                  <div className="tech-icons-main">
-                    <div className="col-md-12 pb-3">
-                      <div className="main-technical-icons">
-                        <div className="tech-icons">
-                          <img src={Apple} alt="" />
-                          <h4>IOS</h4>
-                        </div>
-                        <div className="tech-icons">
-                          <img src={Android} alt="" />
-                          <h4>Android</h4>
-                        </div>
-                        <div className="tech-icons">
-                          <img src={Flutter} alt="" />
-                          <h4>Flutter</h4>
-                        </div>
-                        <div className="tech-icons">
-                          <img src={Reactnative} alt="" />
-                          <h4>React Native</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* ===========================years-of-working======================================= */}
-      <section id="home-technologies" className="years-of-working">
-        <div className="main">
-          <div className="case-container">
-            <div className="sec-padding">
-              <div className="main-portfolio">
-                <div className="row">
-                  <div className="col-md-12 d-flex flex-column">
-                    <div className="heading">
-                      <h1>
-                        14 Years of building digital products and we <br /> are
-                        just getting started
-                      </h1>
-
-                      <span className="underline"></span>
-                    </div>
-                    <div className="button">
-                      <button className="custom-btn">Get Started</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <YearsOfWork />
+      {/* ===========================footer================ */}
       <Footer />
     </div>
   );

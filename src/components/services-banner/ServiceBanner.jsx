@@ -134,13 +134,7 @@ const ServiceBanner = ({ page, title, titleSmall, para }) => {
                           }}
                           noValidate
                           autoComplete="off"
-                        >
-                          <TextField
-                            id="standard-basic"
-                            label="Standard"
-                            variant="standard"
-                          />
-                        </Box>
+                        ></Box>
                       </div>
                       <div className="button">
                         <button className="custom-btn" type="submit">

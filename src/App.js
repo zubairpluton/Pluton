@@ -7,9 +7,14 @@ import {
   BlockChain,
   MobileAppDev,
   WebDevelopment,
-  CaseStudy,
+  SoftwareDev,
+  CreativeDesign,
+  DigitalMarketing,
+  IslandGirl,
+  BarterExchange,
 } from "./pages/index";
 import { Header, Jobform } from "./components/index";
+import { Oluary } from "./assets/images";
 
 function App() {
   return (
@@ -24,7 +29,12 @@ function App() {
           <Route path="/blockchain-dev" element={<BlockChain />} />
           <Route path="/mobile-app-dev" element={<MobileAppDev />} />
           <Route path="/web-dev" element={<WebDevelopment />} />
-          <Route path="/case-study" element={<CaseStudy />} />
+          <Route path="/software-dev" element={<SoftwareDev />} />
+          <Route path="/creative-design" element={<CreativeDesign />} />
+          <Route path="/digital-marketing" element={<DigitalMarketing />} />
+          <Route path="/case-study-2" element={<IslandGirl />} />
+          <Route path="/case-study-3" element={<BarterExchange />} />
+          {/* <Route path="/case-study-1" element={<Oluary />} /> */}
         </Routes>
       </Router>
     </div>

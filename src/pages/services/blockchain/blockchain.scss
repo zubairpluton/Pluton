@@ -66,6 +66,9 @@
 }
 
 .slider-cards {
+  .slick-dots li button:before {
+    font-size: 17px;
+  }
   .main-about {
     .main-services-card {
       .card {
@@ -107,4 +110,7 @@
       }
     }
   }
+}
+.main {
+  overflow: hidden !important;
 }

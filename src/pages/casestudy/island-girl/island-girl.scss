@@ -1,15 +1,18 @@
-@import "../../global.scss";
+@import "../../../global.scss";
 #custom-web {
   .banner {
-    opacity: 1 !important;
+    // opacity: 1 !important;
     .banner-container {
       width: 90%;
       margin: 0 auto;
     }
-    background: linear-gradient(90deg, #000525 16.81%, #24b3d6 119.48%);
-    opacity: 0.9;
+    background-image: url("../../../assets/images/casestudy/island-girl-banner.png") !important;
+    background: linear-gradient(90deg, #202d0b -2.67%, #609350 100%);
+    opacity: 0.9999;
     height: 100vh;
     position: relative;
+    background-position: center;
+    background-size: cover;
     .title-home {
       h2 {
         font-weight: 400;
@@ -23,7 +26,7 @@
         @include laptop {
           font-size: 40px;
         }
-        @include mobile {
+        @include tablet {
           font-size: 24px;
         }
       }
@@ -42,11 +45,12 @@
     }
     .banner-img {
       img {
-        max-width: 100%;
+        max-width: 60%;
         position: absolute;
         z-index: 1;
         right: 50%;
-        transform: translate(50%, 300px);
+        // transform: translate(50%, 300px);
+        transform: translate(50%, 40%);
         bottom: 0;
 
         @include laptop {
@@ -121,6 +125,9 @@
       @include ipad-pro {
         font-size: 24px;
       }
+      @include mobile {
+        margin-top: 30px;
+      }
     }
   }
   #case-study-content {
@@ -130,6 +137,10 @@
       .banner-img {
         img {
           width: 100%;
+        }
+        img.island-girl-4 {
+          margin-left: 20px;
+          width: 107%;
         }
       }
       .content {
@@ -197,13 +208,13 @@
   }
 
   .tech-we-work {
-    background: #000525;
+    background: #000525 !important;
     .container {
       width: 45%;
     }
     .heading {
       h1 {
-        color: white;
+        color: white !important;
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -217,6 +228,17 @@
       }
       .underline {
         width: 65%;
+      }
+    }
+
+    .main-technical-icons {
+      .tech-icons {
+        h4 {
+          color: #ffffff !important;
+        }
+        img {
+          filter: brightness(3.5) !important;
+        }
       }
     }
   }
