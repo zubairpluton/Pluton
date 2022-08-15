@@ -12,9 +12,9 @@ import {
   DigitalMarketing,
   IslandGirl,
   BarterExchange,
+  Oluary,
 } from "./pages/index";
 import { Header, Jobform } from "./components/index";
-import { Oluary } from "./assets/images";
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
           <Route path="/digital-marketing" element={<DigitalMarketing />} />
           <Route path="/case-study-2" element={<IslandGirl />} />
           <Route path="/case-study-3" element={<BarterExchange />} />
-          {/* <Route path="/case-study-1" element={<Oluary />} /> */}
+          <Route path="/case-study-1" element={<Oluary />} />
         </Routes>
       </Router>
     </div>

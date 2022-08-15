@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.eddf5d9d.css",
-    "main.js": "/static/js/main.839fa1c3.js",
+    "main.css": "/static/css/main.55774a2f.css",
+    "main.js": "/static/js/main.561cf91a.js",
     "static/js/787.573de1c8.chunk.js": "/static/js/787.573de1c8.chunk.js",
     "static/media/service-banner.png": "/static/media/service-banner.ecbcbe8da664cbda3435.png",
+    "static/media/island-girl-bg-layer.png": "/static/media/island-girl-bg-layer.5828d145d9c4d93cef5c.png",
     "static/media/Dark-College.otf": "/static/media/Dark-College.6ba8a7a766c7dfc980d1.otf",
     "static/media/tech-banner.png": "/static/media/tech-banner.a9673d916036573d618b.png",
+    "static/media/island-girl-banner.png": "/static/media/island-girl-banner.4ecbd396a0e74fc8eac4.png",
     "static/media/island-girl-6.png": "/static/media/island-girl-6.084f8f903811c8e06383.png",
     "static/media/island-girl-3.png": "/static/media/island-girl-3.44081b46e738058fa149.png",
     "static/media/island-girl-1.png": "/static/media/island-girl-1.c47901eb7784760170da.png",
@@ -37,12 +39,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.eddf5d9d.css.map": "/static/css/main.eddf5d9d.css.map",
-    "main.839fa1c3.js.map": "/static/js/main.839fa1c3.js.map",
+    "main.55774a2f.css.map": "/static/css/main.55774a2f.css.map",
+    "main.561cf91a.js.map": "/static/js/main.561cf91a.js.map",
     "787.573de1c8.chunk.js.map": "/static/js/787.573de1c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eddf5d9d.css",
-    "static/js/main.839fa1c3.js"
+    "static/css/main.55774a2f.css",
+    "static/js/main.561cf91a.js"
   ]
 }

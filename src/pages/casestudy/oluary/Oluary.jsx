@@ -8,26 +8,26 @@ import {
 } from "../../../components";
 // import { CareerBanner } from "../career/Career";
 import { Zoom } from "react-reveal";
-import "./barter-exchange.scss";
+import "./oluary.scss";
 import {
-  BarterExchangeBannerImg,
-  Cloud1,
-  Cloud2,
-  Cloud3,
-  BarterExchange2,
-  BarterExchange3,
-  BarterExchange4,
-  BarterExchange5,
-  BarterExchangeBgLayer,
+  GameLogic,
+  Islandgirl1,
+  Islandgirl2,
+  Islandgirl3,
+  Islandgirl4,
+  Islandgirl5,
+  Islandgirl6,
+  Islandgirl7,
+  islandGirlBgLayer,
 } from "../../../assets/images/index";
 
-function BarterExchange() {
+function Oluary() {
   return (
     <div id="custom-web">
       {/* =========================banner============ */}
-      <section className="banner barter-exchange-banner">
+      <section className="banner">
         <img
-          src={BarterExchangeBgLayer}
+          src={islandGirlBgLayer}
           alt=""
           style={{
             zIndex: "-2",
@@ -37,76 +37,42 @@ function BarterExchange() {
           }}
         />
         <Header />
-        <div className="main">
-          <div className="container ">
-            <div className="row" style={{ height: "40%" }}>
-              <div className="col-md-12 col-sm-12">
-                <div className="main-cloud">
-                  <div className="first-cloud">
-                    <img src={Cloud1} alt="cloud.png" className="mt-5" />
-                  </div>
-                  <div className="second-cloud">
-                    <img src={Cloud2} alt="cloud.png" />
-                  </div>
-                  <div className="third-cloud">
-                    <img src={Cloud3} alt="cloud.png" />
-                  </div>
-                </div>
-              </div>
+        <div className="banner-container">
+          <div className="banner-content mt-5">
+            <div className="title-home">
+              <h2>
+                A classic side-scrolling runner game <br /> played with NFTs
+              </h2>
+              <hr className="line" style={{ borderTop: "3px solid #198754" }} />
             </div>
-            <div className="row">
-              <div className="col-lg-7 col-md-12 col-sm-12">
-                <div className="banner-content mt-5">
-                  <div className="title-home">
-                    <h2>
-                      Trite goods now <br /> barter them
-                    </h2>
-                    <hr
-                      className="line"
-                      style={{ borderTop: "6px solid #F89200", width: "50%" }}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-5 col-md-12 col-sm-12">
-                <div className="banner-img">
-                  <img src={BarterExchangeBannerImg} alt="" />
-                </div>
-              </div>
-            </div>
+          </div>
+
+          <div className="banner-img">
+            <img src={Islandgirl1} alt="" />
           </div>
         </div>
       </section>
       <section id="case-study-content" className="clearfix">
-        <div className="container barter-container">
+        <div className="container">
           <div className="sec-padding">
             <div className="row">
-              <div className="col-lg-12 mt-2 d-flex  flex-column align-items-center justify-content-end ">
-                <div className="banner-img-mobile d-none">
-                  <Zoom>
-                    <img
-                      src={BarterExchangeBannerImg}
-                      alt="BarterExchange.png"
-                    />
-                  </Zoom>
-                </div>
-              </div>
-              <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end mb-5 ">
+              <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end ">
                 <div className="content">
                   <div className="heading">
                     <h1>
-                      Online platform for bartering and trades make it easier to
-                      get rid of unwanted items.
+                      Island Girl is an NFT game based on a P2E model based on
+                      blockchain technology.
                     </h1>
-                    <span className="underline barter-underline"></span>
+                    <span className="underline"></span>
                   </div>
 
                   <div className="para">
                     <p>
-                      Barter is the application where you can search million of
-                      new items and exchange them with your old stuff, not just
-                      that but also a facility of nearby purchasing and customer
-                      support.
+                      Pluton’s establishment was laid in 2018. Our experience
+                      started determined to utilize state-of-the-art innovation
+                      to <br />
+                      carry transparency and trustworthiness to organization
+                      processes.
                     </p>{" "}
                   </div>
                 </div>
@@ -114,12 +80,12 @@ function BarterExchange() {
               <div className="col-lg-12 mt-2 d-flex  flex-column align-items-center justify-content-end ">
                 <div className="banner-img">
                   <Zoom>
-                    <img src={BarterExchange2} alt="BarterExchange.png" />
+                    <img src={Islandgirl2} alt="Island girl image" />
                   </Zoom>
                 </div>
               </div>
             </div>
-            {/* <div className="row flex-column-reverse">
+            <div className="row flex-column-reverse">
               <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end ">
                 <div className="content">
                   <div className="heading">
@@ -155,107 +121,110 @@ function BarterExchange() {
                   <img src={Islandgirl3} alt="Island girl image" />
                 </div>
               </div>
-            </div> */}
+            </div>
             <div className="row">
               <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end ">
                 <div className="content">
                   <div className="heading">
-                    <h1>
-                      Bartering and swaps are being accepted by buyers and
-                      sellers in industries including vehicles, smartphones, and
-                      home living items.
-                    </h1>
-                    <span className="underline barter-underline"></span>
+                    <h1>Island Girl Game Development Partner</h1>
+                    <span className="underline"></span>
                   </div>
 
                   <div className="para">
                     <p>
-                      We embraced the ability of swapping and exchanging the
-                      items. Stuff like automobile, construction, advertising
-                      and media, printing, and retail industries. Our niche is
-                      to exchange your old and vintage item to the brand new.
+                      Based on its Binance Smart Chain, Island Girl’ wanted a
+                      partner capable of building this game for a competitive
+                      market comprising play-to-earn games. And with many of the
+                      stakeholders and product strategists at Pluton being P2E
+                      game enthusiasts themselves, this said a lot about their
+                      expertise and ability to critique games as a preferred
+                      choice as a development partner.
                     </p>{" "}
+                    <p>
+                      Island Girl needed to have this game built by an expert
+                      with a track record of working with blockchain and NFT
+                      technologies. After reviewing dozens of companies, Island
+                      Girl believed Pluton was the partner fully capable of
+                      building a premium game developer with a professional
+                      approach.
+                    </p>
+                    <p>
+                      Island Girl and Pluton were both pleased to announce their
+                      partnership. According to Island Girl, Pluton was
+                      naturally a good fit for this project because of its
+                      expertise in blockchain development.
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="row ">
               <div className="col-lg-12 mt-2 d-flex  flex-column align-items-center justify-content-end ">
                 <div className="banner-img">
-                  <img src={BarterExchange3} alt="BarterExchange3.png" />
+                  <img
+                    src={Islandgirl4}
+                    alt="Island girl image"
+                    className="island-girl-4"
+                  />
                 </div>
               </div>
+            </div>
+            <div className="row flex-column-reverse">
               <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end ">
                 <div className="content">
                   <div className="heading">
-                    <h1>Avail Options</h1>
-                    <span className="underline barter-underline"></span>
+                    <h1>Development & Launch</h1>
+                    <span className="underline"></span>
                   </div>
 
                   <div className="para">
                     <p>
-                      Gain the authority to hold the exchange options of your
-                      choice.
+                      There are several game development companies engaged in
+                      building the next best game and with mobile gaming being a
+                      growing industry that has millions riveted playing one
+                      game or another, the quicker the product is launched, the
+                      better it would. Among these are P2E games or play-to-earn
+                      games that allow you to spend time building up revenue as
+                      you play.
                     </p>{" "}
+                    <p>
+                      Island Girl’ game development is complete, and the game
+                      has been launched according to their scheduled launch
+                      date.
+                    </p>
+                    <p>
+                      It’s worth mentioning that a farming system is also being
+                      developed alongside the mobile game. Even more significant
+                      than this is the team’s plan to expand the concept into
+                      the Metaverse during 2022, which would give Island Girl
+                      massive potential.
+                    </p>
                   </div>
+                </div>
+              </div>
+              <div className="col-lg-12 mt-2 d-flex  flex-column align-items-center justify-content-end ">
+                <div className="banner-img">
+                  <img src={Islandgirl5} alt="Island girl image" />
                 </div>
               </div>
             </div>
             <div className="row">
-              <div className="col-lg-12 mt-2 d-flex  flex-column align-items-center justify-content-end ">
-                <div className="banner-img">
-                  <img src={BarterExchange4} alt="BarterExchange3.png" />
-                </div>
-              </div>
               <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end ">
-                <div className="content">
-                  <div className="heading">
-                    <h1>ChatBox</h1>
-                    <span className="underline barter-underline"></span>
-                  </div>
-
-                  <div className="para ">
-                    <p>
-                      Our chat representatives supporting and assisting
-                      customers 24/7. Sorting out all the queries with guiding
-                      helplines
-                    </p>{" "}
-                  </div>
+                <div className="banner-img">
+                  <img src={Islandgirl6} alt="Island girl image" />
                 </div>
               </div>
-            </div>
-            <div className="row mb-5 ">
               <div className="col-lg-12 mt-2 d-flex  flex-column align-items-center justify-content-end ">
                 <div className="banner-img">
-                  <img src={BarterExchange5} alt="BarterExchange5.png" />
-                </div>
-              </div>
-              <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end  ">
-                <div className="content">
-                  <div className="heading">
-                    <h1>Nearby Exchange</h1>
-                    <span className="underline barter-underline"></span>
-                  </div>
-
-                  <div className="para ">
-                    <p>
-                      By using our location detecting service now eligible you
-                      with nearby exchange offers. We give you the picture of
-                      whole map where you find all available swapping options.
-                    </p>{" "}
-                  </div>
+                  <img src={Islandgirl7} alt="Island girl image" />
                 </div>
               </div>
             </div>
-
-            <TechniCalities className="my-5" />
-
+            <TechniCalities />
             <div className="row">
               <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end ">
                 <div className="content">
                   <div className="heading">
                     <h1>NFTs</h1>
-                    <span className="underline barter-underline"></span>
+                    <span className="underline"></span>
                   </div>
 
                   <div className="para">
@@ -269,7 +238,7 @@ function BarterExchange() {
                 <div className="content">
                   <div className="heading">
                     <h1>Marketplace</h1>
-                    <span className="underline barter-underline"></span>
+                    <span className="underline"></span>
                   </div>
 
                   <div className="para">
@@ -288,7 +257,7 @@ function BarterExchange() {
                 <div className="content">
                   <div className="heading">
                     <h1>Token</h1>
-                    <span className="underline barter-underline"></span>
+                    <span className="underline"></span>
                   </div>
 
                   <div className="para">
@@ -314,7 +283,7 @@ function BarterExchange() {
                 <div className="content">
                   <div className="heading">
                     <h1>Tokenomics</h1>
-                    <span className="underline barter-underline"></span>
+                    <span className="underline"></span>
                   </div>
 
                   <div className="para">
@@ -355,4 +324,4 @@ function BarterExchange() {
   );
 }
 
-export default BarterExchange;
+export default Oluary;

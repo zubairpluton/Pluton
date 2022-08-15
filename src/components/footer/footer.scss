@@ -136,7 +136,7 @@ footer {
       }
 
       @include pc {
-        justify-content: end !important;
+        justify-content: flex-end !important;
       }
       @include laptop {
         justify-content: space-between !important;

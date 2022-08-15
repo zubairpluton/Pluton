@@ -634,8 +634,11 @@
   // opacity: 0.8;
   background-color: #f3f3f3 !important;
   .tech-icons-main {
-    width: 600px;
+    width: 80%;
     margin: 0 auto;
+    @include ipad-pro {
+      width: 100%;
+    }
 
     .main-technical-icons {
       display: flex;

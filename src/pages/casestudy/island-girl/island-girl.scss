@@ -34,7 +34,7 @@
         text-align: start;
         width: 500px;
 
-        color: #24b3d6;
+        color: transparent;
         border: 0;
         border-top: 3px solid #24b3d6;
         opacity: 1;
@@ -85,9 +85,9 @@
       height: 50vh;
       .logo {
         a {
-          img {
-            width: 50%;
-          }
+          // img {
+          //   width: 50%;
+          // }
         }
       }
     }

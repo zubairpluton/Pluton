@@ -9,4 +9,5 @@ export { default as CreativeDesign } from "./services/creative-design/CreativeDe
 export { default as DigitalMarketing } from "./services/digital-marketing/DigitalMarketing";
 export { default as SoftwareDev } from "./services/software-dev/SoftwareDev";
 export { default as IslandGirl } from "./casestudy/island-girl/IslandGirl";
+export { default as Oluary } from "./casestudy/oluary/Oluary";
 export { default as BarterExchange } from "./casestudy/barter-exchange/BarterExchange";

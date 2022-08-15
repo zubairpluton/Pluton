@@ -1,0 +1,93 @@
+@import "../../../global.scss";
+
+#custom-web {
+  .barter-underline {
+    border-bottom: 4px solid #dcaf45;
+  }
+  .barter-exchange-banner {
+    .main {
+      height: 80%;
+      .container {
+        height: 100%;
+      }
+    }
+    background-image: url("../../../assets/images/casestudy/barter-exchange-banner.png") !important;
+    background-color: linear-gradient(
+      90deg,
+      #cf6402 -2.67%,
+      #ffdb5b 100%
+    ) !important;
+    opacity: 1;
+    background-position: inherit;
+
+    .banner-img {
+      img {
+        right: 25%;
+        transform: translate(50%, 20%);
+        max-width: 50%;
+        // @include laptop {
+        //   max-width: 25%;
+        // }
+        @include ipad-pro {
+          display: none;
+        }
+      }
+    }
+
+    .banner-content {
+      @include ipad-pro {
+        display: flex;
+        justify-content: center;
+        margin-top: 0 !important;
+
+        .title-home {
+          hr {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .main-cloud {
+      display: flex;
+      width: 70%;
+
+      height: 70%;
+
+      justify-content: space-evenly;
+      @include ipad-pro {
+        width: 100%;
+      }
+
+      .first-cloud,
+      .second-cloud,
+      .third-cloud {
+        img {
+          @include laptop {
+            width: 70%;
+          }
+        }
+      }
+      .second-cloud {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+#case-study-content {
+  .barter-container {
+    @include ipad-pro {
+      margin-top: 0 !important;
+    }
+  }
+  .banner-img-mobile {
+    @include ipad-pro {
+      display: flex !important;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    margin: 50px 0px;
+  }
+}
