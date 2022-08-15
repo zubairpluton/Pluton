@@ -53,9 +53,9 @@ function CaseStudy() {
         </div>
       </section>
       <section id="case-study-content" className="clearfix">
-        <div className="container">
+        <div className="container case-container">
           <div className="sec-padding">
-            <div className="row">
+            <div className="row mt-5">
               <div className="col-lg-12 d-flex  flex-column align-items-start justify-content-end ">
                 <div className="content">
                   <div className="heading">

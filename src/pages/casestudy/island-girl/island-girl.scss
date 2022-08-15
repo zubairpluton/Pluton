@@ -6,8 +6,8 @@
       width: 90%;
       margin: 0 auto;
     }
-    background-image: url("../../../assets/images/casestudy/island-girl-banner.png") !important;
-    background: linear-gradient(90deg, #202d0b -2.67%, #609350 100%);
+    background-image: url("../../../assets/images/casestudy/island-girl-banner.png");
+    background-color: linear-gradient(90deg, #202d0b -2.67%, #609350 100%);
     opacity: 0.9999;
     height: 100vh;
     position: relative;
@@ -132,7 +132,6 @@
   }
   #case-study-content {
     .container {
-      margin-top: 180px;
       max-width: 55%;
       .banner-img {
         img {

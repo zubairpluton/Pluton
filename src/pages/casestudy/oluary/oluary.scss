@@ -1,0 +1,44 @@
+@import "../../../global.scss";
+#custom-web {
+  .oluary-banner {
+    background: radial-gradient(
+      70.41% 117.49% at 39.69% 0.01%,
+      #117ab0 0%,
+      #093e81 43.23%,
+      #083a7e 46%,
+      #02105d 81%,
+      #180051 99%
+    ) !important;
+
+    // background-image: url("../../../assets/images/casestudy/oluary-banner-bg.png") !important;
+
+    .main-cloud {
+      width: 90% !important;
+      .second-cloud {
+        align-self: center !important;
+      }
+    }
+    .banner-img {
+      img {
+        position: relative;
+        width: 100%;
+        transform: inherit !important;
+        max-width: 100% !important;
+        right: auto !important;
+      }
+    }
+
+    .title-home {
+      @include ipad-pro {
+        text-align: center;
+        margin: 0 auto;
+        hr {
+          margin: 0 auto;
+        }
+      }
+      h4 {
+        color: #fff;
+      }
+    }
+  }
+}
